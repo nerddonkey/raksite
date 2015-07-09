@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Course in a Nutshell &middot; ENGN2228 Signal Processing
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  
+  <!-- javascript -->
+  
+  <script type="text/javascript"> 
+    window.onload=function() {
+      var links = document.links;
+      for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+          links[i].target = '_blank';
+        }
+      }
+    }
+  </script>
+
+  <!-- mathjax -->
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"
+    type="text/javascript">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } },
+      SVG: { scale: 90, blacker: 10 }
+    });
+  </script>
+</head>
+
+
+  <body class="theme-base-08">
+
+    
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Site dedicated to the delivery of course material in: <br><b>ENGN2228 Signal Processing</b></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    
+
+    <a class="sidebar-nav-item "
+      href="/index.html">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p01-learning.html">Learning Outcomes</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p02-textbook.html">Course Textbook</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p03-materials.html">Materials for Course</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p04-people.html">Instructors</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p05-assessment.html">Assessment</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item active"
+            href="/p06-nutshell.html">Course in a Nutshell</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p07-elcomaj.html">Major for Course</a>
+        
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      Site Version v1.0.0<br>
+      Generator: <a href="http://jekyllrb.com">Jekyll</a>
+      Theme: <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            
+            <img src="/images/ANU-logo.png" align="top"
+               style="margin:0px 25px 0px 0px; float:left; width:170px;">
+             <a href="/index.html" title="Home">ENGN2228 Signal Processing</a><br>
+            <small>College of Engineering and Computer Science</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">Course in a Nutshell</h1>
+  <h3 class="no_toc" id="contents-stylecolor-gray"><em style="color: gray">Contents</em></h3>
+
+<ul id="markdown-toc">
+  <li><a href="#nutshell-1-music-interpretation" id="markdown-toc-nutshell-1-music-interpretation">Nutshell 1 (music interpretation)</a></li>
+  <li><a href="#nutshell-2-after-you-complete-the-course" id="markdown-toc-nutshell-2-after-you-complete-the-course">Nutshell 2 (after you complete the course)</a></li>
+</ul>
+
+<hr />
+
+<p>Here are some various views on what this course is about and why it is useful/essential:</p>
+
+<h2 id="nutshell-1-music-interpretation">Nutshell 1 (music interpretation)</h2>
+
+<p><img src="/images/music.png" style="width:95%; 	margin-left: auto; margin-right: auto;" onerror="this.style.display='none'" /></p>
+
+<ul>
+  <li>Composers write sheet music (and guitar tabs) because it is a natural way to represent and work with music.  Engineers use <strong>Fourier analysis</strong> in the same way.  In fact it is not a rough analogy, music notation <em>really</em> is a shorthand (short-time) <em>“Fourier Transform”</em>.</li>
+  <li>In the same way anything we measure such as a signal (e.g., voltage waveform) is best thought of in musical terms and transformed to musical notes.</li>
+  <li>Transforming a signal to musical notation is applying the <em>“Fourier Transform”</em> and the process is called <em>ANALYSIS</em>.
+    <ul>
+      <li>Analysis means taking an object-of-interest and breaking it up into its parts to understand how it works.</li>
+    </ul>
+  </li>
+  <li>Playing back music from musical notation is applying the <em>“Inverse Fourier Transform”</em> and called <em>SYNTHESIS</em>.
+    <ul>
+      <li>Synthesis means combining parts to reconstruct an object-of-interest.</li>
+    </ul>
+  </li>
+  <li>A pianist sitting at a piano and playing from sheet music in front of him is performing an <em>“Inverse Fourier Transform”</em>, she is <em>synthesizing</em> the music.  The composer who hears music in her head and writes the musical notation is performing <em>analysis</em> — call this Fourier analysis.</li>
+  <li>Synthesis recombines the parts to recreate the object-of-interest.</li>
+  <li>Filtering means
+    <ul>
+      <li>taking something, which contains the object-of-interest, and breaking it up into its parts</li>
+      <li>throwing away those parts we don’t want or which are contaminated to much</li>
+      <li>recombining the <em>remaining</em> parts to recreate the object-of-interest</li>
+    </ul>
+  </li>
+  <li>Filtering Examples
+    <ul>
+      <li>take the recording of an orchestra playing music and by doing <em>“signal processing”</em> extract just the violins playing (not easy)</li>
+      <li>cleaning up medical images: <a href="http://en.wikibooks.org/wiki/Basic_Physics_of_Nuclear_Medicine/">Computers_in_Nuclear_Medicine 2D Medical Image Processing</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="nutshell-2-after-you-complete-the-course">Nutshell 2 (after you complete the course)</h2>
+
+<ul>
+  <li>It’s a standard course on signals and systems, Fourier Transforms, frequency responses, convolutions, filters and sampling.</li>
+</ul>
+
+<hr />
+
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>ENGN2228 Signal Processing</title>
+ <link href="https://github.com/nerddonkey/sigpro/atom.xml" rel="self"/>
+ <link href="https://github.com/nerddonkey/sigpro/"/>
+ <updated>2015-07-08T23:27:22+01:00</updated>
+ <id>https://github.com/nerddonkey/sigpro</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Welcome to ENGN2228 Signal Processing</title>
+   <link href="https://github.com/nerddonkey/sigpro/blogs/2015-07-05/welcome.html"/>
+   <updated>2015-07-05T00:00:00+01:00</updated>
+   <id>https://github.com/nerddonkey/sigpro/blogs/2015-07-05/welcome</id>
+   <content type="html">&lt;h2 id=&quot;course-description&quot;&gt;Course Description&lt;/h2&gt;
+
+&lt;p&gt;This course presents the principles, theory and techniques fundamental to the analysis and design of continuous time and discrete time signal processing systems. The concepts are illustrated with examples from circuit theory, signal processing, bio-medical engineering, communications, etc. The course has three hardware laboratories using the &lt;strong&gt;Telecommunications Instructional Modelling System (TIMS)&lt;/strong&gt; and one computer laboratory based around &lt;strong&gt;MATLAB&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The course title &lt;em&gt;“Signal Processing”&lt;/em&gt; was chosen as an alternative to &lt;em&gt;“Signals and Systems”&lt;/em&gt;, which is a better name (and the name of the text), so as to not clash with the general term &lt;em&gt;“Systems Engineering&lt;/em&gt;” that means something different as used in a number of other courses such as ENGN2225 and ENGN2226.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Learning Outcomes of Course and Major</title>
+   <link href="https://github.com/nerddonkey/sigpro/blogs/2015-07-04/learning-outcomes.html"/>
+   <updated>2015-07-04T00:00:00+01:00</updated>
+   <id>https://github.com/nerddonkey/sigpro/blogs/2015-07-04/learning-outcomes</id>
+   <content type="html">&lt;h2 id=&quot;learning-outcomes-of-course&quot;&gt;Learning Outcomes of Course&lt;/h2&gt;
+
+&lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/course/ENGN2228&quot;&gt;ENGN2228 Signal Processing&lt;/a&gt;, students should be able to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;Demonstrate an understanding of continuous-time and discrete-time signals and other underpinning concepts such as causality, linearity, time invariance and stability.&lt;/li&gt;
+    &lt;li&gt;Understand the notion of mechanical, thermal and electrical analogies and the application of common engineering tools and techniques to problem solving across these disciplinary.&lt;/li&gt;
+    &lt;li&gt;Have an in-depth understanding of and use of convolution, impulse response, frequency response and the characteristics of low-pass, band-pass and high-pass filters.&lt;/li&gt;
+    &lt;li&gt;Demonstrate an understanding of engineering design practice and the broad principles of analysis and synthesis.&lt;/li&gt;
+    &lt;li&gt;Demonstrate effective reporting of laboratory work.&lt;/li&gt;
+    &lt;li&gt;Demonstrate in-depth understanding of sampling, the Sampling Theorem, aliasing and the Nyquist.&lt;/li&gt;
+    &lt;li&gt;Demonstrate understanding continuous time processing design via sampling and digital processing&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How these learning outcomes of this Course relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ENGN2228.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;learning-outcomes-of-major&quot;&gt;Learning Outcomes of Major&lt;/h2&gt;
+
+&lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/major/ELCO-MAJ&quot;&gt;Electronic and Communication Systems Major&lt;/a&gt;, students should be able to:&lt;/p&gt;
+
+&lt;blockquote&gt;
+
+  &lt;ol&gt;
+    &lt;li&gt;apply the advanced engineering concepts, modelling techniques and mathematical tools to analyse and design electronic and communication systems&lt;/li&gt;
+    &lt;li&gt;conduct appropriate computer-based simulations and hardware experiments to investigate the performance of electronic and communication systems&lt;/li&gt;
+    &lt;li&gt;solve complex design problems in electronics and communication systems and critically evaluate the outcomes&lt;/li&gt;
+    &lt;li&gt;apply advanced knowledge of electronic engineering in diverse contexts and applications&lt;/li&gt;
+    &lt;li&gt;use systems engineering approaches in conducting electronic engineering projects&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How these learning outcomes of this Major relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ELCO-MAJ.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>MathJax in Jekyll kramdown</title>
+   <link href="https://github.com/nerddonkey/sigpro/blogs/2015-01-25/mathjax.html"/>
+   <updated>2015-01-25T00:00:00+00:00</updated>
+   <id>https://github.com/nerddonkey/sigpro/blogs/2015-01-25/mathjax</id>
+   <content type="html">&lt;p&gt;Getting &lt;abbr title=&quot;MathJax JavaScript display engine for mathematics&quot;&gt; MathJax&lt;/abbr&gt; to play nice with Jekyll/Kramdown
+needs a bit of tinkering&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align\*}
+x&amp;=y \\
+z&amp;= p
+\end{align\*} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;is &lt;em style=&quot;color: red&quot;&gt;obtained&lt;/em&gt; by&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;sb&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{align}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;  x &amp;amp;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; y &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;  z &amp;amp;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; p&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{align}&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{equation}&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;\label&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{eqn:shbe}&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;	H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\theta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\phi&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\sum&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\infty&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;} &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\gamma&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p}&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\,\varGamma&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\theta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\phi&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{equation}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing Lanyon</title>
+   <link href="https://github.com/nerddonkey/sigpro/blogs/2014-01-02/introducing-lanyon.html"/>
+   <updated>2014-01-02T00:00:00+00:00</updated>
+   <id>https://github.com/nerddonkey/sigpro/blogs/2014-01-02/introducing-lanyon</id>
+   <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+
+&lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
+
+&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Lanyon here) includes the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Mobile friendly design and development&lt;/li&gt;
+  &lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
+  &lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
+  &lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
+  &lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lanyon-features&quot;&gt;Lanyon features&lt;/h3&gt;
+
+&lt;p&gt;In addition to the features of Poole, Lanyon adds the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Toggleable sliding sidebar (built with only CSS) via &lt;strong&gt;☰&lt;/strong&gt; link in top corner&lt;/li&gt;
+  &lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
+  &lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/poole/lanyon#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/poole/lanyon#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;h3 id=&quot;browser-support&quot;&gt;Browser support&lt;/h3&gt;
+
+&lt;p&gt;Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
+
+&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Lanyon is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Fourier Synthesis with MATLAB</title>
+   <link href="https://github.com/nerddonkey/sigpro/blogs/2014-01-02/fourier-synth.html"/>
+   <updated>2014-01-02T00:00:00+00:00</updated>
+   <id>https://github.com/nerddonkey/sigpro/blogs/2014-01-02/fourier-synth</id>
+   <content type="html">&lt;p&gt;Here is a bit of &lt;abbr title=&quot;MATLAB&amp;reg; is a high-level technical computing language&quot;&gt; MATLAB®&lt;/abbr&gt; code that does Fourier &lt;em&gt;synthesis&lt;/em&gt;. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation*}
+	c_k = T\,a_k^2 \quad\text{where}\quad
+	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{equation*}&lt;/script&gt;
+
+&lt;p&gt;Or this&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+	c_k &amp;= T\,a_k^2 \\
+	a_k &amp;= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;But it serves as an illustration of a lot of aspects of coding in &lt;abbr title=&quot;MATLAB&amp;reg; is a high-level technical computing language&quot;&gt;MATLAB®&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;foursynth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; kmax, T &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;w&quot;&gt;    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% Fourier coefficient index span&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;omega0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% fundamental frequency (rad/sec); T - period&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% lazy way to handle sinc at zero&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;./&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ak&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.01&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% time scan for plot (5 periods)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ekt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;omega0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kron&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% k horz; t vert&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;yt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ekt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;% sum the series; .&amp;#39; means non-conjugate transpose&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shg&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+
+</feed>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Fourier Synthesis with MATLAB &middot; ENGN2228 Signal Processing
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  
+  <!-- javascript -->
+  
+  <script type="text/javascript"> 
+    window.onload=function() {
+      var links = document.links;
+      for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+          links[i].target = '_blank';
+        }
+      }
+    }
+  </script>
+
+  <!-- mathjax -->
+  
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js"
+    type="text/javascript">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } },
+      SVG: { scale: 90, blacker: 10 }
+    });
+  </script>
+</head>
+
+
+  <body class="theme-base-08">
+
+    
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Site dedicated to the delivery of course material in: <br><b>ENGN2228 Signal Processing</b></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    
+
+    <a class="sidebar-nav-item "
+      href="/index.html">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p01-learning.html">Learning Outcomes</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p02-textbook.html">Course Textbook</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p03-materials.html">Materials for Course</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p04-people.html">Instructors</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p05-assessment.html">Assessment</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p06-nutshell.html">Course in a Nutshell</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item "
+            href="/p07-elcomaj.html">Major for Course</a>
+        
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      Site Version v1.0.0<br>
+      Generator: <a href="http://jekyllrb.com">Jekyll</a>
+      Theme: <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            
+            <img src="/images/ANU-logo.png" align="top"
+               style="margin:0px 25px 0px 0px; float:left; width:170px;">
+             <a href="/index.html" title="Home">ENGN2228 Signal Processing</a><br>
+            <small>College of Engineering and Computer Science</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        
+
+<div class="post">
+  <h1 class="post-title">Fourier Synthesis with MATLAB</h1>
+  <!-- <span class="post-date">02 Jan 2014</span> -->
+  <span class="post-date">Rod Kennedy</span>
+  <p>Here is a bit of <abbr title="MATLAB&reg; is a high-level technical computing language"> MATLAB®</abbr> code that does Fourier <em>synthesis</em>. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients</p>
+
+<script type="math/tex; mode=display">\begin{equation*}
+	c_k = T\,a_k^2 \quad\text{where}\quad
+	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{equation*}</script>
+
+<p>Or this</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+	c_k &= T\,a_k^2 \\
+	a_k &= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{align*} %]]></script>
+
+<p>But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB®</abbr>.</p>
+
+<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span><span class="nf">foursynth</span><span class="p">(</span> kmax, T <span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">k</span><span class="p">=[</span><span class="o">-</span><span class="n">kmax</span><span class="p">:</span><span class="n">kmax</span><span class="p">];</span> <span class="c">% Fourier coefficient index span</span>
+    <span class="n">omega0</span><span class="p">=</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="n">T</span><span class="p">;</span> <span class="c">% fundamental frequency (rad/sec); T - period</span>
+
+    <span class="n">k</span><span class="p">=</span><span class="n">k</span><span class="o">+</span><span class="mf">0.0001</span><span class="p">;</span> <span class="c">% lazy way to handle sinc at zero</span>
+    <span class="n">ak</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">./</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="p">)</span><span class="o">.*</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="nb">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">ck</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="n">ak</span><span class="o">.*</span><span class="n">ak</span><span class="p">;</span>
+
+    <span class="n">t</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="p">[</span><span class="o">-</span><span class="mf">2.5</span><span class="p">:</span><span class="mf">0.01</span><span class="p">:</span><span class="mf">2.5</span><span class="p">];</span> <span class="c">% time scan for plot (5 periods)</span>
+    <span class="n">ekt</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="nb">j</span><span class="o">*</span><span class="n">omega0</span><span class="o">*</span><span class="n">kron</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">t</span><span class="o">&#39;</span><span class="p">));</span> <span class="c">% k horz; t vert</span>
+
+    <span class="n">yt</span><span class="p">=</span><span class="n">ck</span><span class="o">*</span><span class="n">ekt</span><span class="p">.</span><span class="o">&#39;</span><span class="p">;</span> <span class="c">% sum the series; .&#39; means non-conjugate transpose</span>
+
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">));</span> <span class="n">shg</span>
+<span class="k">end</span></code></pre></div>
+
+<hr />
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blogs/2015-07-05/welcome.html">
+            Welcome to ENGN2228 Signal Processing
+            <!-- <small>05 Jul 2015</small> -->
+            <small>Rod Kennedy</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blogs/2015-07-04/learning-outcomes.html">
+            Learning Outcomes of Course and Major
+            <!-- <small>04 Jul 2015</small> -->
+            <small>Rod Kennedy</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blogs/2015-01-25/mathjax.html">
+            MathJax in Jekyll kramdown
+            <!-- <small>25 Jan 2015</small> -->
+            <small>Rod Kennedy</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

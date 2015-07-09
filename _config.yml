@@ -1,0 +1,36 @@
+# Permalinks, use of `relative_permalinks` ensures post links from the index work properly.
+permalink: /blogs/:year-:month-:day/:title.html
+relative_permalinks: true
+
+# Setup
+title: ENGN2228 Signal Processing
+tagline: College of Engineering and Computer Science
+description: 'Site dedicated to the delivery of course material in: <br><b>ENGN2228 Signal Processing</b>'
+
+# A) Site served up locally usually on http://127.0.0.1:4000/
+#
+baseurl: ''
+
+# B) Site on ANU CECS servers
+#
+#baseurl: http://users.cecs.anu.edu.au/~rod/engn2228
+
+# C) Site hosted on Dropbox ~/Dropbox/Public/engn2228
+# available at https://dl.dropboxusercontent.com/u/3959788/engn2228/index.html
+#
+baseurl: https://dl.dropboxusercontent.com/u/3959788/engn2228
+destination: /Users/rodneykennedy/Dropbox/Public/engn2228
+
+# max blogs entries per page
+paginate: 5
+
+# excluded from copying to destination
+exclude: [sandbox]
+
+# about
+name: Rod Kennedy
+url: https://github.com/nerddonkey/sigpro
+email: rodney.kennedy@anu.edu.au
+
+# version
+version: 1.0.0
