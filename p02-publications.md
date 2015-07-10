@@ -39,4 +39,8 @@ author: Rod Kennedy
 
 {% include snippets/2010pubs.html %}
 
+## 2009 Publications
+
+{% include snippets/2009pubs.html %}
+
 ---
