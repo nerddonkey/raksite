@@ -13,7 +13,7 @@
 
   <title>
     
-      404: Page not found &middot; Prof Rodney A. Kennedy Homepage
+      MathJax in Jekyll kramdown &middot; Prof Rodney A. Kennedy Homepage
     
   </title>
 
@@ -170,9 +170,72 @@
       </div>
 
       <div class="container content">
-        <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+        
+
+<div class="post">
+  <h1 class="post-title">MathJax in Jekyll kramdown</h1>
+  <!-- <span class="post-date">25 Jan 2015</span> -->
+  <span class="post-date">Rod Kennedy</span>
+  <p>Getting <abbr title="MathJax JavaScript display engine for mathematics"> MathJax</abbr> to play nice with Jekyll/Kramdown
+needs a bit of tinkering</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+x&=y \\
+z&= p
+\end{align*} %]]></script>
+
+<p>is <em style="color: red">obtained</em> by</p>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="sb">$$</span><span class="nb"></span>
+<span class="nv">\begin</span><span class="nb">{align}</span>
+<span class="nb">  x &amp;</span><span class="o">=</span><span class="nb"> y </span><span class="nv">\\</span><span class="nb"></span>
+<span class="nb">  z &amp;</span><span class="o">=</span><span class="nb"> p</span>
+<span class="nv">\end</span><span class="nb">{align}</span>
+<span class="nv">\begin</span><span class="nb">{equation}</span>
+<span class="nv">\label</span><span class="nb">{eqn:shbe}</span>
+<span class="nb">	H</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{p</span><span class="o">=</span><span class="m">1</span><span class="nb">}^{</span><span class="nv">\infty</span><span class="nb">} </span><span class="nv">\gamma</span><span class="nb">_{p}</span><span class="nv">\,\varGamma</span><span class="nb">_{p}</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"></span>
+<span class="nv">\end</span><span class="nb">{equation}</span>
+<span class="s">$$</span></code></pre></div>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blogs/2014-01-02/fourier-synth.html">
+            Fourier Synthesis with MATLAB
+            <!-- <small>02 Jan 2014</small> -->
+            <small>Rod Kennedy</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blogs/2014-01-01/example-content.html">
+            Example content
+            <!-- <small>01 Jan 2014</small> -->
+            <small>mdo</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blogs/2013-12-31/whats-jekyll.html">
+            What's Jekyll?
+            <!-- <small>31 Dec 2013</small> -->
+            <small></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
 
       </div>

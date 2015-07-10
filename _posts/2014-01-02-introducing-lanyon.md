@@ -2,7 +2,6 @@
 layout: post
 title: Introducing Lanyon
 author: mdo
-date: Fri 10 Jul 2015
 published: no
 ---
 

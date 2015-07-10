@@ -10,7 +10,7 @@ author: Rod Kennedy
 * TOC
 {:toc}
 
----   
+---
 
 ## Learning Outcomes of ENGN2228 Signal Processing
 
@@ -49,5 +49,3 @@ How these learning outcomes of this Major relate to *Engineers Australia* [Stage
 [ELCO-MAJ]: http://programsandcourses.anu.edu.au/major/ELCO-MAJ
 [ELCO-MAJm]: http://cs.anu.edu.au/courses/COMP3100/demo/ELCO-MAJ.html
 [EAStage1]: assets/EA-stage1.pdf
-
-

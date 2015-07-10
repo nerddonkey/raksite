@@ -10,7 +10,7 @@ author: Rod Kennedy
 * TOC
 {:toc}
 
----   
+---
 
 *Note that not all URL links will work until some later date (you'll get a 404 error).  It'd be a bit pointless to have solutions to an assignments before you attempt them without me first posting them on eBay.*
 
@@ -120,4 +120,3 @@ Problems to do as you go through the course.
 [Hmwrk8-s]: assets/homework-08-soln.pdf
 
 ---
-

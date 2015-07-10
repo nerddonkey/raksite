@@ -36,13 +36,13 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
-  
+
   <!-- javascript -->
   {% comment %}
     make external links open in new tab, see
       http://stackoverflow.com/questions/4425198/markdown-target-blank#answer-4705645
   {% endcomment %}
-  <script type="text/javascript"> 
+  <script type="text/javascript">
     window.onload=function() {
       var links = document.links;
       for (var i = 0, linksLength = links.length; i < linksLength; i++) {

@@ -2,7 +2,7 @@
 layout: post
 title: Example content
 author: mdo
-published: no
+published: yes
 ---
 
 

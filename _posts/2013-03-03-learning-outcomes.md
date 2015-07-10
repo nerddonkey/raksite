@@ -2,7 +2,6 @@
 layout: post
 title: Learning Outcomes of Course and Major
 author: Rod Kennedy
-date: Fri 3 Jul 2015
 published: yes
 ---
 
