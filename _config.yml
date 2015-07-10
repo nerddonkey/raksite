@@ -5,7 +5,7 @@ relative_permalinks: true
 # Setup
 title: Prof Rodney A. Kennedy Homepage
 tagline: College of Engineering and Computer Science
-description: 'Website of Prof Rodney A. Kennedy'
+description: 'Website of<br><b>Prof Rodney A. Kennedy</b>'
 port: 4001
 
 # A) Site served up locally usually on http://127.0.0.1:4000/
