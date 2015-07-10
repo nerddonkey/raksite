@@ -4,7 +4,7 @@
  <title>Prof Rodney A. Kennedy Homepage</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-10T05:38:22+01:00</updated>
+ <updated>2015-07-10T08:03:00+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -48,8 +48,154 @@ z&amp;= p
    <updated>2014-11-05T00:00:00+00:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15</id>
    <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Science on the Sphere Presentation</title>
+   <link href="https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere.html"/>
+   <updated>2014-07-01T00:00:00+01:00</updated>
+   <id>https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere</id>
+   <content type="html">&lt;p&gt;Presentation for Royal Society meeting “Science on the Sphere”.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Three 2014 ICASSP papers</title>
+   <link href="https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14.html"/>
+   <updated>2014-05-02T00:00:00+01:00</updated>
+   <id>https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14</id>
+   <content type="html">&lt;p&gt;Three 2014 ICASSP papers have been presented in Florence:&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;!-- Paper Title: Band-Limited Extrapolation on the Sphere for Signal Reconstruction in the Presence of Noise --&gt;
+&lt;!-- Authors: Y. Alem, Z. Khalid, and R. A. Kennedy --&gt;
+
+&lt;div class=&quot;Bibentry&quot;&gt; [1]
+  &lt;span class=&quot;Author&quot;&gt;Y. Alem, Z. Khalid, and R. A. Kennedy, &lt;/span&gt;
+  &lt;span class=&quot;Title&quot;&gt;&quot;Band-Limited Extrapolation on the Sphere for Signal Reconstruction in the Presence of Noise&quot;, &lt;/span&gt;
+  &lt;span class=&quot;Booktitle&quot;&gt;Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014, &lt;/span&gt;
+  &lt;span class=&quot;Address&quot;&gt;Florence, Italy, &lt;/span&gt;
+  &lt;span class=&quot;Pages&quot;&gt;pp. 4141-4145, &lt;/span&gt;
+  &lt;span class=&quot;Month&quot;&gt;May &lt;/span&gt;
+  &lt;span class=&quot;Date&quot;&gt;2014. &lt;/span&gt;
+  &lt;div class=&quot;CheckBoxes&quot;&gt;
+    &lt;form&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Abstract&quot; onclick=&quot;toggle(&#39;KennedyC2014c_abstract&#39;);&quot; unchecked=&quot;&quot; /&gt;&amp;nbsp;
+      &lt;input type=&quot;button&quot; value=&quot;BibTeX&quot; onclick=&quot;toggle(&#39;KennedyC2014c_bibtex&#39;);&quot; unchecked=&quot;&quot; /&gt; &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;Url&quot;&gt;DOI: &lt;a href=&quot;http://dx.doi.org/10.1109/ICASSP.2014.6854381&quot; target=&quot;_blank&quot;&gt;10.1109/ICASSP.2014.6854381&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;PDF: &lt;a href=&quot;http://users.rsise.anu.edu.au/~rod/papers/2014/06854381.pdf&quot; target=&quot;_blank&quot;&gt;06854381.pdf&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;Google-Scholar: &lt;a href=&quot;http://scholar.google.com.au/scholar?q=Band-Limited+Extrapolation+on+the+Sphere+for+Signal+Reconstruction+in+the+Presence+of+Noise&quot; target=&quot;_blank&quot;&gt;[1]&lt;/a&gt;&lt;/span&gt;
+  &lt;!-- Abstract --&gt;
+
+  &lt;div id=&quot;KennedyC2014c_abstract&quot; class=&quot;Abstract-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Abstract&quot;&gt; &lt;b&gt;Abstract:&lt;/b&gt; We investigate the problem of extrapolation of band-limited signals on the 2-sphere in the presence of noise. Specifically, given incomplete or spatially limited measurements subject to noise, find the unique extrapolation to the
+      complete 2-sphere. We present an analytic solution to the extrapolation problem based on the expansion of a signal in Slepian basis corresponding to an orthogonal set of eigenfunctions of an associated energy concentration problem. An alternative
+      equivalent iterative algorithm is also developed for practical implementation and guidelines are proposed to choose the parameters of the iterative algorithm. The capability of the proposed extrapolation is compared and demonstrated with the help
+      of an illustration example. &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Bibtex --&gt;
+
+  &lt;div id=&quot;KennedyC2014c_bibtex&quot; class=&quot;Bibtex-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Bibtex&quot;&gt; @inproceedings{KennedyC2014c,
+      &lt;br /&gt; title = {Band-Limited Extrapolation on the Sphere for Signal Reconstruction in the Presence of Noise},
+      &lt;br /&gt;author = {Alem, Y. and Khalid, Z. and Kennedy, R. A.},
+      &lt;br /&gt;booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014},
+      &lt;br /&gt;address = {Florence, Italy},
+      &lt;br /&gt;pages = {4141-4145},
+      &lt;br /&gt;month = {May},
+      &lt;br /&gt;year = {2014}} &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- class=&quot;Bibentry&quot; --&gt;
+
+&lt;!-- Paper Title: On the Choice of Window for Spatial Smoothing of Spherical Data --&gt;
+&lt;!-- Authors: Z. Khalid, R. A. Kennedy, and S. Durrani --&gt;
+
+&lt;div class=&quot;Bibentry&quot;&gt; [2]
+  &lt;span class=&quot;Author&quot;&gt;Z. Khalid, R. A. Kennedy, and S. Durrani, &lt;/span&gt;
+  &lt;span class=&quot;Title&quot;&gt;&quot;On the Choice of Window for Spatial Smoothing of Spherical Data&quot;, &lt;/span&gt;
+  &lt;span class=&quot;Booktitle&quot;&gt;Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014, &lt;/span&gt;
+  &lt;span class=&quot;Address&quot;&gt;Florence, Italy, &lt;/span&gt;
+  &lt;span class=&quot;Pages&quot;&gt;pp. 2644-2648, &lt;/span&gt;
+  &lt;span class=&quot;Month&quot;&gt;May &lt;/span&gt;
+  &lt;span class=&quot;Date&quot;&gt;2014.&lt;/span&gt;
+  &lt;div class=&quot;CheckBoxes&quot;&gt;
+    &lt;form&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Abstract&quot; onclick=&quot;toggle(&#39;KennedyC2014b_abstract&#39;);&quot; unchecked=&quot;&quot; /&gt;&amp;nbsp;
+      &lt;input type=&quot;button&quot; value=&quot;BibTeX&quot; onclick=&quot;toggle(&#39;KennedyC2014b_bibtex&#39;);&quot; unchecked=&quot;&quot; /&gt; &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;Url&quot;&gt;DOI: &lt;a href=&quot;http://dx.doi.org/10.1109/ICASSP.2014.6854079&quot; target=&quot;_blank&quot;&gt;10.1109/ICASSP.2014.6854079&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;PDF: &lt;a href=&quot;http://users.rsise.anu.edu.au/~rod/papers/2014/06854079.pdf&quot; target=&quot;_blank&quot;&gt;06854079.pdf&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;Google-Scholar: &lt;a href=&quot;http://scholar.google.com.au/scholar?q=On+the+Choice+of+Window+for+Spatial+Smoothing+of+Spherical+Data&quot; target=&quot;_blank&quot;&gt;[2]&lt;/a&gt;&lt;/span&gt;
+  &lt;!-- Abstract --&gt;
+
+  &lt;div id=&quot;KennedyC2014b_abstract&quot; class=&quot;Abstract-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Abstract&quot;&gt; &lt;b&gt;Abstract:&lt;/b&gt; This paper investigates spectral filtering using isotropic spectral windows, which is a computationally efficient method of spatial smoothing on the sphere. We propose a Slepian eigenfunction window, which is obtained as a solution
+      of the concentration problem on the sphere, as a good choice of the window function. We also unify a comprehensive set of quantitative tools, both spatial and spectral, to assess and compare the performance of different smoothing windows (i.e.,
+      smoothers). We analyze and compare the performance of the proposed window against the two best available candidates in the literature: von-Hann window and von Mises-Fisher distribution window. We establish that the latter window includes the popular
+      Gauss window as a subcase. We show that the Slepian eigenfunction window has the smallest spatial variance (better spatial localization) and the smallest side-lobe level. &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Bibtex --&gt;
+
+  &lt;div id=&quot;KennedyC2014b_bibtex&quot; class=&quot;Bibtex-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Bibtex&quot;&gt; @inproceedings{KennedyC2014b,
+      &lt;br /&gt; title = {On the Choice of Window for Spatial Smoothing of Spherical Data},
+      &lt;br /&gt;author = {Khalid, Z. and Kennedy, R. A. and Durrani, S.},
+      &lt;br /&gt;booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014},
+      &lt;br /&gt;address = {Florence, Italy},
+      &lt;br /&gt;pages = {2644-2648},
+      &lt;br /&gt;month = {May},
+      &lt;br /&gt;year = {2014}} &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- class=&quot;Bibentry&quot; --&gt;
+
+&lt;!-- Paper Title: Efficient Kernel-Based Formulations of Spatio-Spectral and Related Transformations on the 2-Sphere --&gt;
+&lt;!-- Authors: R. A. Kennedy, Z. Khalid, and P. Sadeghi --&gt;
+
+&lt;div class=&quot;Bibentry&quot;&gt; [3]
+  &lt;span class=&quot;Author&quot;&gt;R. A. Kennedy, Z. Khalid, and P. Sadeghi, &lt;/span&gt;
+  &lt;span class=&quot;Title&quot;&gt;&quot;Efficient Kernel-Based Formulations of Spatio-Spectral and Related Transformations on the 2-Sphere&quot;, &lt;/span&gt;
+  &lt;span class=&quot;Booktitle&quot;&gt;Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014, &lt;/span&gt;
+  &lt;span class=&quot;Address&quot;&gt;Florence, Italy, &lt;/span&gt;
+  &lt;span class=&quot;Pages&quot;&gt;pp. 310-314, &lt;/span&gt;
+  &lt;span class=&quot;Month&quot;&gt;May &lt;/span&gt;
+  &lt;span class=&quot;Date&quot;&gt;2014.&lt;/span&gt;
+  &lt;div class=&quot;CheckBoxes&quot;&gt;
+    &lt;form&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Abstract&quot; onclick=&quot;toggle(&#39;KennedyC2014a_abstract&#39;);&quot; unchecked=&quot;&quot; /&gt;&amp;nbsp;
+      &lt;input type=&quot;button&quot; value=&quot;BibTeX&quot; onclick=&quot;toggle(&#39;KennedyC2014a_bibtex&#39;);&quot; unchecked=&quot;&quot; /&gt; &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;Url&quot;&gt;DOI: &lt;a href=&quot;http://dx.doi.org/10.1109/ICASSP.2014.6853608&quot; target=&quot;_blank&quot;&gt;10.1109/ICASSP.2014.6853608&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;PDF: &lt;a href=&quot;http://users.rsise.anu.edu.au/~rod/papers/2014/06853608.pdf&quot; target=&quot;_blank&quot;&gt;06853608.pdf&lt;/a&gt;&lt;/span&gt;
+  &lt;span class=&quot;Url&quot;&gt;Google-Scholar: &lt;a href=&quot;http://scholar.google.com.au/scholar?q=Efficient+Kernel-Based+Formulations+of+Spatio-Spectral+and+Related+Transformations+on+the+2-Sphere&quot; target=&quot;_blank&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+  &lt;!-- Abstract --&gt;
+
+  &lt;div id=&quot;KennedyC2014a_abstract&quot; class=&quot;Abstract-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Abstract&quot;&gt; &lt;b&gt;Abstract:&lt;/b&gt; In this paper we show that the spatially localized spherical harmonic transform (SLSHT), which represents a signal on the 2-sphere in the spatio-spectral domain, can be efficiently computed using new kernel-based formulations. In
+      addition to the standard spatio-spectral domain, we show there are three other related transforms that provide alternative representations in the spatio-spatial, spectro-spatial and spectro-spectral domains. We provide inversion results that extend
+      available results for the SLSHT. We show that for signals on the 2-sphere band-limited to degree $L$, the computational complexity using our class of kernel-based SLSHT transforms is $O(L^4)$ and outperforms the previous best known fast methods,
+      which have complexity $O(L^5)$. &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Bibtex --&gt;
+
+  &lt;div id=&quot;KennedyC2014a_bibtex&quot; class=&quot;Bibtex-toggle&quot; style=&quot;display:none&quot;&gt;
+    &lt;div class=&quot;Bibtex&quot;&gt; @inproceedings{KennedyC2014a,
+      &lt;br /&gt; title = {Efficient Kernel-Based Formulations of Spatio-Spectral and Related Transformations on the 2-Sphere},
+      &lt;br /&gt;author = {Kennedy, R. A. and Khalid, Z. and Sadeghi, P.},
+      &lt;br /&gt;booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP&#39;2014},
+      &lt;br /&gt;address = {Florence, Italy},
+      &lt;br /&gt;pages = {310-314},
+      &lt;br /&gt;month = {May},
+      &lt;br /&gt;year = {2014}} &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- class=&quot;Bibentry&quot; --&gt;
+
+&lt;!-- - +Mar 2014+ --- [[http://ict-2015.org/](http://ict-2015.org/) 22nd Int. Conf. on Telecommunications ICT] will be held in Sydney, Australia, 27-29 April 2015, right after ICASSP 2015 in Brisbane.
+- +Feb 2014+ --- Three 2014 ICASSP papers have been accepted and will be presented in Florence in May.
+- +Jan 2014+ --- Two 2014 ICC papers have been accepted and will be presented in Sydney in June. --&gt;
 </content>
  </entry>
  
@@ -91,137 +237,6 @@ z&amp;= p
     &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shg&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;hr /&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Example content</title>
-   <link href="https://github.com/nerddonkey/raksite/blogs/2014-01-01/example-content.html"/>
-   <updated>2014-01-01T00:00:00+00:00</updated>
-   <id>https://github.com/nerddonkey/raksite/blogs/2014-01-01/example-content</id>
-   <content type="html">&lt;div class=&quot;message&quot;&gt;
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-&lt;/div&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
-
-&lt;h2 id=&quot;inline-html-elements&quot;&gt;Inline HTML elements&lt;/h2&gt;
-
-&lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
-  &lt;li&gt;Citations, like &lt;cite&gt;— Mark otto&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
-
-&lt;h2 id=&quot;heading&quot;&gt;Heading&lt;/h2&gt;
-
-&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
-
-&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
-
-&lt;h3 id=&quot;lists&quot;&gt;Lists&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
-  &lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
-  &lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
-  &lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
-  &lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
-  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
-
-  &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
-  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
-
-  &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
-  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
-
-&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
-
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Upvotes&lt;/th&gt;
-      &lt;th&gt;Downvotes&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Totals&lt;/td&gt;
-      &lt;td&gt;21&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Alice&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Bob&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Charlie&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -247,8 +262,7 @@ z&amp;= p
    <link href="https://github.com/nerddonkey/raksite/blogs/2013-03-03/learning-outcomes.html"/>
    <updated>2013-03-03T00:00:00+00:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2013-03-03/learning-outcomes</id>
-   <content type="html">&lt;h2 id=&quot;learning-outcomes-of-course&quot;&gt;Learning Outcomes of Course&lt;/h2&gt;
-
+   <content type="html">&lt;h1 id=&quot;learning-outcomes-of-course&quot;&gt;Learning Outcomes of Course&lt;/h1&gt;
 &lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/course/ENGN2228&quot;&gt;ENGN2228 Signal Processing&lt;/a&gt;, students should be able to:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -266,8 +280,7 @@ z&amp;= p
 
 &lt;p&gt;How these learning outcomes of this Course relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ENGN2228.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;learning-outcomes-of-major&quot;&gt;Learning Outcomes of Major&lt;/h2&gt;
-
+&lt;h1 id=&quot;learning-outcomes-of-major&quot;&gt;Learning Outcomes of Major&lt;/h1&gt;
 &lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/major/ELCO-MAJ&quot;&gt;Electronic and Communication Systems Major&lt;/a&gt;, students should be able to:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -283,7 +296,6 @@ z&amp;= p
 
 &lt;p&gt;How these learning outcomes of this Major relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ELCO-MAJ.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;hr /&gt;
 </content>
  </entry>
  

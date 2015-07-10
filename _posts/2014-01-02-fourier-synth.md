@@ -42,5 +42,3 @@ function foursynth( kmax, T )
     plot(t,real(yt)); shg
 end
 {% endhighlight %}
-
----
