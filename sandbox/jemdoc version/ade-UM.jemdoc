@@ -1,0 +1,83 @@
+# jemdoc: title{University Medal Considerations}, addcss{web-mods}
+#% !TEX TS-program = jaxdoc
+
+== BE (xxx) University Medal Considerations
+
+Rod Kennedy
+20 Apr 2013
+
+== Broad Comments
+
+- UM means University Medal
+- this is wrt to BE (Hons) and BE (R&D) programs combined
+-- they should be treated together
+-- UM can (and has) come from either program (obviously successful UM candidate are more likely to come from BE (R&D))
+- pretty clearly over the years we have awarded too many, e.g., 8 in 2012
+-- in 2012 there was a clear exceptional candidate clearly superior to other the other 7 candidates, which is precisely what the UM should capture
+- awarding on average one per year should be a realistic expectation
+- awarding more than one per year should not be excluded but be relatively rare
+- awarding none in a given year should not be excluded but be relatively rare
+
+== Analysis
+
+- In BE (xxx) the primary indicator is the /APM Mark/ (average percentage mark or pseudo-GPA) and the secondary indicator is the /Thesis Mark/
+- It is rather clear that the /Thesis Mark/ is quite subjective and noisy, and should only be considered in borderline cases
+- So we just rely on the APM for some analysis
+-- we look at data from 2001 to 2014
+-- successful UM's have secured APMs in the range 83--91\%
+-- as a working rule generally an APM of 85\% is needed (more recently)
+- Table showing the results from 2001-2014
+~~~
+{}{table}{students}
+APM Lower Bound   | Total Number of UMs 2001--2014 ||
+91 | 1 ||
+90 | 2 ||
+89 | 6 ||
+88 | 13 ||
+87 | 25 ||
+86 | 40
+~~~
+
+== Recalibration
+
+- APM 88+ and leads to an average of one UM per year (13 in 14 years)
+- APM 87+ and leads to an average of two UM per year (25 in 14 years)
+- The data shows the effect of raising standards
+~~~
+{}{table}{students}
+Year  | Mock APM 88+ UMs | Actual UMs ||
+2001 | 0 | 2 ||
+2002 | 1 | 2 ||
+2003 | 0 | 1 ||
+2004 | 0 | 1 ||
+2005 | 0 | 1 ||
+2006 | 1 | 3 ||
+2007 | 1 | 3 ||
+2008 | 3 | 5 ||
+2009 | 1 | 3 ||
+2010 | 0 | 1 ||
+2011 | 0 | 2 ||
+2012 | 4 | 8 ||
+2013 | 1 | 3 ||
+2014 | 1 | 8 ||
+*Total* | *13* | *43*
+~~~
+
+
+== Recommendations
+
+- APM of 88 and above should be advanced for UM
+- APM of 87 should only be advanced for UM with a strong /Thesis Mark/ (90+) and in the absence of any stronger candidates (no APM of 88 and above candidate in the same year/cohort)
+- APM of 86 and below should not be advanced as candidates for UMs
+- We do use APM for honours calculations and that is fine; I recommend that we start also using GPA for UM medal calculations as this better conforms to university expectations.
+- There should be one round of UM nominations each year (mid-year cohort is smaller)
+
+== Raw Data
+
+~~~
+{}{raw}
+<img class="displayed" src="img/UM-2001-2014.jpg" width="780" alt="genealogy">
+~~~
+
+
+

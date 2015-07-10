@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>exiftool</title>
+<!-- mathjax -->
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script><!-- apple-touch-icon -->
+<link rel="apple-touch-icon"
+      href="img/icon-60.png">
+<link rel="apple-touch-icon"
+      sizes="76x76" href="img/icon-76.png">
+<link rel="apple-touch-icon"
+      sizes="120x120" href="img/icon-120.png">
+<link rel="apple-touch-icon"
+      sizes="152x152" href="img/icon-152.png">
+<!-- iPhone -->
+<link rel="apple-touch-startup-image"
+      media="(device-width: 320px)"
+      href="img/apple-touch-startup-image-320x460.png">
+<!-- iPhone (Retina) -->
+<link rel="apple-touch-startup-image"
+      media="(device-width: 320px)
+         and (-webkit-device-pixel-ratio: 2)"
+      href="img/apple-touch-startup-image-640x920.png">
+</head>
+<body>
+<div id="layout-content">
+<h1>exiftool Related Tinkerings</h1>
+<h2>Software Links</h2>
+<ul>
+<li><p><a href="http://www.sno.phy.queensu.ca/~phil/exiftool/index.html">exiftool</a></p>
+</li>
+</ul>
+<h2>Renaming and Organizating Media</h2>
+<p>Here we rename and organise such that we:</p>
+<ol>
+<li><p>Can change nondescript files names to ones that reflect the date-time information related to when the 
+capture was made, e.g., &ldquo;<tt>1303218998 Tue 19 Apr 2011 2316+1000.MTS</tt>&rdquo;.</p>
+</li>
+<li><p>Move the files into folders (creating them if necessary), in the same example case, &ldquo;<tt>2011 04 (Apr)</tt>&rdquo;.</p>
+</li>
+</ol>
+<p>Depending on the camera we can rely on different tags to identify the time the capture was actually taken:</p>
+<h3>For SONY DSC and SONY Video Cam</h3>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+exiftool -ext MTS "-FileName&lt;DateTimeOriginal" -d "%a %d %b %Y %H%M%z%%-c.%%e" .
+exiftool -ext JPG "-FileName&lt;DateTimeOriginal" -d "%a %d %b %Y %H%M%z%%-c.%%e" .
+exiftool -ext MTS -ext JPG "-FileName&lt;DateTimeOriginal" -d "%a %d %b %Y %H%M%z%%-c.%%e" .
+</pre></div></div>
+<h2>Fixing Invalid Creation Dates</h2>
+<p>Here we assume we want to set all the creation dates of JPG files in the directory to their respective modification dates:</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+#!/bin/bash
+FILES=*.JPG
+for f in $FILES
+do
+    echo "$f"
+    SetFile -d "$(GetFileInfo -m "$f")" "$f"
+done
+</pre></div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2014-05-25 07:35:56 EST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

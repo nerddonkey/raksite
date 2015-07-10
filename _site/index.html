@@ -13,7 +13,7 @@
 
   <title>
     
-      ENGN2228 Signal Processing &middot; College of Engineering and Computer Science
+      Prof Rodney A. Kennedy Homepage &middot; College of Engineering and Computer Science
     
   </title>
 
@@ -58,7 +58,7 @@
 </head>
 
 
-  <body class="theme-base-08">
+  <body class="theme-base-0d">
 
     
 
@@ -69,7 +69,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>Site dedicated to the delivery of course material in: <br><b>ENGN2228 Signal Processing</b></p>
+    <p>Website of Prof Rodney A. Kennedy</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -81,10 +81,6 @@
     
 
     
-    
-      
-        
-      
     
       
         
@@ -150,8 +146,8 @@
   <div class="sidebar-item">
     <p>
       Site Version v1.0.0<br>
-      Generator: <a href="http://jekyllrb.com">Jekyll</a>
-      Theme: <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+      <a href="http://jekyllrb.com">Jekyll</a>
+      with <a href="https://github.com/poole/lanyon">Lanyon</a><br>
       &copy; 2015. All rights reserved.
     </p>
   </div>
@@ -167,12 +163,35 @@
             
             <img src="/images/ANU-logo.png" align="top"
                style="margin:0px 25px 0px 0px; float:left; width:170px;">
-             <a href="/index.html" title="Home">ENGN2228 Signal Processing</a><br>
+             <a href="/index.html" title="Home">Prof Rodney A. Kennedy Homepage</a><br>
             <small>College of Engineering and Computer Science</small>
           </h3>
         </div>
       </div>
 
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">
+    Welcome to My Homepage
+  </h1>
+    
+<!--    <span class="post-date">Rod Kennedy</span> -->
+
+  <h2 id="biography">Biography</h2>
+
+    <img src="/images/rod_2011b.jpg" align="top"
+      style="margin:5px 25px 5px 0px; float:left; width:40%;">
+
+<p>Rodney A.&nbsp;Kennedy is Full Professor in Engineering at the Australian National University and is currently the Head of the Applied Signal Processing research group and the Associate Director (Education) within the Research School of Engineering. He is an electrical engineer with research specialization in wireless communications, signal processing and audio signal processing.</p>
+
+<p>He has been Head of the Departments of Information Engineering and Telecommunications Engineering in the Research School of Information Sciences and Engineering between 1994 and 2008, and Director of Research 2009&ndash;2010. Professor Kennedy has received over 30 external grants and industry contracts/university consultancies including 15 ARC grants. In addition he has a leading participant in major research centers including the Cooperative Research Centre for Robust and Adaptive Systems (CRASys), National ICT Australia (NICTA) and the ARC Communications Research Network (ACoRN).</p>
+
+<p>He is an IEEE Fellow and has published in excess of 350 journal papers, conference papers and patents, and has supervised over 45 PhD students. He was an Associate editor for 11 years in the IEEE Transactions on Communications and a member of a number of journal editorial boards. He is a former QEII Fellow and recipient of a number awards including the ATERB medal and the UNSW University medal.</p>
+
+<hr>
+
+</div>
+      </div>
       <div class="container content">
         
 
@@ -180,18 +199,78 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/blogs/2015-07-05/welcome.html">
-        Welcome to ENGN2228 Signal Processing
+      <a href="/blogs/2015-07-09/mathjax.html">
+        MathJax in Jekyll kramdown
       </a>
     </h1>
     
-    <span class="post-date">Rod Kennedy</span>
+    <span class="post-date">09 Jul 2015 &mdash; Rod Kennedy</span>
 
-    <h2 id="course-description">Course Description</h2>
+    <p>Getting <abbr title="MathJax JavaScript display engine for mathematics"> MathJax</abbr> to play nice with Jekyll/Kramdown
+needs a bit of tinkering</p>
 
-<p>This course presents the principles, theory and techniques fundamental to the analysis and design of continuous time and discrete time signal processing systems. The concepts are illustrated with examples from circuit theory, signal processing, bio-medical engineering, communications, etc. The course has three hardware laboratories using the <strong>Telecommunications Instructional Modelling System (TIMS)</strong> and one computer laboratory based around <strong>MATLAB</strong>.</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+x&=y \\
+z&= p
+\end{align*} %]]></script>
 
-<p>The course title <em>“Signal Processing”</em> was chosen as an alternative to <em>“Signals and Systems”</em>, which is a better name (and the name of the text), so as to not clash with the general term <em>“Systems Engineering</em>” that means something different as used in a number of other courses such as ENGN2225 and ENGN2226.</p>
+<p>is <em style="color: red">obtained</em> by</p>
+
+<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="sb">$$</span><span class="nb"></span>
+<span class="nv">\begin</span><span class="nb">{align}</span>
+<span class="nb">  x &amp;</span><span class="o">=</span><span class="nb"> y </span><span class="nv">\\</span><span class="nb"> </span>
+<span class="nb">  z &amp;</span><span class="o">=</span><span class="nb"> p</span>
+<span class="nv">\end</span><span class="nb">{align}</span>
+<span class="nv">\begin</span><span class="nb">{equation}</span>
+<span class="nv">\label</span><span class="nb">{eqn:shbe}</span>
+<span class="nb">	H</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{p</span><span class="o">=</span><span class="m">1</span><span class="nb">}^{</span><span class="nv">\infty</span><span class="nb">} </span><span class="nv">\gamma</span><span class="nb">_{p}</span><span class="nv">\,\varGamma</span><span class="nb">_{p}</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"></span>
+<span class="nv">\end</span><span class="nb">{equation}</span>
+<span class="s">$$</span></code></pre></div>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/blogs/2015-07-08/fourier-synth.html">
+        Fourier Synthesis with MATLAB
+      </a>
+    </h1>
+    
+    <span class="post-date">08 Jul 2015 &mdash; Rod Kennedy</span>
+
+    <p>Here is a bit of <abbr title="MATLAB&reg; is a high-level technical computing language"> MATLAB®</abbr> code that does Fourier <em>synthesis</em>. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients</p>
+
+<script type="math/tex; mode=display">\begin{equation*}
+	c_k = T\,a_k^2 \quad\text{where}\quad
+	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{equation*}</script>
+
+<p>Or this</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+	c_k &= T\,a_k^2 \\
+	a_k &= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
+\end{align*} %]]></script>
+
+<p>But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB®</abbr>.</p>
+
+<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span><span class="nf">foursynth</span><span class="p">(</span> kmax, T <span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">k</span><span class="p">=[</span><span class="o">-</span><span class="n">kmax</span><span class="p">:</span><span class="n">kmax</span><span class="p">];</span> <span class="c">% Fourier coefficient index span</span>
+    <span class="n">omega0</span><span class="p">=</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="n">T</span><span class="p">;</span> <span class="c">% fundamental frequency (rad/sec); T - period</span>
+
+    <span class="n">k</span><span class="p">=</span><span class="n">k</span><span class="o">+</span><span class="mf">0.0001</span><span class="p">;</span> <span class="c">% lazy way to handle sinc at zero</span>
+    <span class="n">ak</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">./</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="p">)</span><span class="o">.*</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="nb">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span>
+    <span class="n">ck</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="n">ak</span><span class="o">.*</span><span class="n">ak</span><span class="p">;</span>
+
+    <span class="n">t</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="p">[</span><span class="o">-</span><span class="mf">2.5</span><span class="p">:</span><span class="mf">0.01</span><span class="p">:</span><span class="mf">2.5</span><span class="p">];</span> <span class="c">% time scan for plot (5 periods)</span>
+    <span class="n">ekt</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="nb">j</span><span class="o">*</span><span class="n">omega0</span><span class="o">*</span><span class="n">kron</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">t</span><span class="o">&#39;</span><span class="p">));</span> <span class="c">% k horz; t vert</span>
+
+    <span class="n">yt</span><span class="p">=</span><span class="n">ck</span><span class="o">*</span><span class="n">ekt</span><span class="p">.</span><span class="o">&#39;</span><span class="p">;</span> <span class="c">% sum the series; .&#39; means non-conjugate transpose</span>
+
+    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">));</span> <span class="n">shg</span>
+<span class="k">end</span></code></pre></div>
 
 <hr />
 
@@ -199,12 +278,12 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/blogs/2015-07-04/learning-outcomes.html">
+      <a href="/blogs/2015-07-03/learning-outcomes.html">
         Learning Outcomes of Course and Major
       </a>
     </h1>
     
-    <span class="post-date">Rod Kennedy</span>
+    <span class="post-date">03 Jul 2015 &mdash; Rod Kennedy</span>
 
     <h2 id="learning-outcomes-of-course">Learning Outcomes of Course</h2>
 
@@ -241,134 +320,6 @@
 </blockquote>
 
 <p>How these learning outcomes of this Major relate to <em>Engineers Australia</em> <a href="https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf">Stage 1 Competencies for Professional Engineer</a> is given <a href="http://cs.anu.edu.au/courses/COMP3100/demo/ELCO-MAJ.html">here</a>.</p>
-
-<hr />
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/blogs/2015-01-25/mathjax.html">
-        MathJax in Jekyll kramdown
-      </a>
-    </h1>
-    
-    <span class="post-date">Rod Kennedy</span>
-
-    <p>Getting <abbr title="MathJax JavaScript display engine for mathematics"> MathJax</abbr> to play nice with Jekyll/Kramdown
-needs a bit of tinkering</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align\*}
-x&=y \\
-z&= p
-\end{align\*} %]]></script>
-
-<p>is <em style="color: red">obtained</em> by</p>
-
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="sb">$$</span><span class="nb"></span>
-<span class="nv">\begin</span><span class="nb">{align}</span>
-<span class="nb">  x &amp;</span><span class="o">=</span><span class="nb"> y </span><span class="nv">\\</span><span class="nb"> </span>
-<span class="nb">  z &amp;</span><span class="o">=</span><span class="nb"> p</span>
-<span class="nv">\end</span><span class="nb">{align}</span>
-<span class="nv">\begin</span><span class="nb">{equation}</span>
-<span class="nv">\label</span><span class="nb">{eqn:shbe}</span>
-<span class="nb">	H</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{p</span><span class="o">=</span><span class="m">1</span><span class="nb">}^{</span><span class="nv">\infty</span><span class="nb">} </span><span class="nv">\gamma</span><span class="nb">_{p}</span><span class="nv">\,\varGamma</span><span class="nb">_{p}</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"></span>
-<span class="nv">\end</span><span class="nb">{equation}</span>
-<span class="s">$$</span></code></pre></div>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/blogs/2014-01-02/introducing-lanyon.html">
-        Introducing Lanyon
-      </a>
-    </h1>
-    
-    <span class="post-date">mdo</span>
-
-    <p>Lanyon is an unassuming <a href="http://jekyllrb.com">Jekyll</a> theme that places content first by tucking away navigation in a hidden drawer. It’s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
-
-<h3 id="built-on-poole">Built on Poole</h3>
-
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo">@mdo</a>. Poole, and every theme built on it (like Lanyon here) includes the following:</p>
-
-<ul>
-  <li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-  <li>Mobile friendly design and development</li>
-  <li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-  <li>Support for a wide gamut of HTML elements</li>
-  <li>Related posts (time-based, because Jekyll) below each post</li>
-  <li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
-
-<h3 id="lanyon-features">Lanyon features</h3>
-
-<p>In addition to the features of Poole, Lanyon adds the following:</p>
-
-<ul>
-  <li>Toggleable sliding sidebar (built with only CSS) via <strong>☰</strong> link in top corner</li>
-  <li>Sidebar includes support for textual modules and a dynamically generated navigation with active link support</li>
-  <li>Two orientations for content and sidebar, default (left sidebar) and <a href="https://github.com/poole/lanyon#reverse-layout">reverse</a> (right sidebar), available via <code>&lt;body&gt;</code> classes</li>
-  <li><a href="https://github.com/poole/lanyon#themes">Eight optional color schemes</a>, available via <code>&lt;body&gt;</code> classes</li>
-</ul>
-
-<p><a href="https://github.com/poole/lanyon#readme">Head to the readme</a> to learn more.</p>
-
-<h3 id="browser-support">Browser support</h3>
-
-<p>Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
-
-<h3 id="download">Download</h3>
-
-<p>Lanyon is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/lanyon">GitHub repository</a> for downloads, bug reports, and features requests.</p>
-
-<p>Thanks!</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/blogs/2014-01-02/fourier-synth.html">
-        Fourier Synthesis with MATLAB
-      </a>
-    </h1>
-    
-    <span class="post-date">Rod Kennedy</span>
-
-    <p>Here is a bit of <abbr title="MATLAB&reg; is a high-level technical computing language"> MATLAB®</abbr> code that does Fourier <em>synthesis</em>. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients</p>
-
-<script type="math/tex; mode=display">\begin{equation*}
-	c_k = T\,a_k^2 \quad\text{where}\quad
-	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
-\end{equation*}</script>
-
-<p>Or this</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
-	c_k &= T\,a_k^2 \\
-	a_k &= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
-\end{align*} %]]></script>
-
-<p>But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB®</abbr>.</p>
-
-<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span><span class="nf">foursynth</span><span class="p">(</span> kmax, T <span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">k</span><span class="p">=[</span><span class="o">-</span><span class="n">kmax</span><span class="p">:</span><span class="n">kmax</span><span class="p">];</span> <span class="c">% Fourier coefficient index span</span>
-    <span class="n">omega0</span><span class="p">=</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="n">T</span><span class="p">;</span> <span class="c">% fundamental frequency (rad/sec); T - period</span>
-
-    <span class="n">k</span><span class="p">=</span><span class="n">k</span><span class="o">+</span><span class="mf">0.0001</span><span class="p">;</span> <span class="c">% lazy way to handle sinc at zero</span>
-    <span class="n">ak</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">./</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="p">)</span><span class="o">.*</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="nb">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span>
-    <span class="n">ck</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="n">ak</span><span class="o">.*</span><span class="n">ak</span><span class="p">;</span>
-
-    <span class="n">t</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="p">[</span><span class="o">-</span><span class="mf">2.5</span><span class="p">:</span><span class="mf">0.01</span><span class="p">:</span><span class="mf">2.5</span><span class="p">];</span> <span class="c">% time scan for plot (5 periods)</span>
-    <span class="n">ekt</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="nb">j</span><span class="o">*</span><span class="n">omega0</span><span class="o">*</span><span class="n">kron</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">t</span><span class="o">&#39;</span><span class="p">));</span> <span class="c">% k horz; t vert</span>
-
-    <span class="n">yt</span><span class="p">=</span><span class="n">ck</span><span class="o">*</span><span class="n">ekt</span><span class="p">.</span><span class="o">&#39;</span><span class="p">;</span> <span class="c">% sum the series; .&#39; means non-conjugate transpose</span>
-
-    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">));</span> <span class="n">shg</span>
-<span class="k">end</span></code></pre></div>
 
 <hr />
 

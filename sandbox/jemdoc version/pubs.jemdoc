@@ -1,0 +1,61 @@
+# jemdoc: title{RAK Pubs}, menu{rak-menu}{pubs.html}, addcss{web-mods}, addcss{bibdesk-export}, addjs{toggle}
+#% !TEX TS-program = jaxDoc
+
+= [/http://people.cecs.anu.edu.au/user/96 Prof Rodney A. Kennedy] -- Publications\n
+*
+[/http://eng.anu.edu.au Research School of Engineering]\n
+[/https://cecs.anu.edu.au College of Engineering and Computer Science]\n
+[/http://www.anu.edu.au Australian National University]
+*
+
+~~~
+An alternative externally maintained up-to-date list of most of my publications can be found on the /The DBLP Computer Science Bibliography/ site:  [/http://dblp.uni-trier.de/pers/hd/k/Kennedy:Rodney_A=.html Kennedy DBLP Pubs]
+~~~
+
+~~~
+{}{raw}
+<button id="hide-abstract">Hide All Abstracts</button>
+<button id="show-abstract">Show All Abstracts</button>
+<button id="hide-bibtex">Hide All BibTeX</button>
+<button id="show-bibtex">Show All BibTeX</button>
+~~~
+
+== 2015 Publications
+
+#includeraw{RAK-Pubs/RAK-2015-Pubs.html}
+
+== 2014 Publications
+
+#includeraw{RAK-Pubs/RAK-2014-Pubs.html}
+
+== 2013 Publications
+
+#includeraw{RAK-Pubs/RAK-2013-Pubs.html}
+
+== 2012 Publications
+
+#includeraw{RAK-Pubs/RAK-2012-Pubs.html}
+
+== 2011 Publications
+
+#includeraw{RAK-Pubs/RAK-2011-Pubs.html}
+
+== 2010 Publications
+
+#includeraw{RAK-Pubs/RAK-2010-Pubs.html}
+
+== 2009 Publications
+
+#includeraw{RAK-Pubs/RAK-2009-Pubs.html}
+
+== 2008 Publications
+
+#includeraw{RAK-Pubs/RAK-2008-Pubs.html}
+
+== 2007 Publications
+
+#includeraw{RAK-Pubs/RAK-2007-Pubs.html}
+
+== 2006 Publications
+
+#includeraw{RAK-Pubs/RAK-2006-Pubs.html}

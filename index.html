@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: homepage
 title: Home
 author: Rod Kennedy
 ---
 
 {% comment %}
-  sigpro for ENGN2228 Signal Processing
+  raksite
   done:
     used {{ post.author }} instead of {{ post.date | date_to_string }} in byline
 {% endcomment %}
@@ -19,11 +19,11 @@ author: Rod Kennedy
       </a>
     </h1>
     {% comment %}
-      sigpro for ENGN2228 Signal Processing
+      raksite
       done:
         used {{ post.author }} instead of {{ post.date | date_to_string }} in this byline
     {% endcomment %}
-    <span class="post-date">{{ post.author }}</span>
+    <span class="post-date">{{ post.date | date_to_string }} &mdash; {{ post.author }}</span>
 
     {{ post.content }}
   </div>

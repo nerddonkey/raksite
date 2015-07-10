@@ -1,0 +1,27 @@
+/* ISSN table */
+table #issn tr td
+{
+	padding: 5px 10px 1px 10px;
+	font-size: 100% ;
+	font-family: Georgia, Optima, Bookman, Palatino, Palatino, serif ;
+}
+
+/* force mono-spaced */
+#issn tr td.c1,
+#issn tr td.c3,
+#issn tr td.c4
+{
+	font-size: 90% ;
+	font-family: monaco, monospace ;
+	text-align: left;
+}
+
+#issn tr.r1 td {
+	border-bottom: 2px solid black ;
+	font-weight: bold ;
+	line-height: 22px ;
+	text-align: center;
+	background: #b6f6f6 ;
+	font-size: 100% ;
+	font-family: Georgia, Optima, Bookman, Palatino, Palatino, serif ;
+}

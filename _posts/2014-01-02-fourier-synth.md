@@ -2,6 +2,7 @@
 layout: post
 title: Fourier Synthesis with MATLAB
 author: Rod Kennedy
+date: Wed 8 Jul 2015
 published: yes
 ---
 
