@@ -43,4 +43,20 @@ author: Rod Kennedy
 
 {% include snippets/2009pubs.html %}
 
+## 2008 Publications
+
+{% include snippets/2008pubs.html %}
+
+## 2007 Publications
+
+{% include snippets/2007pubs.html %}
+
+## 2006 Publications
+
+{% include snippets/2006pubs.html %}
+
+## 2005 Publications
+
+{% include snippets/2005pubs.html %}
+
 ---
