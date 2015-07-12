@@ -1,9 +1,4 @@
-/*
- * Container
- *
- * Center the page content.
- */
-
+/* customize the layount, to do: need to consider the mobile version */
 .container {
   max-width: 60rem;
   padding-left: 5rem;
@@ -11,6 +6,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* tidy up the tables */
+table {
+  width: auto;
+}
+thead th { background: #B5CFDA }
+th {
+  padding: .25rem 2rem .25rem 2rem;
+}
+
+/* lighten the sidebar navigation active item a bit more than rgba(255,255,255,.1) */
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  background-color: rgba(255,255,255,.15);
+}
+
+.Bibtex {
+	font-family: menlo, monaco, Consolas, "Courier New", Courier, monospace;
+  border-radius: 3px;
+	border-color: #9F9F9F;
+	background: #B5CFDA;
+}
+
 /*@media (min-width: 38em) {
   .container {
     max-width: 38rem;

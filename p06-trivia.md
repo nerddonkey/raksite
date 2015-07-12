@@ -20,7 +20,7 @@ author: Rod Kennedy
 
 ## Windsurfing
 
-Dedicated to Bobby seen in background.
+Me windsurfing. Dedicated to Bobby seen in background.
 
 <iframe width="720" height="405"
 	src="https://www.youtube.com/embed/Zz5dUB4Ahbo?vq=hd720"
@@ -31,7 +31,7 @@ Dedicated to Bobby seen in background.
 
 ## Astronomy
 
-A bit of signal processing on backyard astro captures (sorry about the music).
+A bit of signal processing on my backyard astro captures (sorry about the music).
 
 <iframe width="420" height="315"
 	src="https://www.youtube.com/embed/oJhM9Wg8y-k"

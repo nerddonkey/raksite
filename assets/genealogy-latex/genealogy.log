@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 JUL 2015 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  12 JUL 2015 07:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -670,18 +670,18 @@ Package pgfplots external lib: patching system driver code for your PGF version
  (./genealogy.aux)
 \openout1 = `genealogy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -785,7 +785,7 @@ dmap/pdftex.map}>] (./genealogy.aux) )
 Here is how much of TeX's memory you used:
  22954 strings out of 493093
  589560 string characters out of 6134989
- 709830 words of memory out of 5000000
+ 709823 words of memory out of 5000000
  26023 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -793,7 +793,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2015/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on genealogy.pdf (1 page, 30553 bytes).
+Output written on genealogy.pdf (1 page, 30556 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
