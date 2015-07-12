@@ -10,8 +10,9 @@
 /* tidy up the tables */
 table {
   width: auto;
+	/* box-shadow: 0px 0px 8px #B5CFDA; */
 }
-thead th { background: #B5CFDA }
+thead th { background: rgba(181,207,218,.75); }
 th {
   padding: .25rem 2rem .25rem 2rem;
 }
@@ -25,9 +26,10 @@ a.sidebar-nav-item:focus {
 
 .Bibtex {
 	font-family: menlo, monaco, Consolas, "Courier New", Courier, monospace;
-  border-radius: 3px;
-	border-color: #9F9F9F;
-	background: #B5CFDA;
+  border-radius: 5px;
+	border-color: rgba(181,207,218,1);
+	background: rgba(181,207,218,.5);
+  /* box-shadow: 0px 2px 12px #bfbfbf ; #B5CFDA;*/
 }
 
 /*@media (min-width: 38em) {

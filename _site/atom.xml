@@ -4,7 +4,7 @@
  <title>Prof Rodney A. Kennedy Homepage</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-12T10:46:34+01:00</updated>
+ <updated>2015-07-12T14:03:10+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -47,7 +47,8 @@ z&amp;= p
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15.html"/>
    <updated>2014-11-05T00:00:00+00:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15</id>
-   <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.&lt;/p&gt;
+   <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.  More details &lt;a href=&quot;p05-dp15.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -56,7 +57,8 @@ z&amp;= p
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere.html"/>
    <updated>2014-07-01T00:00:00+01:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere</id>
-   <content type="html">&lt;p&gt;Presentation for Royal Society meeting “Science on the Sphere”.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;assets/s2-transforms-beamer.pdf&quot; target=&quot;\_blank&quot;&gt;Presentation&lt;/a&gt;, &lt;em&gt;“Kernel-Based Formulations of Spatio-Spectral Transform and Three Related Transforms on the Sphere”&lt;/em&gt; given for Royal Society meeting “Science on the Sphere”.&lt;/p&gt;
+
 </content>
  </entry>
  
