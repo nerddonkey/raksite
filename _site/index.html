@@ -73,7 +73,12 @@
 	<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript">
 	</script>
 	<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, SVG: { scale: 90, blacker: 10 } });
+		MathJax.Hub.Config({
+			TeX: {
+				equationNumbers: { autoNumber: "AMS" },
+				extensions: ["color.js"] },
+			SVG: {
+				scale: 90, blacker: 30 } });
 	</script>
 </head>
 
@@ -131,7 +136,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/p04-hsmsp.html">Hilbert Space Methods in Signal Processing</a>
+          <a class="sidebar-nav-item" href="/p04-hsmsp.html">Book &mdash; Hilbert Space Methods in Signal Processing</a>
         
       
     
@@ -143,7 +148,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/p06-trivia.html">Trivia</a>
+          <a class="sidebar-nav-item" href="/p06-miscellaneous.html">Miscellaneous</a>
         
       
     
@@ -153,7 +158,13 @@
     
       
         
-          <a class="sidebar-nav-item" href="/t01-Improved-FL.html">Improving ... Gauss-Legendre</a>
+          <a class="sidebar-nav-item" href="/t01-Improved-FL%20copy.html">Improving ... Gauss-Legendre</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/t02-Interview.html">La Trobe</a>
         
       
     
@@ -216,40 +227,6 @@
       
 
 <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/blogs/2015-01-25/mathjax.html">
-        MathJax in Jekyll kramdown
-      </a>
-    </h1>
-    
-    <span class="post-date">25 Jan 2015 &mdash; Rod Kennedy</span>
-
-    <p>Getting <abbr title="MathJax JavaScript display engine for mathematics"> MathJax</abbr> to play nice with Jekyll/Kramdown
-needs a bit of tinkering</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\begin{align*}
-x&=y \\
-z&= p
-\end{align*} %]]></script>
-
-<p>is <em style="color: red">obtained</em> by</p>
-
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="sb">$$</span><span class="nb"></span>
-<span class="nv">\begin</span><span class="nb">{align}</span>
-<span class="nb">  x &amp;</span><span class="o">=</span><span class="nb"> y </span><span class="nv">\\</span><span class="nb"></span>
-<span class="nb">  z &amp;</span><span class="o">=</span><span class="nb"> p</span>
-<span class="nv">\end</span><span class="nb">{align}</span>
-<span class="nv">\begin</span><span class="nb">{equation}</span>
-<span class="nv">\label</span><span class="nb">{eqn:shbe}</span>
-<span class="nb">	H</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="nv">\sum</span><span class="nb">_{p</span><span class="o">=</span><span class="m">1</span><span class="nb">}^{</span><span class="nv">\infty</span><span class="nb">} </span><span class="nv">\gamma</span><span class="nb">_{p}</span><span class="nv">\,\varGamma</span><span class="nb">_{p}</span><span class="o">(</span><span class="nv">\theta</span><span class="nb">,</span><span class="nv">\phi</span><span class="nb">;k</span><span class="o">)</span><span class="nb"></span>
-<span class="nv">\end</span><span class="nb">{equation}</span>
-<span class="s">$$</span></code></pre></div>
-
-
-  </div>
   
   <div class="post">
     <h1 class="post-title">
@@ -464,6 +441,27 @@ z&= p
     <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">));</span> <span class="n">shg</span>
 <span class="k">end</span></code></pre></div>
 
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/blogs/2013-12-31/whats-jekyll.html">
+        What's Jekyll?
+      </a>
+    </h1>
+    
+    <span class="post-date">31 Dec 2013 &mdash; </span>
+
+    <p><a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From <a href="https://github.com/mojombo/jekyll/blob/master/README.markdown">the project’s readme</a>:</p>
+
+<blockquote>
+  <p>Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</p>
+</blockquote>
+
+<p>It’s an immensely useful tool and one we encourage you to use here with Lanyon.</p>
+
+<p>Find out more by <a href="https://github.com/mojombo/jekyll">visiting the project on GitHub</a>.</p>
 
   </div>
   

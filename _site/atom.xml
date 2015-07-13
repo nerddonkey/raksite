@@ -4,43 +4,13 @@
  <title>Prof Rodney A. Kennedy Homepage</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-12T15:51:20+01:00</updated>
+ <updated>2015-07-12T20:44:40+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>MathJax in Jekyll kramdown</title>
-   <link href="https://github.com/nerddonkey/raksite/blogs/2015-01-25/mathjax.html"/>
-   <updated>2015-01-25T00:00:00+00:00</updated>
-   <id>https://github.com/nerddonkey/raksite/blogs/2015-01-25/mathjax</id>
-   <content type="html">&lt;p&gt;Getting &lt;abbr title=&quot;MathJax JavaScript display engine for mathematics&quot;&gt; MathJax&lt;/abbr&gt; to play nice with Jekyll/Kramdown
-needs a bit of tinkering&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
-x&amp;=y \\
-z&amp;= p
-\end{align*} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;is &lt;em style=&quot;color: red&quot;&gt;obtained&lt;/em&gt; by&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-latex&quot; data-lang=&quot;latex&quot;&gt;&lt;span class=&quot;sb&quot;&gt;$$&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{align}&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;  x &amp;amp;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; y &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\\&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;  z &amp;amp;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; p&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{align}&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;\begin&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{equation}&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;\label&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{eqn:shbe}&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;	H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\theta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\phi&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\sum&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;}^{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\infty&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;} &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\gamma&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p}&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\,\varGamma&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;_{p}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\theta&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;\phi&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;\end&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;{equation}&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</content>
- </entry>
  
  <entry>
    <title>ARC DP150101011 Project Funded</title>
