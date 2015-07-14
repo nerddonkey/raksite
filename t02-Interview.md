@@ -38,3 +38,17 @@ date: 12 Jul 2015
 ## Research
 
 Straightforward
+
+ANU Eng 500 EFTSL and CS is 300 so Eng is 5/8 or 63% of CECS
+
+## Planning when Budget Formulas Challenges
+
+- there are complicated formulae which deliver funding to the University based on student load, completions, census dates, grant activity in different categories, research output such as papers.  Poor strategic management tends to follow new formula and demand that staff change to meet the new challenges.  Of course change is disruptive and expensive to do.
+- what is clear is if you do core buiness and do that well then you'll come out on top of any funding model.  For undergraduates you need students and students look for relevance; we give then skills so they can adapt.  Between starting and graduating the economy and employment areas can change.  Broad general skills.  For research you don't focus on papers (HERDC will send you broke).  If you have PhD students you'll get papers, and you'll get completions.  You need scholarships; best to get a grant then you get students, completions and scholarships and papers.  Then you might need reputation and competitive grants carry weight.  Electrical
+
+- papers
+- graduate students
+- scholarships
+- grants
+- track record
+- 
