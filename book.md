@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Hilbert Space Methods in Signal Processing
-menutitle: Book &middot; Hilbert Space Methods in Signal Processing
+menutitle: <b>Kennedy</b> &middot; Hilbert Book
 author: Rod Kennedy
+menuranking: 80
 ---
 
 ### *Contents*{: style="color: gray"}

@@ -3,6 +3,7 @@ layout: page
 title: Publications
 menutitle: <b>Kennedy</b> &middot; Publications
 author: Rod Kennedy
+menuranking: 60
 ---
 
 ### *Contents*{: style="color: gray"}

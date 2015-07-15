@@ -3,6 +3,7 @@ layout: page
 title: Miscellaneous
 menutitle: <b>Kennedy</b> &middot; Miscellaneous
 author: Rod Kennedy
+menuranking: 100
 ---
 
 ### *Contents*{: style="color: gray"}

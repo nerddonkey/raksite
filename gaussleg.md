@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Improving Gauss-Legendre
-menutitle: <b>Kennedy</b><br>Improving Gauss-Legendre
+title: <b>Improving Gauss-Legendre</b>
+menutitle: Tech Note 01:<br> <b>Improving Gauss-Legendre</b>
 author: Rod Kennedy
 date: 12 Jul 2015
+menuranking: 1001
 published: yes
 ---
 

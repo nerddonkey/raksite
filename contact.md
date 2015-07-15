@@ -3,6 +3,7 @@ layout: page
 title: Contact
 menutitle: <b>Kennedy</b> &middot; Contact
 author: Rod Kennedy
+menuranking: 20
 ---
 
 ### *Contents*{: style="color: gray"}
