@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Improving ... Gauss-Legendre
+title: Improving Gauss-Legendre
+menutitle: <b>Kennedy</b><br>Improving Gauss-Legendre
 author: Rod Kennedy
 date: 12 Jul 2015
+published: yes
 ---
 
 - signals on $$\mathbb{S}^2$$ always **bandlimited** to $$L$$, i.e., beyond $$\ell\in\{0,1,\dotsc,L-1\}$$ the harmonics are zero
@@ -16,6 +18,5 @@ $$
 		&\lvert\mathfrak{S}_{\mathrm{EGL}}\rvert &= (L-1)(2L-1)+1
 \end{align*}
 $$
-
 
 ---

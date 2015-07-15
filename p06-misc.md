@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Miscellaneous
+menutitle: <b>Kennedy</b> &middot; Miscellaneous
 author: Rod Kennedy
 ---
 

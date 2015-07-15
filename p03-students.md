@@ -1,6 +1,7 @@
 ---
 layout: page
 title: PhD Students
+menutitle: <b>Kennedy</b> &middot; PhD Students
 author: Rod Kennedy
 ---
 

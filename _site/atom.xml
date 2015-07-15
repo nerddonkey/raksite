@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Prof Rodney A. Kennedy Homepage</title>
+ <title>Prof Rodney A. Kennedy</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-12T20:44:40+01:00</updated>
+ <updated>2015-07-15T18:08:48+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>

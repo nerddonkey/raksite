@@ -3,14 +3,16 @@ permalink: /blogs/:year-:month-:day/:title.html
 relative_permalinks: true
 
 # Setup
-title: Prof Rodney A. Kennedy Homepage
+title: Prof Rodney A. Kennedy
 tagline: College of Engineering and Computer Science
 description: 'Website of<br><b>Prof Rodney A. Kennedy</b>'
-port: 4001
+hometitle: Home Page
+class: theme-base-0d
 
 # A) Site served up locally usually on http://127.0.0.1:4000/
 #
 baseurl: ''
+port: 4001
 
 # B) Site on ANU CECS servers
 #
@@ -26,7 +28,7 @@ baseurl: ''
 paginate: 5
 
 # excluded from copying to destination
-exclude: [sandbox]
+exclude: [LICENSE.md, README.md, sandbox]
 
 # about
 name: Rod Kennedy

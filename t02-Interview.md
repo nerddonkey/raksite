@@ -3,6 +3,7 @@ layout: page
 title: La Trobe
 author: Rod Kennedy
 date: 12 Jul 2015
+published: no
 ---
 
 ## Leadership Experience
@@ -51,4 +52,4 @@ ANU Eng 500 EFTSL and CS is 300 so Eng is 5/8 or 63% of CECS
 - scholarships
 - grants
 - track record
-- 
+-

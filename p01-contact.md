@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+menutitle: <b>Kennedy</b> &middot; Contact
 author: Rod Kennedy
 ---
 
@@ -24,7 +25,7 @@ Prof Rod Kennedy Associate Director (Education)
 Research School of Engineering, CECS  
 The Australian National University  
 115 North Road  
-Acton, ACT, 2601  
+Acton ACT 2601  
 Australia
 
 ---

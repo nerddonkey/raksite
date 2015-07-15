@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Book &mdash; Hilbert Space Methods in Signal Processing
+title: Hilbert Space Methods in Signal Processing
+menutitle: Book &middot; Hilbert Space Methods in Signal Processing
 author: Rod Kennedy
 ---
 
