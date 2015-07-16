@@ -24,15 +24,8 @@
 
     <div class="container content">
       {% include intro.html %}
-
-      {% for page in site.pages %}
-      <ul>
-        {% if page.categories contains 'technote' %}
-          <li><a href="{{ page.url }}">{{ page.technote-title }}</a></li>
-        {% endif %}
-      </ul>
-      {% endfor %}
     </div>
+    <hr>
 
     <div class="container content">
       {{ content }}

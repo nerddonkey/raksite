@@ -1,18 +1,24 @@
 ---
-layout: default
+layout: plain
 ---
 
 <div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
+  <h2 class="page-title">{{ page.title }}</h2>
   <span class="post-date"><b>Technical Note &mdash; {{ page.date }}</b></span>
+
   {{ content }}
 
-  {% for page in site.pages %}
-    {% if page.categories contains 'technote' %}
-      <div>
-        <h3>{{ page.title }}</h3>
-      </div>
-    {% endif %}
+  <hr>
+
+  <h3 class="page-title">Technote Index:</h3>
+
+  {% assign resource-list = site.pages | sort:"date" %}
+  {% for page in resource-list reversed %}
+  <ul>
+  	{% if page.categories contains 'technote' %}
+  		<li>[{{ page.date | date_to_string }}] <a href="{{ page.url }}">{{ page.title }}</a></li>
+  	{% endif %}
+  </ul>
   {% endfor %}
 
 </div>

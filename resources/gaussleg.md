@@ -1,13 +1,10 @@
 ---
-layout: homepage
-technote-title: Improving Gauss-Legendre
+layout: technote
+title: Improving Gauss-Legendre
 author: Rod Kennedy
-date: 12 Jul 2015
+date: 18 Jul 2015
 categories: [technote, sphere]
 ---
-
-<h2 class="post-title">{{ page.technote-title }}</h2>
-
 
 - signals on $$\mathbb{S}^2$$ always **bandlimited** to $$L$$, i.e., beyond $$\ell\in\{0,1,\dotsc,L-1\}$$ the harmonics are zero
 - natural Gauss-Legendre uses $$L$$ samples along co-latitude ($$\theta$$) taken as the roots of the Legendre polynomial of degree $$L$$, $$P_{L}(\theta)$$ -- denote these roots as $$\theta^{\,r}_L$$, $$r=1,2,\dotsc,L$$.
@@ -20,5 +17,3 @@ $$
 		&\lvert\mathfrak{S}_{\mathrm{EGL}}\rvert &= (L-1)(2L-1)+1
 \end{align*}
 $$
-
----
