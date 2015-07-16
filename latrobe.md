@@ -3,7 +3,7 @@ layout: page
 title: La Trobe
 author: Rod Kennedy
 date: 12 Jul 2015
-published: no
+published: false
 ---
 
 ## Leadership Experience
