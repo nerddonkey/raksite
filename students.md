@@ -14,7 +14,7 @@ menuranking: 40
 
 <div class="wide-block" markdown="block">
 
-PhD Student | Topic| Start Date
+PhD&nbsp;Student | Topic| Start&nbsp;Date
 :-: | :-: | :-:
 [Usama Elahi](http://www.uet.edu.pk/faculties/facultiesinfo/facultyinfo?fac_id=841) | Harnessing Spherical Geometry in Data Processing | Aug 2015
 [Alice Bates](http://people.cecs.anu.edu.au/user/5215) | Spherical Biological Signals Processing | Feb 2014

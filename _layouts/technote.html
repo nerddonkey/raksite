@@ -10,15 +10,19 @@ layout: plain
 
   <hr>
 
-  <h3 class="page-title">Technote Index:</h3>
+  <h3 class="page-title">Technical Note Index:</h3>
 
-  {% assign resource-list = site.pages | sort:"date" %}
-  {% for page in resource-list reversed %}
   <ul>
-  	{% if page.categories contains 'technote' %}
-  		<li>[{{ page.date | date_to_string }}] <a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% assign resource-list = site.pages | sort:"date" %}
+  {% for node in resource-list reversed %}
+  	{% if node.categories contains 'technote' %}
+  		{% if node.title == page.title %}
+        <li>[{{ node.date | date_to_string }}] {{ node.title }}</li>
+      {% else %}
+  		  <li>[{{ node.date | date_to_string }}] <a href="{{ node.url }}">{{ node.title }}</a></li>
+  		{% endif %}
   	{% endif %}
-  </ul>
   {% endfor %}
+  </ul>
 
 </div>
