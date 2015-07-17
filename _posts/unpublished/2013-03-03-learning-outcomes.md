@@ -2,7 +2,7 @@
 layout: post
 title: Learning Outcomes of Course and Major
 author: Rod Kennedy
-published: true
+published: false
 ---
 
 # Learning Outcomes of Course

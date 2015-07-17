@@ -4,7 +4,7 @@
  <title>Prof Rodney A. Kennedy</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-17T07:57:35+01:00</updated>
+ <updated>2015-07-17T09:32:22+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -200,65 +200,6 @@
 
     &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;real&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shg&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="https://github.com/nerddonkey/raksite/blogs/2013-12-31/whats-jekyll.html"/>
-   <updated>2013-12-31T00:00:00+00:00</updated>
-   <id>https://github.com/nerddonkey/raksite/blogs/2013-12-31/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory […] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Lanyon.&lt;/p&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Learning Outcomes of Course and Major</title>
-   <link href="https://github.com/nerddonkey/raksite/blogs/2013-03-03/learning-outcomes.html"/>
-   <updated>2013-03-03T00:00:00+00:00</updated>
-   <id>https://github.com/nerddonkey/raksite/blogs/2013-03-03/learning-outcomes</id>
-   <content type="html">&lt;h1 id=&quot;learning-outcomes-of-course&quot;&gt;Learning Outcomes of Course&lt;/h1&gt;
-&lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/course/ENGN2228&quot;&gt;ENGN2228 Signal Processing&lt;/a&gt;, students should be able to:&lt;/p&gt;
-
-&lt;blockquote&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;Demonstrate an understanding of continuous-time and discrete-time signals and other underpinning concepts such as causality, linearity, time invariance and stability.&lt;/li&gt;
-    &lt;li&gt;Understand the notion of mechanical, thermal and electrical analogies and the application of common engineering tools and techniques to problem solving across these disciplinary.&lt;/li&gt;
-    &lt;li&gt;Have an in-depth understanding of and use of convolution, impulse response, frequency response and the characteristics of low-pass, band-pass and high-pass filters.&lt;/li&gt;
-    &lt;li&gt;Demonstrate an understanding of engineering design practice and the broad principles of analysis and synthesis.&lt;/li&gt;
-    &lt;li&gt;Demonstrate effective reporting of laboratory work.&lt;/li&gt;
-    &lt;li&gt;Demonstrate in-depth understanding of sampling, the Sampling Theorem, aliasing and the Nyquist.&lt;/li&gt;
-    &lt;li&gt;Demonstrate understanding continuous time processing design via sampling and digital processing&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How these learning outcomes of this Course relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ENGN2228.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;learning-outcomes-of-major&quot;&gt;Learning Outcomes of Major&lt;/h1&gt;
-&lt;p&gt;After completing the &lt;a href=&quot;http://programsandcourses.anu.edu.au/major/ELCO-MAJ&quot;&gt;Electronic and Communication Systems Major&lt;/a&gt;, students should be able to:&lt;/p&gt;
-
-&lt;blockquote&gt;
-
-  &lt;ol&gt;
-    &lt;li&gt;apply the advanced engineering concepts, modelling techniques and mathematical tools to analyse and design electronic and communication systems&lt;/li&gt;
-    &lt;li&gt;conduct appropriate computer-based simulations and hardware experiments to investigate the performance of electronic and communication systems&lt;/li&gt;
-    &lt;li&gt;solve complex design problems in electronics and communication systems and critically evaluate the outcomes&lt;/li&gt;
-    &lt;li&gt;apply advanced knowledge of electronic engineering in diverse contexts and applications&lt;/li&gt;
-    &lt;li&gt;use systems engineering approaches in conducting electronic engineering projects&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How these learning outcomes of this Major relate to &lt;em&gt;Engineers Australia&lt;/em&gt; &lt;a href=&quot;https://www.engineersaustralia.org.au/sites/default/files/shado/Education/Program%20Accreditation/110318%20Stage%201%20Professional%20Engineer.pdf&quot;&gt;Stage 1 Competencies for Professional Engineer&lt;/a&gt; is given &lt;a href=&quot;http://cs.anu.edu.au/courses/COMP3100/demo/ELCO-MAJ.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </content>
  </entry>

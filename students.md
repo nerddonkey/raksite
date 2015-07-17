@@ -12,12 +12,16 @@ menuranking: 40
 
 ## Current PhD Students
 
+<div class="wide-block" markdown="block">
+
 PhD Student | Topic| Start Date
 :-: | :-: | :-:
 [Usama Elahi](http://www.uet.edu.pk/faculties/facultiesinfo/facultyinfo?fac_id=841) | Harnessing Spherical Geometry in Data Processing | Aug 2015
 [Alice Bates](http://people.cecs.anu.edu.au/user/5215) | Spherical Biological Signals Processing | Feb 2014
 [Yirui Cong](http://people.cecs.anu.edu.au/user/5178) | Mobility Models and Analysis in Ad Hoc Networks | Dec 2013
 [Ni Ding](http://people.cecs.anu.edu.au/user/4928) | Cross-layer Transmission Control in Wireless | Jul 2013
+
+</div>
 
 ---
 

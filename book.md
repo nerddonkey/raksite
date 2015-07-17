@@ -32,7 +32,8 @@ menuranking: 80
 ## Errata
 
 - page 26, missing norm in triangle inequality
-\$$
+
+$$
 	\color{#6A9FB5}\|f+g\| \le \|f\|+\|g\|,\quad \forall f,g\in\mathcal{H}.\hspace{20mm}(2.4)
 $$
 

@@ -2,7 +2,7 @@
 layout: post
 title: Fourier Synthesis with MATLAB
 author: Rod Kennedy
-published: yes
+published: true
 ---
 
 Here is a bit of <abbr title="MATLAB&reg; is a high-level technical computing language"> MATLAB&reg;</abbr> code that does Fourier *synthesis*. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients
