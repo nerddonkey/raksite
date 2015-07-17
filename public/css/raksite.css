@@ -41,14 +41,17 @@ p {
 /* tidy up the tables */
 
 table {
-	/*width: auto;*/
+	width: auto;
 	/* box-shadow: 0px 0px 8px #B5CFDA; */
 }
 thead th {
-	background: rgba(181, 207, 218, .75);
+	background: rgba(230, 230, 230, 1);
 }
 th {
 	padding: .25rem 1rem .25rem 1rem;
+}
+td {
+	white-space: nowrap;
 }
 .wide-block {
 	overflow-x: scroll;
@@ -58,15 +61,14 @@ th {
 	top: .2rem;
 	left: .2rem;
 }
+
 /*td:not(:last-child){
     white-space: nowrap;
 }
 td:last-child{
     width: 100%;
 }*/
-td{
-    white-space: nowrap;
-}
+
 
 /* lighten the sidebar navigation active item a bit more than rgba(255,255,255,.1) */
 
