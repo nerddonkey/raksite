@@ -4,7 +4,7 @@
  <title>Prof Rodney A. Kennedy</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-16T23:05:26+01:00</updated>
+ <updated>2015-07-17T07:52:18+01:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -182,14 +182,6 @@
 	c_k = T\,a_k^2 \quad\text{where}\quad
 	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
 \end{equation*}&lt;/script&gt;
-
-&lt;p&gt;Or this&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
-	c_k &amp;= T\,a_k^2 \\
-	a_k &amp;= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
-\end{align*} %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;But it serves as an illustration of a lot of aspects of coding in &lt;abbr title=&quot;MATLAB&amp;reg; is a high-level technical computing language&quot;&gt;MATLAB®&lt;/abbr&gt;.&lt;/p&gt;
 

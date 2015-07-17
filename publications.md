@@ -6,11 +6,7 @@ author: Rod Kennedy
 menuranking: 60
 ---
 
-### *Contents*{: style="color: gray"}
-{:.no_toc}
-
-* TOC
-{:toc}
+{% include contents.md %}
 
 <button id="hide-abstract">Hide All Abstracts</button>
 <button id="show-abstract">Show All Abstracts</button>

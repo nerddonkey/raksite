@@ -6,15 +6,9 @@ author: Rod Kennedy
 menuranking: 40
 ---
 
-<img src="{{ site.baseurl }}/images/nosferatu.jpg" align="top" style="margin:1.5rem 0px 0px 10px;float:right; width:40%; max-width:300px;">
+<img src="images/nosferatu.jpg" align="top" style="margin:1.5rem 0px 0px 10px; float:right; width:40%; max-width:300px;">
 
-### *Contents*{: style="color: gray"}
-{:.no_toc}
-
-* TOC
-{:toc}
-
----
+{% include contents.md %}
 
 ## Current PhD Students
 

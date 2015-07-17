@@ -13,7 +13,7 @@ $$
 	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
 \end{equation*}
 $$
-
+{% comment %}
 Or this
 
 $$
@@ -22,7 +22,7 @@ $$
 	a_k &= \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
 \end{align*}
 $$
-
+{% endcomment %}
 But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB&reg;</abbr>.
 
 {% highlight matlab %}

@@ -6,15 +6,11 @@ author: Rod Kennedy
 menuranking: 20
 ---
 
-### *Contents*{: style="color: gray"}
-{:.no_toc}
-
-* TOC
-{:toc}
-
----
+{% include contents.md %}
 
 ## Email
+
+rodney dot kennedy at anu.edu.au
 
 Good luck getting through to me and my spam filter.
 

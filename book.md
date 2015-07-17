@@ -6,13 +6,7 @@ author: Rod Kennedy
 menuranking: 80
 ---
 
-### *Contents*{: style="color: gray"}
-{:.no_toc}
-
-* TOC
-{:toc}
-
----  
+{% include contents.md %}
 
 ## Citing the Book
 

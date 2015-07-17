@@ -6,13 +6,7 @@ author: Rod Kennedy
 menuranking: 200
 ---
 
-### *Contents*{: style="color: gray"}
-{:.no_toc}
-
-* TOC
-{:toc}
-
----  
+{% include contents.md %}
 
 ## Technical notes
 
