@@ -33,10 +33,12 @@ Windsurfing video captured from a helmet mounted GoPro Hero HD camera.[^1] The f
 
 A bit of signal processing on my backyard astro captures (sorry about the music).
 
+<div class="wide-block" markdown="block">
 <iframe width="420" height="315"
 	src="https://www.youtube.com/embed/oJhM9Wg8y-k"
 	frameborder="0" allowfullscreen>
 </iframe>
+</div>
 
 ---
 

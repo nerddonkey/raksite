@@ -19,7 +19,7 @@ layout: plain
   		{% if node.title == page.title %}
         <li>[{{ node.date | date_to_string }}] {{ node.title }}</li>
       {% else %}
-  		  <li>[{{ node.date | date_to_string }}] <a href="{{ node.url }}">{{ node.title }}</a></li>
+  		  <li>[{{ node.date | date_to_string }}] <a href="{{ site.baseurl }}/{{ node.url }}">{{ node.title }}</a></li>
   		{% endif %}
   	{% endif %}
   {% endfor %}

@@ -7,7 +7,7 @@ title: Prof Rodney A. Kennedy
 tagline: College of Engineering and Computer Science
 description: 'Website of<br><b>Prof Rodney A. Kennedy</b>'
 hometitle: Home Page
-theme: theme-base-04
+theme: theme-base-00
 
 # A) Site served up locally usually on http://127.0.0.1:4000/
 #
@@ -16,7 +16,7 @@ port: 4001
 
 # B) Site on ANU CECS servers
 #
-#baseurl: http://users.cecs.anu.edu.au/~rod/raksite
+#baseurl: http://users.cecs.anu.edu.au/~rod
 #destination: /Users/rodneykennedy/Dropbox/Public/raksite
 
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite

@@ -17,7 +17,23 @@ menuranking: 200
 ### Technical Note Index
 <ul>
 		{% endif %}
-		<li>[{{ page.date | date_to_string }}] <a href="{{ page.url }}">{{ page.title }}</a></li>
+		<li>[{{ page.date | date_to_string }}] <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+	{% endif %}
+{% endfor %}
+{% if counter != 0 %}
+</ul>
+{% endif %}
+
+{% assign counter = 0 %}
+{% assign resource-list = site.pages | sort:"date" %}
+{% for page in resource-list reversed %}
+	{% if page.categories contains 'code' %}
+		{% assign counter = counter | plus: 1 %}
+		{% if counter == 1 %}
+### Code Index
+<ul>
+		{% endif %}
+		<li>[{{ page.date | date_to_string }}] <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 	{% endif %}
 {% endfor %}
 {% if counter != 0 %}
