@@ -17,12 +17,13 @@ port: 4001
 # B) Site on ANU CECS servers
 #
 #baseurl: http://users.cecs.anu.edu.au/~rod/raksite
+#destination: /Users/rodneykennedy/Dropbox/Public/raksite
 
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite
 # available at https://dl.dropboxusercontent.com/u/3959788/raksite/index.html
 #
-#baseurl: https://dl.dropboxusercontent.com/u/3959788/raksite
-#destination: /Users/rodneykennedy/Dropbox/Public/raksite
+baseurl: https://dl.dropboxusercontent.com/u/3959788/db-raksite
+destination: /Users/rodneykennedy/Dropbox/Public/db-raksite
 
 # max blogs entries per page
 paginate: 5
