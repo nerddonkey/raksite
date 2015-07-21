@@ -8,7 +8,7 @@ menuranking: 40
 
 <img src="images/nosferatu.jpg" align="top" style="margin:1.5rem 0px 0px 10px; float:right; width:40%; max-width:300px;">
 
-{% include contents.md %}
+{% include toc.md %}
 
 ## Current PhD Students
 
@@ -23,7 +23,7 @@ PhD&nbsp;Student | Topic| Start&nbsp;Date
 
 </div>
 
----
+{% include ornament.html %}
 
 ## Recent Past PhD Students
 
@@ -40,9 +40,9 @@ PhD&nbsp;Student | Topic| Start&nbsp;Date
 - [Dr Zubair Khalid 2013](http://www.zubairkhalid.org/home.html) --- ARC funded postdoc at ANU
 - [Dr Ali Nasir 2013](http://people.cecs.anu.edu.au/user/3835) --- ARC funded postdoc at ANU
 - [Dr Karan Zhang 2012](http://www.lms.lnt.de/en/people/staff/mengqiu-zhang.php)  --- University of Erlangen-Nuremberg
-- [Dr Pradeepa Samarasinghe 2011](http://computing.sliit.lk/researcher/dr-pradeepa-samarasinghe/) ---  Senior Lecturer SIIT
+- [Dr Pradeepa Samarasinghe 2011](http://computing.sliit.lk/researcher/dr-pradeepa-samarasinghe/) --- Senior Lecturer SIIT
 
----
+{% include ornament.html %}
 
 ## Future Students
 
@@ -63,4 +63,4 @@ Follow the application process described in [Graduate Research][gredres]
 [selfass]: http://cecs.anu.edu.au/future_students/graduate/research/selfassessment
 [preap]: http://cecs.anu.edu.au/future_students/graduate/research/preapplication
 
----
+{% include ornament.html %}

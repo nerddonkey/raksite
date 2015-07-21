@@ -6,7 +6,7 @@ author: Rod Kennedy
 menuranking: 20
 ---
 
-{% include contents.md %}
+{% include toc.md %}
 
 ## Email
 
@@ -29,7 +29,8 @@ Australia
 
 ## Brief Paper Biography
 
-<img src="{{ site.baseurl }}/images/rod_2011b.jpg" align="top" style="margin:25px 75px 25px 25px; float:right; width:25%;"> <!-- {}{img_left}{img/rod4.jpg}{wod4}{150}{}{} -->
+<img src="{{ site.baseurl }}/images/rod_2011b.jpg"
+	align="top" style="margin:25px 75px 25px 25px; float:right; width:25%;">
 
 Rodney A. Kennedy (S'86--M'88--SM'01--F'05) received the B.E. degree (1st class honours and university medal) from the University of New South Wales, Sydney, Australia, the M.E. degree from the University of Newcastle, and the Ph.D. degree from the Australian National University, Canberra. Since 2000 he has been is a Professor in engineering at the Australian National University, Canberra, Australia.
 

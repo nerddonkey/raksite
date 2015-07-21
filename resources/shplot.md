@@ -1,10 +1,12 @@
 ---
 layout: technote
-title: Computing and Plotting Spherical Harmonic in MATLAB
+title: Computing and Plotting Spherical Harmonics using MATLAB&reg;
 author: Rod Kennedy
 date: 16 Jul 2015
-categories: [technote, sphere]
+resource-categories: [technote, sphere]
 ---
+
+{% include toc.md %}
 
 ![too]({{ site.baseurl }}/images/new.png){: height="200px" width="200px"}
 
@@ -18,9 +20,8 @@ This is taken directly from the [Matlab Website][exmpl]
 {% include sh_plot.m %}
 {% endhighlight %}
 
-
 ## Animate
 
 {% highlight matlab %}
-a=b
+{% include sh_plot_animate.m %}
 {% endhighlight %}

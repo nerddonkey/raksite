@@ -4,7 +4,7 @@
  <title>Prof Rodney A. Kennedy</title>
  <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
  <link href="https://github.com/nerddonkey/raksite/"/>
- <updated>2015-07-18T21:17:20+01:00</updated>
+ <updated>2015-07-21T13:48:09+10:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -15,7 +15,7 @@
  <entry>
    <title>ARC DP150101011 Project Funded</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15.html"/>
-   <updated>2014-11-05T00:00:00+00:00</updated>
+   <updated>2014-11-05T00:00:00+11:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15</id>
    <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.  More details &lt;a href=&quot;p05-dp15.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -25,7 +25,7 @@
  <entry>
    <title>Science on the Sphere Presentation</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere.html"/>
-   <updated>2014-07-01T00:00:00+01:00</updated>
+   <updated>2014-07-01T00:00:00+10:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;assets/s2-transforms-beamer.pdf&quot; target=&quot;\_blank&quot;&gt;Presentation&lt;/a&gt;, &lt;em&gt;“Kernel-Based Formulations of Spatio-Spectral Transform and Three Related Transforms on the Sphere”&lt;/em&gt; given for Royal Society meeting “Science on the Sphere”.&lt;/p&gt;
 
@@ -35,7 +35,7 @@
  <entry>
    <title>Three 2014 ICASSP papers</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14.html"/>
-   <updated>2014-05-02T00:00:00+01:00</updated>
+   <updated>2014-05-02T00:00:00+10:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14</id>
    <content type="html">&lt;p&gt;Three 2014 ICASSP papers have been presented in Florence:&lt;/p&gt;
 
@@ -174,7 +174,7 @@
  <entry>
    <title>Fourier Synthesis with MATLAB</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-01-02/fourier-synth.html"/>
-   <updated>2014-01-02T00:00:00+00:00</updated>
+   <updated>2014-01-02T00:00:00+11:00</updated>
    <id>https://github.com/nerddonkey/raksite/blogs/2014-01-02/fourier-synth</id>
    <content type="html">&lt;p&gt;Here is a bit of &lt;abbr title=&quot;MATLAB&amp;reg; is a high-level technical computing language&quot;&gt; MATLAB®&lt;/abbr&gt; code that does Fourier &lt;em&gt;synthesis&lt;/em&gt;. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients&lt;/p&gt;
 

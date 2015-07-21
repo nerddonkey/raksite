@@ -8,6 +8,8 @@ tagline: College of Engineering and Computer Science
 description: 'Website of<br><b>Prof Rodney A. Kennedy</b>'
 hometitle: Home Page
 theme: theme-base-00
+cat-list: [technote, code, paper]
+resource-categories: [technote, code, paper, sphere]
 
 # A) Site served up locally usually on http://127.0.0.1:4000/
 #
@@ -22,8 +24,8 @@ port: 4001
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite
 # available at https://dl.dropboxusercontent.com/u/3959788/raksite/index.html
 #
-baseurl: https://dl.dropboxusercontent.com/u/3959788/db-raksite
-destination: /Users/rodneykennedy/Dropbox/Public/db-raksite
+#baseurl: https://dl.dropboxusercontent.com/u/3959788/db-raksite
+#destination: /Users/rodneykennedy/Dropbox/Public/db-raksite
 
 # max blogs entries per page
 paginate: 5

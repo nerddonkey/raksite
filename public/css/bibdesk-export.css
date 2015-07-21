@@ -3,17 +3,8 @@
 .Bibentry {
 	font-size: 85%;
 	line-height: 120%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	/*	font-family: Georgia, Optima, Bookman, Palatino, Palatino, serif ;*/
-	/*	font-family: "Helvetica Neue" ;*/
-	border-bottom: 1px solid #e0e0e0;
-	padding-left: 22px;
-	/*22px*/
+	padding: 5px 0px 5px 22px;
 	text-indent: -22px;
-	/*-22px*/
-	margin-bottom: 0px;
-	/*	max-width: 1000px ;*/
 }
 .Title, .Pages, .Month, .Date, .Volume, .Author, .Year, .Publisher, .Address {
 	font-style: normal;

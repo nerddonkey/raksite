@@ -75,3 +75,26 @@ td {
 	border-color: rgba(181, 207, 218, 1);
 	background: rgba(181, 207, 218, .5);
 }
+.Abstract-toggle, .Bibtex-toggle {
+	display: inline;
+}
+#hide-abstract, #show-abstract, #hide-bibtex, #show-bibtex {
+	border-radius: 5px;
+	border-color: rgba(181, 207, 218, 1);
+	background: rgba(181, 207, 218, .5);
+	padding: 2px;
+	position: fixed;
+	left: 12px;
+}
+#hide-abstract {
+	top: 4rem;
+}
+#show-abstract {
+	top: 6rem;
+}
+#hide-bibtex {
+	top: 8rem;
+}
+#show-bibtex {
+	top: 10rem;
+}
