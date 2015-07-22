@@ -16,8 +16,7 @@ This figure I derived from the data available at the [Mathematics Genealogy Proj
 <img src="{{ site.baseurl }}/images/rak-genealogy.png"
 	style="min-width:500px; max-width:100%">
 </div>
-
-{% include ornament.html %}
+---
 
 ## Windsurfing
 
@@ -29,8 +28,7 @@ Windsurfing video captured from a helmet mounted GoPro Hero HD camera.[^1] The f
 	frameborder="0" allowfullscreen>
 </iframe>
 </div>
-
-{% include ornament.html %}
+---
 
 ## Astronomy
 
@@ -42,8 +40,7 @@ A bit of signal processing on my backyard astro captures (sorry about the music)
 	frameborder="0" allowfullscreen>
 </iframe>
 </div>
-
-{% include ornament.html %}
+---
 
 [^1]: This is dedicated to [Bobby][bobby], who is seen briefly in background at around time 0:20.
 [bobby]: http://www.canberratimes.com.au/act-news/missing-windsurfers-body-found-in-lake-tuggeranong-20131224-2zvxk.html

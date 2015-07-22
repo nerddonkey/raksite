@@ -1,16 +1,3 @@
----
-layout: technote
-title: TikZ-externatizing png
-author: Rod Kennedy
-date: 21 Jul 2015
-resource-categories: [code]
----
-
-
-### Relevant latex code
-
-{% highlight latex %}
-
 \documentclass[a4paper]{article}
 
 \usepackage[margin=5mm]{geometry}
@@ -20,12 +7,13 @@ resource-categories: [code]
 \usepgfplotslibrary{external} % creates a tight self-contained pdf figure for each tikzpicture
 \tikzexternalize % comment out to debug if latex errors: generates the external pdf
 \tikzset{external/force remake} % otherwise will use external pdf
-\tikzsetexternalprefix{fig/} % output the pdf to an existing directory (needs to exist)
+%\tikzsetexternalprefix{fig/} % output the pdf to an existing directory (needs to exist)
 
 \tikzset{png export/.style={
 	external/system call={
-		pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
-		sips -s format png --out "\image.png" "\image.pdf"
+		pdflatex \tikzexternalcheckshellescape
+			-halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
+		sips -s format png --out "\image.png" "\image.pdf" % sips: scriptable image processing system.
 	}}}
 
 \pgfplotsset{compat=1.12}
@@ -35,12 +23,10 @@ resource-categories: [code]
 \begin{document}
 \thispagestyle{empty}
 
-\tikzsetnextfilename{rak-genealogy}
+\tikzsetnextfilename{myfigure}
 
 \begin{tikzpicture}
-
 ...
-
 \end{tikzpicture}
 
-{% endhighlight %}
+\end{document}

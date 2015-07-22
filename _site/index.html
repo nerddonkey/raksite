@@ -237,7 +237,7 @@
 </div>
 
       <center>
-<img src="/images/pgf-ornament.png" style="width:300pt; margin:2rem 0rem">
+<img src="/images/pgf-ornament.png" style="width:400px; margin:1.5rem 0rem">
 </center>
 
       <div class="posts">
@@ -252,6 +252,10 @@
     <p>ARC Discovery Project DP150101011, <em>Harnessing Spherical Geometry in Scientific and Engineering Data Processing</em>, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.  More details <a href="p05-dp15.html">here</a>.</p>
 
 
+    <center>
+<img src="/images/pgf-ornament.png" style="width:400px; margin:1.5rem 0rem">
+</center>
+
   </div>
   
   <div class="post">
@@ -264,6 +268,10 @@
     <p><a href="assets/s2-transforms-beamer.pdf" target="\_blank">Presentation</a>, <em>“Kernel-Based Formulations of Spatio-Spectral Transform and Three Related Transforms on the Sphere”</em> given for Royal Society meeting “Science on the Sphere”.</p>
 
 
+    <center>
+<img src="/images/pgf-ornament.png" style="width:400px; margin:1.5rem 0rem">
+</center>
+
   </div>
   
   <div class="post">
@@ -274,6 +282,8 @@
     </h2>
     <span class="post-date">02 May 2014 &mdash; Rod Kennedy</span>
     <p>Three 2014 ICASSP papers have been presented in Florence:</p>
+
+<!--more-->
 
 <!-- Paper Title: Band-Limited Extrapolation on the Sphere for Signal Reconstruction in the Presence of Noise -->
 <!-- Authors: Y. Alem, Z. Khalid, and R. A. Kennedy -->
@@ -405,40 +415,9 @@
 - +Feb 2014+ --- Three 2014 ICASSP papers have been accepted and will be presented in Florence in May.
 - +Jan 2014+ --- Two 2014 ICC papers have been accepted and will be presented in Sydney in June. -->
 
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/blogs/2014-01-02/fourier-synth.html">
-        Fourier Synthesis with MATLAB
-      </a>
-    </h2>
-    <span class="post-date">02 Jan 2014 &mdash; Rod Kennedy</span>
-    <p>Here is a bit of <abbr title="MATLAB&reg; is a high-level technical computing language"> MATLAB®</abbr> code that does Fourier <em>synthesis</em>. That is, it constructs (and plots) a signal from a set of hard-wired Fourier series coefficients</p>
-
-<script type="math/tex; mode=display">\begin{equation*}
-	c_k = T\,a_k^2 \quad\text{where}\quad
-	a_k = \frac{\sin(k\,\pi/4)}{k\,\pi} e^{-j\,k\,\pi/4}
-\end{equation*}</script>
-
-<p>But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB®</abbr>.</p>
-
-<div class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="k">function</span><span class="w"> </span><span class="nf">foursynth</span><span class="p">(</span> kmax, T <span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">k</span><span class="p">=[</span><span class="o">-</span><span class="n">kmax</span><span class="p">:</span><span class="n">kmax</span><span class="p">];</span> <span class="c">% Fourier coefficient index span</span>
-    <span class="n">omega0</span><span class="p">=</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="n">T</span><span class="p">;</span> <span class="c">% fundamental frequency (rad/sec); T - period</span>
-
-    <span class="n">k</span><span class="p">=</span><span class="n">k</span><span class="o">+</span><span class="mf">0.0001</span><span class="p">;</span> <span class="c">% lazy way to handle sinc at zero</span>
-    <span class="n">ak</span><span class="p">=</span><span class="nb">sin</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">./</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="p">)</span><span class="o">.*</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="nb">j</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="nb">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">);</span>
-    <span class="n">ck</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="n">ak</span><span class="o">.*</span><span class="n">ak</span><span class="p">;</span>
-
-    <span class="n">t</span><span class="p">=</span><span class="n">T</span><span class="o">*</span><span class="p">[</span><span class="o">-</span><span class="mf">2.5</span><span class="p">:</span><span class="mf">0.01</span><span class="p">:</span><span class="mf">2.5</span><span class="p">];</span> <span class="c">% time scan for plot (5 periods)</span>
-    <span class="n">ekt</span><span class="p">=</span><span class="nb">exp</span><span class="p">(</span><span class="nb">j</span><span class="o">*</span><span class="n">omega0</span><span class="o">*</span><span class="n">kron</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">t</span><span class="o">&#39;</span><span class="p">));</span> <span class="c">% k horz; t vert</span>
-
-    <span class="n">yt</span><span class="p">=</span><span class="n">ck</span><span class="o">*</span><span class="n">ekt</span><span class="p">.</span><span class="o">&#39;</span><span class="p">;</span> <span class="c">% sum the series; .&#39; means non-conjugate transpose</span>
-
-    <span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">));</span> <span class="n">shg</span>
-<span class="k">end</span></code></pre></div>
-
+    <center>
+<img src="/images/pgf-ornament.png" style="width:400px; margin:1.5rem 0rem">
+</center>
 
   </div>
   

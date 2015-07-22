@@ -8,18 +8,18 @@ scale = [linspace(0,1,20) linspace(1,-1,40)];    % surface scaling (0 to 1 to -1
 
 for ii = 1:length(scale)
 
-    rho = radius + scale(ii)*amplitude*yy/order;
+	rho = radius + scale(ii)*amplitude*yy/order;
 
-    r = rho.*sin(theta);
-    x = r.*cos(phi);
-    y = r.*sin(phi);
-    z = rho.*cos(theta);
+	r = rho.*sin(theta);
+	x = r.*cos(phi);
+	y = r.*sin(phi);
+	z = rho.*cos(theta);
 
-    s.XData = x;    % replace surface x values
-    s.YData = y;    % replace surface y values
-    s.ZData = z;    % replace surface z values
+	s.XData = x;    % replace surface x values
+	s.YData = y;    % replace surface y values
+	s.ZData = z;    % replace surface z values
 
-    pause(0.05)     % pause to control animation speed
+	pause(0.05)     % pause to control animation speed
 end
 
 displayEndOfDemoMessage(mfilename)

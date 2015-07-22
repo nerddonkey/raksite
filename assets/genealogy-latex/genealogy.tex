@@ -2,7 +2,7 @@
 
 \usepackage[margin=5mm]{geometry}
 \usepackage{tikz,pgfplots}
-\usetikzlibrary{matrix,arrows,calc,shadows,positioning,patterns,backgrounds}
+%\usetikzlibrary{matrix,arrows,calc,shadows,positioning,patterns,backgrounds}
 
 \usepackage{mathtools}
 
@@ -13,8 +13,9 @@
 
 \tikzset{png export/.style={
 	external/system call={
-		pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
-		sips -s format png --out "\image.png" "\image.pdf"
+		pdflatex \tikzexternalcheckshellescape
+			-halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
+		sips -s format png --out "\image.png" "\image.pdf" % sips: scriptable image processing system.
 	}}}
 
 %6A9FB5 - Lanyon blue

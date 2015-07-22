@@ -11,8 +11,7 @@ menuranking: 80
 ## Citing the Book
 
 {% include snippets/hsmsp.html %}
-
-{% include ornament.html %}
+---
 
 ## Dust Jacket Description
 
@@ -22,7 +21,7 @@ menuranking: 80
   align="top" style="margin:0.2rem 0rem 0rem 1.5rem; float:right; width:35%; max-width:300px">
 *This lively and accessible book describes the theory and applications of Hilbert spaces and also presents the history of the subject to reveal the ideas behind theorems and the human struggle that led to them. The authors begin by establishing the concept of 'countably infinite', which is central to the proper understanding of separable Hilbert spaces. Fundamental ideas such as convergence, completeness and dense sets are first demonstrated through simple familiar examples and then formalised. Having addressed fundamental topics in Hilbert spaces, the authors then go on to cover the theory of bounded, compact and integral operators at an advanced but accessible level. Finally, the theory is put into action, considering signal processing on the unit sphere, as well as reproducing kernel Hilbert spaces. The text is interspersed with historical comments about central figures in the development of the theory, which helps bring the subject to life.*
 
-{% include ornament.html %}
+---
 
 <img src="{{ site.baseurl }}/images/euclid.jpg" align="top" style="margin:0.2rem 0rem 0.1rem 2rem; float:right; width:45%; max-width:1005px">
 
@@ -49,7 +48,7 @@ menuranking: 80
 </pre>
 {:. style="color: rgba(32,32,32,1); font-size: 1rem; font-family: "PT Sans", Helvetica, Arial, sans-serif; background-color: #ffffff;"}
 
-{% include ornament.html %}
+---
 
 ## Links Relevant to the Book
 
@@ -57,7 +56,7 @@ menuranking: 80
 - [Amazon Site](http://www.amazon.com/Hilbert-Space-Methods-Signal-Processing/dp/1107010039)
 - [Google Books](http://books.google.com.au/books?isbn=1107328357)
 
-{% include ornament.html %}
+---
 
 ## Errata
 
@@ -73,4 +72,4 @@ $$
 
 - page 332 Definition 10.2 and 10.3; Is there an misprint at this location "...for all f in " - H or L2(omega)?
 
-{% include ornament.html %}
+---

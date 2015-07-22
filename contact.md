@@ -48,9 +48,9 @@ Acton ACT 2601
 
 ## Google Map
 
-<div class="wide-block" markdown="block">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d830.222395485185!2d149.12049100727072!3d-35.27438767703271!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1405312883375" width="800" height="400" frameborder="0" style="border:0">
-	</iframe>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d830.222395485185!2d149.12049100727072!3d-35.27438767703271!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1405312883375" width="800" height="400" frameborder="0" style="border:0">
+</iframe>
 
 [build115]: http://campusmap.anu.edu.au/displaybldg.asp?no=115
+
+---

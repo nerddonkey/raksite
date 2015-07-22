@@ -29,7 +29,7 @@ Ymn = Ymn(order+1,:)';
 yy = Ymn;
 
 for kk = 2: size(theta,1)
-    yy = [yy Ymn];
+ 	yy = [yy Ymn];
 end
 
 yy = yy.*cos(order*phi);

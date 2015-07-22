@@ -6,9 +6,13 @@ date: 18 Jul 2015
 resource-categories: [code, sphere]
 ---
 
+{% include toc.md %}
+
 ### You-tube Video
 
 [plot on sphere](https://www.youtube.com/watch?v=NB6rDT4ycVY)
+
+---
 
 ### J-Book Macros
 

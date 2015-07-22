@@ -16,12 +16,14 @@ This is taken directly from the [Matlab Website][exmpl]
 
 [exmpl]: http://www.mathworks.com/examples/matlab/1226-animating-a-surface
 
-{% highlight matlab %}
+{% highlight matlab tabsize=3 %}
 {% include sh_plot.m %}
 {% endhighlight %}
 
+---
+
 ## Animate
 
-{% highlight matlab %}
+{% highlight matlab tabsize=3 %}
 {% include sh_plot_animate.m %}
 {% endhighlight %}

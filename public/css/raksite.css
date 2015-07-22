@@ -1,3 +1,7 @@
+---
+whatthidis: dummy so liquid gets processed; don't remove; jeykll will trim anyway
+---
+
 /* customize the layount, to do: need to consider the mobile version */
 
 .container {
@@ -81,7 +85,7 @@ td {
 #hide-abstract, #show-abstract, #hide-bibtex, #show-bibtex {
 	border-radius: 5px;
 	border-color: rgba(181, 207, 218, 1);
-	background: rgba(181, 207, 218, .5);
+	background: rgba(181, 207, 218, .25);
 	padding: 2px;
 	position: fixed;
 	left: 12px;
@@ -97,4 +101,41 @@ td {
 }
 #show-bibtex {
 	top: 10rem;
+}
+
+/* ornate hr */
+
+hr {
+	display: block;
+	border: 0px;
+	height: 16px;
+	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+	background-size: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1.5rem 0;
+}
+
+/* code */
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 10pt;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: rgba(232, 232, 232, 0.2);
+}
+
+code {
+  padding: 0.1rem;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #ffffff;
+  border-radius: 0px;
 }

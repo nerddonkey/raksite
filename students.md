@@ -23,7 +23,7 @@ PhD&nbsp;Student | Topic| Start&nbsp;Date
 
 </div>
 
-{% include ornament.html %}
+---
 
 ## Recent Past PhD Students
 
@@ -42,7 +42,7 @@ PhD&nbsp;Student | Topic| Start&nbsp;Date
 - [Dr Karan Zhang 2012](http://www.lms.lnt.de/en/people/staff/mengqiu-zhang.php)  --- University of Erlangen-Nuremberg
 - [Dr Pradeepa Samarasinghe 2011](http://computing.sliit.lk/researcher/dr-pradeepa-samarasinghe/) --- Senior Lecturer SIIT
 
-{% include ornament.html %}
+---
 
 ## Future Students
 
@@ -63,4 +63,4 @@ Follow the application process described in [Graduate Research][gredres]
 [selfass]: http://cecs.anu.edu.au/future_students/graduate/research/selfassessment
 [preap]: http://cecs.anu.edu.au/future_students/graduate/research/preapplication
 
-{% include ornament.html %}
+---
