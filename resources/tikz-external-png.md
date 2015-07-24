@@ -11,7 +11,7 @@ resource-categories: [code]
 ### Relevant latex code
 
 {% highlight latex tabsize=3 %}
-{% include tikz-ext-png.tex %}
+{% include latex/tikz-ext-png.tex %}
 {% endhighlight %}
 
 ---

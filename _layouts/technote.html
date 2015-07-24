@@ -1,6 +1,5 @@
 ---
 layout: plain
-cat-list: [technote, code]
 ---
 
 <div class="page">
@@ -9,7 +8,7 @@ cat-list: [technote, code]
 
   {{ content }}
 
-  {% include ornament.html %}
+  {{ '---' | markdownify }}
 
   {% for category in site.resource-categories %}
   	{% assign node-list = site.pages | sort:"date" | reverse %}
@@ -17,9 +16,11 @@ cat-list: [technote, code]
   	{% for node in node-list %}
       {% if node.resource-categories contains category %}
   			{% assign counter = counter | plus: 1 %}
-  			{% if counter == 1 %}
-<h3>{{ category | capitalize }} Index:</h3>
-<ul>
+    			{% if counter == 1 %}
+          <!-- <h3>{{ category | capitalize }} Index:</h3> -->
+          {% capture myString %}### {{ category| capitalize }} Index:{% endcapture %}
+          {{ myString | markdownify }}
+          <ul>
   			{% endif %}
         <li><small>[{{ node.date | date_to_string }}]</small> &mdash;
           {% if node.title == page.title %} {{ node.title }} {% else %}
@@ -27,7 +28,7 @@ cat-list: [technote, code]
   		{% endif %}
   	{% endfor %}
   	{% if counter > 0 %}
-  </ul>
+      </ul>
   	{% endif %}
   {% endfor %}
 </div>

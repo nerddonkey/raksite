@@ -17,7 +17,7 @@ This is taken directly from the [Matlab Website][exmpl]
 [exmpl]: http://www.mathworks.com/examples/matlab/1226-animating-a-surface
 
 {% highlight matlab tabsize=3 %}
-{% include sh_plot.m %}
+{% include matlab/sh_plot.m %}
 {% endhighlight %}
 
 ---
@@ -25,5 +25,5 @@ This is taken directly from the [Matlab Website][exmpl]
 ## Animate
 
 {% highlight matlab tabsize=3 %}
-{% include sh_plot_animate.m %}
+{% include matlab/sh_plot_animate.m %}
 {% endhighlight %}

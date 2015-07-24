@@ -30,4 +30,7 @@ resource-categories: [code, sphere]
 
 \newcommand{\sharm}[3][]{\ifblank{#1}{Y^{#2}_{#3}}{\prescript{}{#1}Y^{#2}_{#3}}}
 
+\[
+	\sharm[s]{m}{\ell} \quad \sharm{m}{\ell}
+\]
 {% endhighlight %}

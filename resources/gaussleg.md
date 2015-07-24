@@ -6,7 +6,7 @@ date: 18 Jul 2015
 resource-categories: [technote, sphere]
 ---
 
-- signals on $$\mathbb{S}^2$$ always **bandlimited** to $$L$$, i.e., beyond $$\ell\in\{0,1,\dotsc,L-1\}$$ the harmonics are zero
+- signals on $$\mathbb{S}^2$$ always *bandlimited* to $$L$$, i.e., beyond $$\ell\in\{0,1,\dotsc,L-1\}$$ the harmonics are zero
 - natural Gauss-Legendre uses $$L$$ samples along co-latitude ($$\theta$$) taken as the roots of the Legendre polynomial of degree $$L$$, $$P_{L}(\theta)$$ -- denote these roots as $$\theta^{\,r}_L$$, $$r=1,2,\dotsc,L$$.
 - when coupled with $$2L-1$$ samples along longitude ($$\phi$$) for each co-latitude sample, this sampling set is denoted $$\mathfrak{S}_{\mathrm{GL}}$$ and its cardinality is $$\lvert\mathfrak{S}_{\mathrm{GL}}\rvert=L(2L-1)$$
 

@@ -1,5 +1,4 @@
 ---
-whatthidis: dummy so liquid gets processed; don't remove; jeykll will trim anyway
 ---
 
 /* customize the layount, to do: need to consider the mobile version */
@@ -23,7 +22,7 @@ whatthidis: dummy so liquid gets processed; don't remove; jeykll will trim anywa
 }
 .masthead {
 	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 0.3rem;
 	margin-bottom: 1.1rem;
 }
 .masthead-title {
@@ -76,19 +75,24 @@ td {
 .Bibtex {
 	font-family: menlo, Monaco, Consolas, "Courier New", Courier, monospace;
 	border-radius: 5px;
-	border-color: rgba(181, 207, 218, 1);
-	background: rgba(181, 207, 218, .5);
+  border-color: rgba(28, 211, 255, 1);
+	background: rgba(28, 211, 255, 0.29);
+
+}
+input[type="button"], button {
+	padding: 2px 6px 0px 6px;
+  font-family: "PT Sans", helvetica, serif;
+	font-size: 9pt;
+	border-radius: 3px;
+	background: rgba(28, 211, 255, 0.29);
+	border: 1px solid #AFAFAF;
 }
 .Abstract-toggle, .Bibtex-toggle {
 	display: inline;
 }
 #hide-abstract, #show-abstract, #hide-bibtex, #show-bibtex {
-	border-radius: 5px;
-	border-color: rgba(181, 207, 218, 1);
-	background: rgba(181, 207, 218, .25);
-	padding: 2px;
 	position: fixed;
-	left: 12px;
+	left: 11px;
 }
 #hide-abstract {
 	top: 4rem;
@@ -108,34 +112,33 @@ td {
 hr {
 	display: block;
 	border: 0px;
-	height: 16px;
+	height: 12px;
 	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
-	background-size: 400px;
+	background-size: 300px;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 1.5rem 0;
+	margin: 1.5rem 0rem;
 }
 
 /* code */
 
 pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 0.75rem;
-  font-size: 10pt;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: rgba(232, 232, 232, 0.2);
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: 0.75rem;
+	font-size: 10pt;
+	line-height: 1.4;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: rgba(232, 232, 232, 0.2);
 }
-
 code {
-  padding: 0.1rem;
-  font-size: 85%;
-  color: #bf616a;
-  background-color: #ffffff;
-  border-radius: 0px;
+	padding: 0.1rem;
+	font-size: 85%;
+	color: #bf616a;
+	background-color: #ffffff;
+	border-radius: 0px;
 }
