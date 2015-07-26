@@ -1,110 +1,85 @@
 <!-- Paper Title: <$fields.Title.stringByRemovingCurlyBraces/> -->
 <!-- Authors: <$authors.abbreviatedName.@componentsJoinedByCommaAndAnd/> -->
-<div class="Bibentry">[<$#/>]
-	<$pubAuthorsForDisplay?>
-		<span class="Author">
-			<$authors.abbreviatedName.@componentsJoinedByCommaAndAnd/>, </span>
-	</$pubAuthorsForDisplay?>
-	<$fields.Title?>
+	<div class="Bibentry">[<$#/>]
+<$pubAuthorsForDisplay?>
+		<span class="Author"><$authors.abbreviatedName.@componentsJoinedByCommaAndAnd/>, </span>
+</$pubAuthorsForDisplay?>
+<$fields.Title?>
 		<span class="Title">"<$fields.Title.stringByRemovingCurlyBraces/>", </span>
-	</$fields.Title?>
-	<$fields.Journal?>
-		<span class="Journal">
-			<$fields.Journal.stringByRemovingCurlyBraces/>, </span>
-	</$fields.Journal?>
-	<$fields.Booktitle?>
-		<span class="Booktitle">
-			<$fields.Booktitle/>, </span>
-	</$fields.Booktitle?>
-	<$fields.Publisher?>
-		<span class="Publisher">
-			<$fields.Publisher/>, </span>
-	</$fields.Publisher?>
-	<$fields.Volume?>
-		<span class="Volume">vol.
-			<$fields.Volume/>, </span>
-	</$fields.Volume?>
-	<$fields.Number?>
-		<span class="Volume">no.
-			<$fields.Number/>, </span>
-	</$fields.Number?>
-	<$fields.Address?>
-		<span class="Address">
-			<$fields.Address/>, </span>
-	</$fields.Address?>
-	<$fields.Pages?>
-		<span class="Pages">pp.
-			<$fields.Pages/>, </span>
-	</$fields.Pages?>
-	<$fields.Month?>
-		<span class="Month">
-			<$fields.Month/> </span>
-	</$fields.Month?>
-	<$fields.Year?>
-		<span class="Date">
-			<$fields.Year/>.</span>
-	</$fields.Year?>
-	<div class="CheckBoxes">
-		<form>
-			<input type="button" value="Abstract" onclick="toggle('<$citeKey/>_abstract');" unchecked>&nbsp;
-			<input type="button" value="BibTeX" onclick="toggle('<$citeKey/>_bibtex');" unchecked>
-		</form>
-	</div>
-	<$fields.Url?>
-		<span class="Url">Official: <a href="<$fields.Url/>" target="_blank">Link</a></span>
-	</$fields.Url?>
-	<$fields.Doi?>
-		<span class="Url">DOI:
-			<a href="http://dx.doi.org/<$fields.Doi/>" target="_blank">
-				<$fields.Doi/>
-			</a>
-		</span>
-	</$fields.Doi?>
-	<$fields.Pdf-Url?>
-		<span class="Url">PDF:
-			<a href="<$fields.Pdf-Url/>" target="_blank">
-				<$fields.Pdf-Url.lastPathComponent/>
-			</a>
-		</span>
-	</$fields.Pdf-Url?>
-	<$fields.Google-Scholar-Url?>
-		<$fields.Google-Scholar=0?>
-			<span class="Url">Google-Scholar: <a href="<$fields.Google-Scholar-Url/>" target="_blank">[link]</a></span>
-			<?$fields.Google-Scholar?>
-				<span class="Url">Google-Scholar: <a href="<$fields.Google-Scholar-Url/>" target="_blank">[<$fields.Google-Scholar/>]</a></span>
-				</$fields.Google-Scholar?>
-				<?$fields.Google-Scholar-Url?>
-	</$fields.Google-Scholar-Url?>
-	<$fields.Arxiv?>
-		<span class="Url">arXiv:
-			<a href="<$fields.Arxiv/>" target="_blank">
-				<$fields.Arxiv/>
-			</a>
-		</span>
-	</$fields.Arxiv?>
-	<!-- Abstract -->
-	<$fields.Abstract?>
+</$fields.Title?>
+<$fields.Journal?>
+		<span class="Journal"><$fields.Journal.stringByRemovingCurlyBraces/>, </span>
+</$fields.Journal?>
+<$fields.Booktitle?>
+		<span class="Booktitle"><$fields.Booktitle/>, </span>
+</$fields.Booktitle?>
+<$fields.Publisher?>
+		<span class="Publisher"><$fields.Publisher/>, </span>
+</$fields.Publisher?>
+<$fields.Volume?>
+		<span class="Volume">vol.&nbsp;<$fields.Volume/>, </span>
+</$fields.Volume?>
+<$fields.Number?>
+		<span class="Volume">no.&nbsp;<$fields.Number/>, </span>
+</$fields.Number?>
+<$fields.Address?>
+		<span class="Address"><$fields.Address/>, </span>
+</$fields.Address?>
+<$fields.Pages?>
+		<span class="Pages">pp.&nbsp;<$fields.Pages/>, </span>
+</$fields.Pages?>
+<$fields.Month?>
+		<span class="Month"><$fields.Month/> </span>
+</$fields.Month?>
+<$fields.Year?>
+		<span class="Date"><$fields.Year/>.</span>
+</$fields.Year?>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('<$citeKey/>_abstract');">&nbsp;<input type="button" value="BibTeX" onclick="toggle('<$citeKey/>_bibtex');">
+			</form>
+		</div>
+<$fields.Url?>
+		<span class="Url">Official:&nbsp;<a href="<$fields.Url/>" target="_blank">Link</a></span>
+</$fields.Url?>
+<$fields.Doi?>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/<$fields.Doi/>" target="_blank"><$fields.Doi/></a></span>
+</$fields.Doi?>
+<$fields.Pdf-Url?>
+		<span class="Url">PDF:&nbsp;<a href="<$fields.Pdf-Url/>" target="_blank"><$fields.Pdf-Url.lastPathComponent/></a></span>
+</$fields.Pdf-Url?>
+<$fields.Google-Scholar-Url?>
+<$fields.Google-Scholar=0?>
+		<span class="Url">Google-Scholar:&nbsp;<a href="<$fields.Google-Scholar-Url/>" target="_blank">[link]</a></span>
+<?$fields.Google-Scholar?>
+		<span class="Url">Google-Scholar:&nbsp;<a href="<$fields.Google-Scholar-Url/>" target="_blank">[<$fields.Google-Scholar/>]</a></span>
+</$fields.Google-Scholar?>
+<?$fields.Google-Scholar-Url?>
+</$fields.Google-Scholar-Url?>
+<$fields.Arxiv?>
+		<span class="Url">arXiv:<a href="<$fields.Arxiv/>" target="_blank"><$fields.Arxiv/></a></span>
+</$fields.Arxiv?>
+			<!-- Abstract -->
+<$fields.Abstract?>
 		<div id="<$citeKey/>_abstract" class="Abstract-toggle" style="display:none">
 			<div class="Abstract">
-				<strong>Abstract:</strong>
-				<$fields.Abstract.stringByRemovingTeX/>
+				<strong>Abstract:</strong> <$fields.Abstract.stringByRemovingTeX/>
 			</div>
 		</div>
-	</$fields.Abstract?>
-	<!-- Bibtex -->
-  <div id="<$citeKey/>_bibtex" class="Bibtex-toggle" style="display:none">
-    <div class="Bibtex">
-      @<$pubType/>{<$citeKey/>,<br>
-      <$fields.Title?>title = {<$fields.Title/>},<br></$fields.Title?>
-      <$fields.Author?>author = {<$fields.Author/>},<br></$fields.Author?>
-      <$fields.Journal?>journal = {<$fields.Journal/>},<br></$fields.Journal?>
-      <$fields.Booktitle?>booktitle = {<$fields.Booktitle/>},<br></$fields.Booktitle?>
-      <$fields.Publisher?>publisher = {<$fields.Publisher/>},<br></$fields.Publisher?>
-      <$fields.Address?>address = {<$fields.Address/>},<br></$fields.Address?>
-      <$fields.Volume?>volume = {<$fields.Volume/>},<br></$fields.Volume?>
-      <$fields.Pages?>pages = {<$fields.Pages/>},<br></$fields.Pages?>
-      <$fields.Month?>month = {<$fields.Month/>},<br></$fields.Month?>
-      <$fields.Year?>year = {<$fields.Year/>}}</$fields.Year?>
-    </div>
-  </div>
-</div> <!-- class="Bibentry" -->
+</$fields.Abstract?>
+		<!-- Bibtex -->
+	  <div id="<$citeKey/>_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@<$pubType/>{<$citeKey/>,<br><$fields.Title?>title = {<$fields.Title/>},<br></$fields.Title?>
+		    <$fields.Author?>author = {<$fields.Author/>},<br></$fields.Author?>
+		    <$fields.Journal?>journal = {<$fields.Journal/>},<br></$fields.Journal?>
+		    <$fields.Booktitle?>booktitle = {<$fields.Booktitle/>},<br></$fields.Booktitle?>
+		    <$fields.Publisher?>publisher = {<$fields.Publisher/>},<br></$fields.Publisher?>
+		    <$fields.Address?>address = {<$fields.Address/>},<br></$fields.Address?>
+		    <$fields.Volume?>volume = {<$fields.Volume/>},<br></$fields.Volume?>
+		    <$fields.Pages?>pages = {<$fields.Pages/>},<br></$fields.Pages?>
+		    <$fields.Month?>month = {<$fields.Month/>},<br></$fields.Month?>
+		    <$fields.Year?>year = {<$fields.Year/>}}</$fields.Year?></span>
+			</div>
+	  </div>
+	</div>
