@@ -12,14 +12,10 @@
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
-            {% comment %}
-              modifed to use "/index.html" rather than node.url which was broken
-            {% endcomment %}
-            <img src="{{ site.baseurl }}/images/ANU-logo.png" align="top"
-               style="margin:0px 25px 0px 0px; float:left; width:170px;">
-             <a href="{{ site.baseurl }}/index.html" title="Home">{{ site.title }}</a><br>
-            <small>{{ site.tagline }}</small>
+          <h3 class="masthead-title" style="white-space: nowrap; line-height:20px;">
+            <img src="{{ site.baseurl }}/images/ANU-logo.png" align="top" style="margin:0px 4% 0px 2px; display:inline-block; width:30%; max-width:170px; min-width:90px; border:none blue 1px; vertical-align:middle;"><span style="display:inline-block; vertical-align:middle; border:none blue 1px;">
+            <a href="{{ site.baseurl }}/index.html" title="Home">{{ site.title }}</a><br>
+            <small>{{ site.tagline }}</small></span>
           </h3>
         </div>
       </div>

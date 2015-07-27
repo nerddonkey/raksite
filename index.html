@@ -1,8 +1,11 @@
 ---
-layout: homepage
+layout: default
 title: Home Page
 author: Rod Kennedy
 ---
+
+{% include intro.html %}
+{{ '---' | markdownify }}
 
 <div class="posts">
   {% for post in paginator.posts %}

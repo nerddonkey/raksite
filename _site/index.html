@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+  <head>
 	<link href="http://gmpg.org/xfn/11" rel="profile">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -14,9 +14,9 @@
   </title>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/public/css/poole.css">
+	<link rel="stylesheet" href="/public/css/poole-rak.css">
 	<link rel="stylesheet" href="/public/css/syntax.css">
-	<link rel="stylesheet" href="/public/css/lanyon.css">
+	<link rel="stylesheet" href="/public/css/lanyon-rak.css">
 	<link rel="stylesheet" href="/public/css/bibdesk-export.css">
 	<link rel="stylesheet" href="/public/css/raksite.css">
 	<!-- <link rel="stylesheet" href="/public/css/button.css"> -->
@@ -90,9 +90,9 @@
 </head>
 
 
-<body class="theme-base-00">
+  <body class="theme-base-00">
 
-  
+    
 
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
@@ -207,41 +207,38 @@
 </div>
 
 
-  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-  <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <img src="/images/ANU-logo.png" align="top" style="margin:0px 25px 0px 0px; float:left; width:170px;">
-          <a href="/index.html" title="Home">Prof Rodney A. Kennedy</a>
-          <br>
-          <small>College of Engineering and Computer Science</small>
-        </h3>
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title" style="white-space: nowrap; line-height:20px;">
+            <img src="/images/ANU-logo.png" align="top" style="margin:0px 4% 0px 2px; display:inline-block; width:30%; max-width:170px; min-width:90px; border:none blue 1px; vertical-align:middle;"><span style="display:inline-block; vertical-align:middle; border:none blue 1px;">
+            <a href="/index.html" title="Home">Prof Rodney A. Kennedy</a><br>
+            <small>RSEng Engineering, CECS</small></span>
+          </h3>
+        </div>
       </div>
-    </div>
 
-    <div class="container content">
-      <div>
-  <h1 class="post-title">
-    Welcome to My Homepage
-  </h1>
+      <div class="container content">
+        <div>
+  <h1 class="post-title">Welcome</h1>
 
-  <h2 id="biography">Rodney A. Kennedy &middot; Biography</h2>
+  <h2 id="biography">Rodney A.&nbsp;Kennedy &middot; Biography</h2>
 
   <img src="/images/rod_2011b.jpg" align="top" style="margin:5px 25px 5px 0px; float:left; width:30%;">
 
-  <p>Rodney A.&nbsp;Kennedy is Full Professor in Engineering at the Australian National University and is currently the Head of the Applied Signal Processing research group and the Associate Director (Education) within the Research School of Engineering. He is an electrical engineer with research specialization in wireless communications, signal processing and audio signal processing.</p>
+  <p>Rodney A.&nbsp;Kennedy is a Professor in Engineering at the Australian National University and is currently the Head of the Applied Signal Processing research group and the Associate Director (Education) within the Research School of Engineering. He is an electrical engineer with research specialization in wireless communications, signal processing and audio signal processing.</p>
 
   <p>He has been Head of the Departments of Information Engineering and Telecommunications Engineering in the Research School of Information Sciences and Engineering between 1994 and 2008, and Director of Research 2009&ndash;2010. Professor Kennedy has received over 30 external grants and industry contracts/university consultancies including 15 ARC grants. In addition he has a leading participant in major research centers including the Cooperative Research Centre for Robust and Adaptive Systems (CRASys), National ICT Australia (NICTA) and the ARC Communications Research Network (ACoRN).</p>
 
   <p>He is an IEEE Fellow and has published in excess of 350 journal papers, conference papers and patents, and has supervised over 45 PhD students. He was an Associate editor for 11 years in the IEEE Transactions on Communications and a member of a number of journal editorial boards. He is a former QEII Fellow and recipient of anumber awards including the ATERB medal and the UNSW University medal.</p>
-
 </div>
 
-      <hr />
+<hr />
 
-      <div class="posts">
+
+<div class="posts">
   
   <div class="post">
     <h2 class="post-title">
@@ -397,28 +394,27 @@
   
 </div>
 
+      </div>
     </div>
-  </div>
 
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-  <script>
-    (function(document) {
-      var toggle = document.querySelector('.sidebar-toggle');
-      var sidebar = document.querySelector('#sidebar');
-      var checkbox = document.querySelector('#sidebar-checkbox');
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
 
-      document.addEventListener('click', function(e) {
-        var target = e.target;
+        document.addEventListener('click', function(e) {
+          var target = e.target;
 
-        if (!checkbox.checked ||
-          sidebar.contains(target) ||
-          (target === checkbox || target === toggle)) return;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
 
-        checkbox.checked = false;
-      }, false);
-    })(document);
-  </script>
-</body>
-
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
 </html>

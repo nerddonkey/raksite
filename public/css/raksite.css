@@ -1,6 +1,5 @@
 ---
 ---
-
 /* customize the layount, to do: need to consider the mobile version */
 
 .container {
@@ -28,6 +27,16 @@
 .masthead-title {
 	margin-left: 1rem;
 }
+
+/*@media (max-width: 48em) {
+  .masthead-title {
+    text-align: center;
+  }
+  .masthead-title small {
+    display: none;
+  }
+}*/
+
 .page, .post {
 	margin-bottom: 2em;
 }
@@ -75,13 +84,12 @@ td {
 .Bibtex {
 	font-family: menlo, Monaco, Consolas, "Courier New", Courier, monospace;
 	border-radius: 5px;
-  border-color: rgba(28, 211, 255, 1);
+	border-color: rgba(28, 211, 255, 1);
 	background: rgba(28, 211, 255, 0.29);
-
 }
 input[type="button"], button {
 	padding: 2px 6px 0px 6px;
-  font-family: "PT Sans", helvetica, serif;
+	font-family: "PT Sans", helvetica, serif;
 	font-size: 9pt;
 	border-radius: 3px;
 	background: rgba(28, 211, 255, 0.29);
@@ -93,6 +101,7 @@ input[type="button"], button {
 #hide-abstract, #show-abstract, #hide-bibtex, #show-bibtex {
 	position: fixed;
 	left: 11px;
+	display: none;
 }
 #hide-abstract {
 	top: 4rem;
@@ -106,18 +115,30 @@ input[type="button"], button {
 #show-bibtex {
 	top: 10rem;
 }
+@media (min-width: 38em) {
+	#hide-abstract, #show-abstract, #hide-bibtex, #show-bibtex {
+		display: inline;
+	}
+}
 
 /* ornate hr */
 
 hr {
 	display: block;
 	border: 0px;
-	height: 12px;
+	height: 8px;
 	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
-	background-size: 300px;
+	background-size: 200px;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 1.5rem 0rem;
+}
+@media (min-width: 38em) {
+	hr {
+		height: 12px;
+		background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+		background-size: 300px;
+	}
 }
 
 /* code */
