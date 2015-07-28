@@ -18,8 +18,8 @@ port: 4001
 
 # B) Site on ANU CECS servers
 #
-baseurl: http://users.cecs.anu.edu.au/~rod
-destination: /Users/rodneykennedy/Dropbox/Public/raksite
+#baseurl: http://users.cecs.anu.edu.au/~rod
+#destination: /Users/rodneykennedy/Dropbox/Public/raksite
 
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite
 # available at https://dl.dropboxusercontent.com/u/3959788/db-raksite/index.html

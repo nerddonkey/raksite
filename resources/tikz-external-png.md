@@ -14,6 +14,10 @@ resource-categories: [code]
 {% include latex/tikz-ext-png.tex %}
 {% endhighlight %}
 
+### Output png figure <code>myfigure.png</code>
+
+<img src="{{ site.baseurl }}/images/myfigure.png">
+
 ---
 
 ### Notes

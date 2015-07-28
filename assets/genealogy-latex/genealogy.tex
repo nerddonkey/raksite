@@ -11,12 +11,14 @@
 \tikzset{external/force remake} % force remarking of external pdf otherwise will use external pdf
 \tikzsetexternalprefix{fig/} % output the pdf to an existing directory (needs to exist)
 
+% sips: scriptable image processing system.
 \tikzset{png export/.style={
 	external/system call={
 		pdflatex \tikzexternalcheckshellescape
 			-halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
-		sips -s format png --out "\image.png" "\image.pdf" % sips: scriptable image processing system.
-	}}}
+		sips -s format png --out "\image.png" "\image.pdf";
+		sips -s dpiWidth 600 -s dpiHeight 600 -s format png --out "\image-600.png" "\image.pdf";
+		}}}
 
 %6A9FB5 - Lanyon blue
 %B5CFDA - Lanyon blue 50 : 50 White
