@@ -127,7 +127,7 @@ hr {
 	display: block;
 	border: 0px;
 	height: 8px;
-	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+	background-image: url({{ site.baseurl }}/images/pgf-ornament-600.png);
 	background-size: 200px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -135,9 +135,9 @@ hr {
 }
 @media (min-width: 38em) {
 	hr {
-		height: 12px;
-		background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
-		background-size: 300px;
+		height: 16px;
+		background-image: url({{ site.baseurl }}/images/pgf-ornament-600.png);
+		background-size: 400px;
 	}
 }
 

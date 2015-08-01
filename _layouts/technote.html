@@ -22,7 +22,7 @@ layout: plain
           {{ myString | markdownify }}
           <ul>
   			{% endif %}
-        <li><small>[{{ node.date | date_to_string }}]</small> &mdash;
+        <li><small><code>[{{ node.date | date_to_string }}]</code></small> &mdash;
           {% if node.title == page.title %} {{ node.title }} {% else %}
           	<a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>{% endif %}</li>
   		{% endif %}

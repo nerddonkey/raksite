@@ -12,8 +12,6 @@ resource-categories: [code, sphere]
 
 [plot on sphere](https://www.youtube.com/watch?v=NB6rDT4ycVY)
 
----
-
 ### J-Book Macros
 
 [mathtools.pdf](http://texdoc.net/texmf-dist/doc/latex/mathtools/mathtools.pdf)

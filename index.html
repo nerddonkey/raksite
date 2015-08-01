@@ -16,7 +16,7 @@ author: Rod Kennedy
       </a>
     </h2>
     <span class="post-date">{{ post.date | date_to_string }} &mdash; {{ post.author }}</span>
-    {{ post.content }}
+    {{ post.excerpt }}
     {{ '---' | markdownify }}
   </div>
   {% endfor %}
