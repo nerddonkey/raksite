@@ -121,13 +121,19 @@ input[type="button"], button {
 	}
 }
 
+img.matlab {
+    border: 1px solid #AFAFAF;;
+    margin: 20px;
+    padding: 10px;
+}
+
 /* ornate hr */
 
 hr {
 	display: block;
 	border: 0px;
 	height: 8px;
-	background-image: url({{ site.baseurl }}/images/pgf-ornament-600.png);
+	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
 	background-size: 200px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -135,9 +141,9 @@ hr {
 }
 @media (min-width: 38em) {
 	hr {
-		height: 16px;
-		background-image: url({{ site.baseurl }}/images/pgf-ornament-600.png);
-		background-size: 400px;
+		height: 12px;
+		background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+		background-size: 300px;
 	}
 }
 
@@ -154,7 +160,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
-	background-color: rgba(232, 232, 232, 0.2);
+	background-color: rgba(232, 232, 232, 0.5);
 }
 code {
 	padding: 0.1rem;
@@ -162,4 +168,7 @@ code {
 	color: #bf616a;
 	background-color: #ffffff;
 	border-radius: 0px;
+}
+.highlight pre {
+	border: 1px solid #AFAFAF;
 }

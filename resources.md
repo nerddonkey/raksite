@@ -16,7 +16,7 @@ menuranking: 200
 ### {{ category | capitalize }} Index:
 <ul>
 			{% endif %}
-<li><small><code>[{{ node.date| date_to_string }}]</code></small> &mdash;
+<li><small><code>[{{ node.date | date_to_string }}]</code></small> &mdash;
 		<a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
 		{% endif %}
 	{% endfor %}

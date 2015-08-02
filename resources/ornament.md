@@ -20,6 +20,6 @@ resource-categories: [code]
 
 ### Downloads
 
-- <a href="{{ site.baseurl }}/assets/latex/pgf-ornament-generate.tex" download><code>pgf-ornament-generate.tex</code></a>
-- <a href="{{ site.baseurl }}/images/pgf-ornament.png" download><code>pgf-ornament.png</code></a>
-- <a href="{{ site.baseurl }}/images/pgf-ornament-600.png" download><code>pgf-ornament-600.png</code></a>
+- <a href="ornament/pgf-ornament-generate.tex" download><code>pgf-ornament-generate.tex</code></a>
+- <a href="ornament/figures/pgf-ornament.png" download><code>pgf-ornament.png</code></a>
+- <a href="ornament/figures/pgf-ornament-600.png" download><code>pgf-ornament-600.png</code></a>
