@@ -18,14 +18,13 @@ port: 4001
 
 # B) Site on ANU CECS servers
 #
-baseurl: http://users.cecs.anu.edu.au/~rod
+#baseurl: http://users.cecs.anu.edu.au/~rod
 #destination: /Users/rodneykennedy/Dropbox/Public/raksite
 # cd /Users/rodneykennedy/Dropbox/GitHub/raksite; ls -la
 # jekyll build; cd _site; ls -la; cp -rv * /Volumes/public_html
 #
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite
 # available at https://dl.dropboxusercontent.com/u/3959788/db-raksite/index.html
-#
 #baseurl: https://dl.dropboxusercontent.com/u/3959788/db-raksite
 #destination: /Users/rodneykennedy/Dropbox/Public/db-raksite
 
@@ -33,7 +32,7 @@ baseurl: http://users.cecs.anu.edu.au/~rod
 paginate: 5
 
 # excluded from copying to destination
-exclude: [LICENSE.md, README.md, sandbox]
+exclude: [LICENSE.md, README.md, sandbox, assets/*-latex, public/css/sandbox]
 
 # about
 name: Rod Kennedy

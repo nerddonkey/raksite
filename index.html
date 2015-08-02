@@ -17,7 +17,7 @@ author: Rod Kennedy
     </h2>
     <span class="post-date">{{ post.date | date_to_string }} &mdash; {{ post.author }}</span>
     {{ post.excerpt }}
-    {{ '---' | markdownify }}
+    <small><a href="{{ site.baseurl }}{{ post.url }}"> (click title or here to continue to full blog entry)</a></small>
   </div>
   {% endfor %}
 </div>

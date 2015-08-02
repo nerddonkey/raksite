@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Prof Rodney A. Kennedy</title>
- <link href="https://github.com/nerddonkey/raksitehttp://users.cecs.anu.edu.au/~rod/atom.xml" rel="self"/>
- <link href="https://github.com/nerddonkey/raksitehttp://users.cecs.anu.edu.au/~rod/"/>
- <updated>2015-08-01T14:33:02+10:00</updated>
+ <link href="https://github.com/nerddonkey/raksite/atom.xml" rel="self"/>
+ <link href="https://github.com/nerddonkey/raksite/"/>
+ <updated>2015-08-02T18:43:34+10:00</updated>
  <id>https://github.com/nerddonkey/raksite</id>
  <author>
    <name></name>
@@ -16,9 +16,8 @@
    <title>ARC DP150101011 Project Funded</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15.html"/>
    <updated>2014-11-05T00:00:00+11:00</updated>
-   <id>https://github.com/nerddonkey/raksitehttp://users.cecs.anu.edu.au/~rod/blogs/2014-11-05/dp15</id>
-   <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.  More details &lt;a href=&quot;p05-dp15.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
+   <id>https://github.com/nerddonkey/raksite/blogs/2014-11-05/dp15</id>
+   <content type="html">&lt;p&gt;ARC Discovery Project DP150101011, &lt;em&gt;Harnessing Spherical Geometry in Scientific and Engineering Data Processing&lt;/em&gt;, with CI Salman Durrani and PI Jason McEwen (MSSL-UCL) secured research funding. The overall success rate for Discovery Projects for funding commencing in 2015 is 18 per cent.  The grant also came with 2 ICA awards, which have a 13 per cent success rate.&lt;/p&gt;
 </content>
  </entry>
  
@@ -26,7 +25,7 @@
    <title>Science on the Sphere Presentation</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere.html"/>
    <updated>2014-07-01T00:00:00+10:00</updated>
-   <id>https://github.com/nerddonkey/raksitehttp://users.cecs.anu.edu.au/~rod/blogs/2014-07-01/science-sphere</id>
+   <id>https://github.com/nerddonkey/raksite/blogs/2014-07-01/science-sphere</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;assets/s2-transforms-beamer.pdf&quot; target=&quot;\_blank&quot;&gt;Presentation&lt;/a&gt;, &lt;em&gt;“Kernel-Based Formulations of Spatio-Spectral Transform and Three Related Transforms on the Sphere”&lt;/em&gt; given for Royal Society meeting “Science on the Sphere”.&lt;/p&gt;
 
 </content>
@@ -36,7 +35,7 @@
    <title>Three 2014 ICASSP papers</title>
    <link href="https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14.html"/>
    <updated>2014-05-02T00:00:00+10:00</updated>
-   <id>https://github.com/nerddonkey/raksitehttp://users.cecs.anu.edu.au/~rod/blogs/2014-05-02/icassp14</id>
+   <id>https://github.com/nerddonkey/raksite/blogs/2014-05-02/icassp14</id>
    <content type="html">&lt;p&gt;Three 2014 ICASSP papers have been presented in Florence:&lt;/p&gt;
 
 &lt;!--more--&gt;

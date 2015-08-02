@@ -16,7 +16,7 @@ resource-categories: [code]
 
 ### Output png figure <code>figures/pgf-ornament.png</code> (150dpi)
 
-<img src="{{ site.baseurl }}/images/pgf-ornament.png">
+<img src="{{ site.baseurl }}/images/pgf-ornament.png" class="matlab">
 
 ### Downloads
 

@@ -16,11 +16,11 @@ resource-categories: [code]
 
 ### Output png figure <code>figures/myfigure.png</code> (150dpi)
 
-<img src="{{ site.baseurl }}/images/myfigure.png">
+<img src="{{ site.baseurl }}/images/myfigure.png" class="matlab">
 
 ### Output png figure <code>figures/myfigure-600.png</code> (600dpi)
 
-<img src="{{ site.baseurl }}/images/myfigure-600.png">
+<img src="{{ site.baseurl }}/images/myfigure-600.png" class="matlab">
 
 ### Exporting to png notes
 
