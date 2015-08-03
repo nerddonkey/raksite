@@ -63,4 +63,4 @@ Follow the application process described in [Graduate Research][gredres]
 [selfass]: http://cecs.anu.edu.au/future_students/graduate/research/selfassessment
 [preap]: http://cecs.anu.edu.au/future_students/graduate/research/preapplication
 
----
+<hr style="opacity: 0.5">

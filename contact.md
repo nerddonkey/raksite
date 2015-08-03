@@ -53,4 +53,4 @@ Acton ACT 2601
 
 [build115]: http://campusmap.anu.edu.au/displaybldg.asp?no=115
 
----
+<hr style="opacity: 0.5">

@@ -69,4 +69,4 @@ $$
 
 - page 332 Definition 10.2 and 10.3; Is there an misprint at this location "...for all f in " - H or L2(omega)?
 
----
+<hr style="opacity: 0.5">

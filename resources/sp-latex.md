@@ -16,7 +16,7 @@ resource-categories: [code, sphere]
 
 [mathtools.pdf](http://texdoc.net/texmf-dist/doc/latex/mathtools/mathtools.pdf)
 
-{% highlight latex %}
+{% highlight latex tabsize=3 %}
 
 \usepackage{amsmath}
 \usepackage{mathtools}

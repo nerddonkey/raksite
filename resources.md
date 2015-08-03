@@ -24,3 +24,5 @@ menuranking: 200
 </ul>
 	{% endif %}
 {% endfor %}
+
+<hr style="opacity: 0.5">

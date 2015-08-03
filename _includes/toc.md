@@ -4,4 +4,4 @@
 * dummy
 {:toc}
 
----
+<hr style="opacity: 0.5">

@@ -10,52 +10,49 @@ resource-categories: [code]
 
 This is material for a html export template for BibDesk.
 
-### Default Item
+### BibDesk Template Default Item &mdash; [<code>raksite-default-item.html</code>][raksite-default-item]
 
-{% highlight html tabsize=3 %}
+{% highlight css tabsize=3 %}
 {% include snippets/raksite-default-item.html %}
 {% endhighlight %}
 
-### Main Page
+### BibDesk Template Main Page &mdash; [<code>raksite-main-page.html</code>][raksite-main-page]
 
-{% highlight html tabsize=3 %}
+{% highlight css tabsize=3 %}
 {% include snippets/raksite-main-page.html %}
 {% endhighlight %}
 
-### css
+### Style File  &mdash; [<code>bibdesk-export.css</code>][bibdesk-export]
 
 {% highlight css tabsize=3 %}
 {% include snippets/bibdesk-export.css %}
 {% endhighlight %}
 
-### javascript
+### javascript  &mdash; [<code>toggle.js</code>][toggle]
 
 {% highlight javascript tabsize=3 %}
-<script type="text/javascript">
-	function toggle(id) {
-		e = document.getElementById(id);
-		if (e.style.display == "none")
-			e.style.display = "inline";
-		else
-			e.style.display = "none";
-	}
-</script>
+{% include js/toggle.js %}
 {% endhighlight %}
 
 ### Export Example
 
-#### Source html
+#### BibDesk Exported html Source
 
 {% highlight html tabsize=3 %}
-{% include snippets/icassp14p.html %}
+{% include snippets/bibdesk-demo.html %}
 {% endhighlight %}
 
-#### Actual appearance
+#### BibDesk Exported html in Browser (with css <code>bibdesk-export.css</code>)
 
-{% include snippets/icassp14p.html %}
+{% include snippets/bibdesk-demo.html %}
 
 ### Downloads
 
-- <a href="bibdesk-export/raksite-default-item.html" download><code>raksite-default-item.html</code></a>
-- <a href="bibdesk-export/raksite-main-page.html" download><code>raksite-main-page.html</code></a>
-- <a href="bibdesk-export/bibdesk-export.css" download><code>bibdesk-export.css</code></a>
+- [raksite-default-item.html][raksite-default-item]
+- [raksite-main-page.html][raksite-main-page]
+- [bibdesk-export.css][bibdesk-export]
+
+[raksite-default-item]: bibdesk-export/raksite-default-item.html
+[raksite-main-page]:  bibdesk-export//raksite-main-page.html
+[bibdesk-export]: bibdesk-export/bibdesk-export.css
+[toggle]: bibdesk-export/toggle.js

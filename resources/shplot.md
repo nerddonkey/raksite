@@ -8,7 +8,7 @@ resource-categories: [technote, sphere]
 
 {% include toc.md %}
 
-![too]({{ site.baseurl }}/images/new.png){: height="200px" width="200px"}
+![too]({{ site.baseurl }}/images/new.png){: height="250px" width="250px"}
 
 ## Matlab Code
 

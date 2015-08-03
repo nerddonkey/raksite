@@ -25,7 +25,7 @@ $$
 {% endcomment %}
 But it serves as an illustration of a lot of aspects of coding in <abbr title="MATLAB&reg; is a high-level technical computing language">MATLAB&reg;</abbr>.
 
-{% highlight matlab %}
+{% highlight matlab tabsize=3 %}
 function foursynth( kmax, T )
     k=[-kmax:kmax]; % Fourier coefficient index span
     omega0=2*pi/T; % fundamental frequency (rad/sec); T - period

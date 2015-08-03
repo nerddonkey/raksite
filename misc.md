@@ -40,7 +40,8 @@ A bit of signal processing on my backyard astro captures (sorry about the music)
 	frameborder="0" allowfullscreen>
 </iframe>
 </div>
----
+
+<hr style="opacity: 0.5">
 
 [^1]: This is dedicated to [Bobby][bobby], who is seen briefly in background at around time 0:20.
 [bobby]: http://www.canberratimes.com.au/act-news/missing-windsurfers-body-found-in-lake-tuggeranong-20131224-2zvxk.html

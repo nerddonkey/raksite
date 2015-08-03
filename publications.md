@@ -68,4 +68,5 @@ menuranking: 60
 ## 2005 Publications
 
 {% include snippets/2005pubs.html %}
----
+
+<hr style="opacity: 0.5">
