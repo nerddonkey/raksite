@@ -8,9 +8,6 @@ resource-categories: [code, sphere]
 
 {% include toc.md %}
 
-### You-tube Video
-
-[plot on sphere](https://www.youtube.com/watch?v=NB6rDT4ycVY)
 
 ### J-Book Macros
 
@@ -32,3 +29,7 @@ resource-categories: [code, sphere]
 	\sharm[s]{m}{\ell} \quad \sharm{m}{\ell}
 \]
 {% endhighlight %}
+
+### You-tube Video
+
+[plot on sphere](https://www.youtube.com/watch?v=NB6rDT4ycVY)

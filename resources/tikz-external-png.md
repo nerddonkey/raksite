@@ -8,21 +8,23 @@ resource-categories: [code]
 
 {% include toc.md %}
 
-### Relevant latex code
+{% capture filePath %}latex/tikz-ext-png.tex{% endcapture %}
+
+### Latex code &mdash; <a href="{{ filePath }}"><code>tikz-ext-png.tex</code></a>
 
 {% highlight latex tabsize=3 %}
-{% include latex/tikz-ext-png.tex %}
+{% include_relative latex/tikz-ext-png.tex %}
 {% endhighlight %}
 
-### Output png figure <code>figures/myfigure.png</code> (150dpi)
+### Output png figure &mdash; [<code>myfigure.png</code>](latex/figures/myfigure.png) (150dpi)
 
-<img src="{{ site.baseurl }}/images/myfigure.png" class="matlab">
+![myfigure](latex/figures/myfigure.png){: class="matlab"}
 
-### Output png figure <code>figures/myfigure-600.png</code> (600dpi)
+### Output png figure &mdash; [<code>myfigure-600.png</code>](latex/figures/myfigure-600.png) (600dpi)
 
-<img src="{{ site.baseurl }}/images/myfigure-600.png" class="matlab">
+![myfigure-600](latex/figures/myfigure-600.png){: class="matlab"}
 
-### Exporting to png notes
+### Exporting to png Notes
 
 - this is always done by first generating the vector graphic pdf and then rasterizing to png
 - png is web friendly and defaults with a transparent background
@@ -41,37 +43,18 @@ resource-categories: [code]
 	- good: <code>sips</code> is pre-installed on OSX
 	- bad: it won't let you rasterize the pdf at other than a fixed dpi (150)
 
-### Debugging
+### Debugging Latex code &mdash; [<code>tikz-ext-png-debug.tex</code>](latex/tikz-ext-png-debug.tex)
 
 Use the modified latex:
 
 {% highlight latex tabsize=3 %}
-\tikzset{png export/.style={
-	external/system call={
-		% print some info to console
-			echo "\\n---- Checking Imagemagick&reg;/convert available ----\\n\\nPATH:" $PATH "\\n";
-			which convert; echo; convert -version;
-		pdflatex \tikzexternalcheckshellescape
-			-halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
-		% convert from pdf to png
-		convert -units pixelsperinch -density 150 "\image.pdf" "\image.png";
-		convert -units pixelsperinch -density 600 "\image.pdf" "\image-600.png";
-}}}
+{% include_relative latex/tikz-ext-png.tex %}
 {% endhighlight %}
 
 If <code>convert</code> is succesfully found should induce this portion of the console message:
 
 ~~~
----- Checking Imagemagick/convert available ----
-
-PATH: /usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/usr/local/bin:/opt/local/bin
-
-/opt/local/bin/convert
-
-Version: ImageMagick 6.9.0-0 Q16 x86_64 2015-07-29 http://www.imagemagick.org
-Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
-Features: DPC Modules
-Delegates (built-in): bzlib djvu fftw fontconfig freetype gslib jbig jng jp2 jpeg lcms ltdl lzma openexr png ps tiff webp x xml zlib
+{% include_relative latex/figures/debug-console.tex %}
 ~~~
 
 If <code>convert</code> cannot be found or your <code>PATH</code> can't point to it then hardwire the path such as follows:<br>
@@ -82,8 +65,9 @@ If silent weird things are happening then comment out the externalization like t
 
 ### Downloads
 
-- <a href="{{ site.baseurl }}/assets/latex/tikz-ext-png.tex" download><code>tikz-ext-png.tex</code></a>
-- <a href="{{ site.baseurl }}/assets/latex/tikz-ext-png.pdf" download><code>tikz-ext-png.pdf</code></a>
-- <a href="{{ site.baseurl }}/assets/latex/tikz-ext-png-debug.tex" download><code>tikz-ext-png-debug.tex</code></a>
-- <a href="{{ site.baseurl }}/images/myfigure.png" download><code>myfigure.png</code></a>
-- <a href="{{ site.baseurl }}/images/myfigure-600.png" download><code>myfigure-600.png</code></a>
+- [<code>tikz-ext-png.tex</code>](latex/tikz-ext-png.tex)
+- [<code>tikz-ext-png-debug.tex</code>](latex/tikz-ext-png-debug.tex)
+- [<code>tikz-ext-png.pdf</code>](latex/tikz-ext-png.pdf)
+
+- [<code>myfigure.png</code>](latex/figures/myfigure.png)
+- [<code>myfigure-600.png</code>](latex/figures/myfigure-600.png)

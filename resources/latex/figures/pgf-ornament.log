@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  31 JUL 2015 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  7 AUG 2015 13:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -534,11 +534,11 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 *geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
-* driver: \Gm@driver
+* driver: \Gm@driver 
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes:
+* modes: 
 * h-part:(L,W,R)=(22.76219pt, 568.77061pt, 22.76219pt)
 * v-part:(T,H,B)=(22.76219pt, 749.4456pt, 22.76219pt)
 * \paperwidth=614.295pt
@@ -611,7 +611,7 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.12}).
 
 (/Users/rodneykennedy/Library/texmf/tex/generic/vectorian/vectorian88.pgf) [1
 
-] )
+] ) 
 Here is how much of TeX's memory you used:
  21041 strings out of 493093
  549870 string characters out of 6134989
@@ -627,3 +627,4 @@ PDF statistics:
  7 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

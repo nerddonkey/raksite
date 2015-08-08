@@ -8,18 +8,22 @@ resource-categories: [code]
 
 {% include toc.md %}
 
-### Relevant latex code
+{% capture latexPath %}latex/pgf-ornament-generate.tex{% endcapture %}
+{% capture pngPath %}latex/figures/pgf-ornament.png{% endcapture %}
+{% capture pngPath2 %}latex/figures/pgf-ornament-600.png{% endcapture %}
+
+### Latex code &mdash; [<code>{{ latexPath | split: "/" | last }}</code>]({{ latexPath }})
 
 {% highlight latex tabsize=3 %}
-{% include latex/pgf-ornament-generate.tex %}
+{% include_relative {{ latexPath }} %}
 {% endhighlight %}
 
-### Output png figure <code>figures/pgf-ornament.png</code> (150dpi)
+### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
-<img src="{{ site.baseurl }}/images/pgf-ornament.png" class="matlab">
+![fig]({{ pngPath }}){: class="matlab"}
 
 ### Downloads
 
-- <a href="ornament/pgf-ornament-generate.tex" download><code>pgf-ornament-generate.tex</code></a>
-- <a href="ornament/figures/pgf-ornament.png" download><code>pgf-ornament.png</code></a>
-- <a href="ornament/figures/pgf-ornament-600.png" download><code>pgf-ornament-600.png</code></a>
+- [<code>{{ latexPath | split: "/" | last }}</code>]({{ latexPath }})
+- [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
+- [<code>{{ pngPath2 | split: "/" | last }}</code>]({{ pngPath2 }})

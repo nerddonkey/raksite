@@ -8,30 +8,35 @@ resource-categories: [code]
 
 {% include toc.md %}
 
+{% capture defaultItem %}bibdesk-export/raksite-default-item.html{% endcapture %}
+{% capture mainPage %}bibdesk-export/raksite-main-page.html{% endcapture %}
+{% capture bibexp %}bibdesk-export/bibdesk-export.css{% endcapture %}
+{% capture toggle %}bibdesk-export/toggle.js{% endcapture %}
+
 This is material for a html export template for BibDesk.
 
-### BibDesk Template Default Item &mdash; [<code>raksite-default-item.html</code>][raksite-default-item]
+### BibDesk Template Default Item &mdash; [<code>{{ defaultItem | split: "/" | last }}</code>]({{ defaultItem }})
 
 {% highlight css tabsize=3 %}
-{% include snippets/raksite-default-item.html %}
+{% include_relative {{ defaultItem }} %}
 {% endhighlight %}
 
-### BibDesk Template Main Page &mdash; [<code>raksite-main-page.html</code>][raksite-main-page]
+### BibDesk Template Main Page &mdash; [<code>{{ mainPage | split: "/" | last }}</code>]({{ mainPage }})
 
 {% highlight css tabsize=3 %}
-{% include snippets/raksite-main-page.html %}
+{% include_relative {{ mainPage }} %}
 {% endhighlight %}
 
-### Style File  &mdash; [<code>bibdesk-export.css</code>][bibdesk-export]
+### Style file &mdash; [<code>{{ bibexp | split: "/" | last }}</code>]({{ bibexp }})
 
 {% highlight css tabsize=3 %}
-{% include snippets/bibdesk-export.css %}
+{% include_relative {{ bibexp }} %}
 {% endhighlight %}
 
-### javascript  &mdash; [<code>toggle.js</code>][toggle]
+### Javascript &mdash; [<code>{{ toggle | split: "/" | last }}</code>]({{ toggle }})
 
 {% highlight javascript tabsize=3 %}
-{% include js/toggle.js %}
+{% include_relative {{ toggle }} %}
 {% endhighlight %}
 
 ### Export Example
@@ -39,20 +44,16 @@ This is material for a html export template for BibDesk.
 #### BibDesk Exported html Source
 
 {% highlight html tabsize=3 %}
-{% include snippets/bibdesk-demo.html %}
+{% include_relative bibdesk-export/bibdesk-demo.html %}
 {% endhighlight %}
 
 #### BibDesk Exported html in Browser (with css <code>bibdesk-export.css</code>)
 
-{% include snippets/bibdesk-demo.html %}
+{% include_relative bibdesk-export/bibdesk-demo.html %}
 
 ### Downloads
 
-- [raksite-default-item.html][raksite-default-item]
-- [raksite-main-page.html][raksite-main-page]
-- [bibdesk-export.css][bibdesk-export]
-
-[raksite-default-item]: bibdesk-export/raksite-default-item.html
-[raksite-main-page]:  bibdesk-export//raksite-main-page.html
-[bibdesk-export]: bibdesk-export/bibdesk-export.css
-[toggle]: bibdesk-export/toggle.js
+- [<code>{{ defaultItem | split: "/" | last }}</code>]({{ defaultItem }})
+- [<code>{{ mainPage | split: "/" | last }}</code>]({{ mainPage }})
+- [<code>{{ bibexp | split: "/" | last }}</code>]({{ bibexp }})
+- [<code>{{ toggle | split: "/" | last }}</code>]({{ toggle }})
