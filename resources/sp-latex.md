@@ -1,17 +1,17 @@
 ---
 layout: technote
-title: Spherical Harmonics Macros
+title: Spherical Harmonics LaTeX Macros
 author: Rod Kennedy
 date: 18 Jul 2015
 resource-categories: [code, sphere]
+published: true
 ---
 
 {% include toc.md %}
 
-
 ### J-Book Macros
 
-[mathtools.pdf](http://texdoc.net/texmf-dist/doc/latex/mathtools/mathtools.pdf)
+The key package is [mathtools.pdf](http://texdoc.net/texmf-dist/doc/latex/mathtools/mathtools.pdf)
 
 {% highlight latex tabsize=3 %}
 

@@ -1,6 +1,9 @@
 function [ R ] = RZRYRZdeg( alpha, beta, gamma )
-%RZRYRZ Generates the 3x3 matrix corresponding the the Euler angles
+%RZRYRZDEG Generates the 3x3 'zyz' matrix corresponding the Euler angles
 %   arguments in deg
+%   gamma is the first rotation about the z-axis
+%   beta is the second rotation about the y-axis
+%   alpha is the third rotation about the z-axis
 	alpha=alpha*pi/180;
 	beta=beta*pi/180;
 	gamma=gamma*pi/180;

@@ -4,8 +4,7 @@
 
 .container {
 	max-width: 32rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding: 0rem 1rem 0rem 1rem;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -15,8 +14,7 @@
 @media (min-width: 38em) {
 	.container {
 		max-width: 60rem;
-		padding-left: 3rem;
-		padding-right: 2rem;
+		padding: 0rem 2rem 0rem 3rem;
 	}
 }
 .masthead {
@@ -67,9 +65,15 @@ th {
 td {
 	white-space: nowrap;
 }
+
+/* allow scrolling of wide blocks using <div class="wide-block" ...> */
+
 .wide-block {
 	overflow-x: scroll;
 }
+
+/* push toggle button tightly up into top left corner */
+
 .sidebar-toggle {
 	position: fixed;
 	top: .2rem;
@@ -81,6 +85,9 @@ td {
 .sidebar-nav-item.active, a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
 	background-color: rgba(255, 255, 255, .15);
 }
+
+/* control the rendering of bibtex experted from bibdesk */
+
 .Bibtex {
 	font-family: menlo, Monaco, Consolas, "Courier New", Courier, monospace;
 	border-radius: 5px;
@@ -132,7 +139,7 @@ hr {
 	display: block;
 	border: 0px;
 	height: 8px;
-	background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+	background-image: url({{ site.baseurl }}/images/hr-ornament.png);
 	background-size: 200px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -142,7 +149,7 @@ hr {
 @media (min-width: 38em) {
 	hr {
 		height: 12px;
-		background-image: url({{ site.baseurl }}/images/pgf-ornament.png);
+		background-image: url({{ site.baseurl }}/images/hr-ornament.png);
 		background-size: 300px;
 	}
 }

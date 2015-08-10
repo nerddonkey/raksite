@@ -4,6 +4,7 @@ title: Categories for technical pages
 author: Rod Kennedy
 date: 12 Jul 2015
 resource-categories: [technote]
+published: false
 ---
 
 - **technote** -- short technical note with latex, for example, $$Y_{\ell}^{m}(\theta,\phi)$$

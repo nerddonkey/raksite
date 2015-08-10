@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 echo "deploy-anu"
 pwd
 which -a jekyll
@@ -8,7 +9,7 @@ jekyll build --config _config.yml,_config-anu.yml
 cd _site
 ls -l *.html
 
-cp -rv * /Volumes/rod/public_html
+cp -rv * /Volumes/public_html
 
 open "http://users.cecs.anu.edu.au/~rod/"
 

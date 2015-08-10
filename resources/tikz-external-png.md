@@ -4,25 +4,32 @@ title: TikZ&ndash;tikzexternalize to png
 author: Rod Kennedy
 date: 21 Jul 2015
 resource-categories: [code]
+downloads: [latex/tikz-ext-png.tex, latex/tikz-ext-png-debug.tex, latex/tikz-ext-png.pdf, latex/figures/myfigure.png, latex/figures/myfigure-600.png]
+published: true
 ---
 
 {% include toc.md %}
 
-{% capture filePath %}latex/tikz-ext-png.tex{% endcapture %}
+{% capture latexPath %}{{ page.downloads[0] }}{% endcapture %}
+{% capture latexPath2 %}{{ page.downloads[1] }}{% endcapture %}
+{% capture pngPath %}{{ page.downloads[3] }}{% endcapture %}
+{% capture pngPath2 %}{{ page.downloads[4] }}{% endcapture %}
 
-### Latex code &mdash; <a href="{{ filePath }}"><code>tikz-ext-png.tex</code></a>
+### Latex code &mdash; [<code>{{ latexPath | split: "/" | last }}</code>]({{ latexPath }})
+
+Here we render out two png files: one at 150dpi and a second at 600dpi.
 
 {% highlight latex tabsize=3 %}
-{% include_relative latex/tikz-ext-png.tex %}
+{% include_relative {{ latexPath }} %}
 {% endhighlight %}
 
-### Output png figure &mdash; [<code>myfigure.png</code>](latex/figures/myfigure.png) (150dpi)
+### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
-![myfigure](latex/figures/myfigure.png){: class="matlab"}
+![fig1]({{ pngPath }}){: class="matlab"}
 
-### Output png figure &mdash; [<code>myfigure-600.png</code>](latex/figures/myfigure-600.png) (600dpi)
+### Output png figure &mdash; [<code>{{ pngPath2 | split: "/" | last }}</code>]({{ pngPath2 }}) (600dpi)
 
-![myfigure-600](latex/figures/myfigure-600.png){: class="matlab"}
+![fig2]({{ pngPath2 }}){: class="matlab"}
 
 ### Exporting to png Notes
 
@@ -41,20 +48,20 @@ resource-categories: [code]
  [sips](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/sips.1.html) &mdash; scriptable image processing system
 	- use: <code>sips -s format png --out "\image.png" "\image.pdf";</code>
 	- good: <code>sips</code> is pre-installed on OSX
-	- bad: it won't let you rasterize the pdf at other than a fixed dpi (150)
+	- bad: it won't let you rasterize the pdf at other than a fixed 150dpi.
 
-### Debugging Latex code &mdash; [<code>tikz-ext-png-debug.tex</code>](latex/tikz-ext-png-debug.tex)
+### Debugging Latex code &mdash; [<code>{{ latexPath2 | split: "/" | last }}</code>]({{ latexPath2 }})
 
 Use the modified latex:
 
 {% highlight latex tabsize=3 %}
-{% include_relative latex/tikz-ext-png.tex %}
+{% include_relative {{ latexPath2 }} %}
 {% endhighlight %}
 
 If <code>convert</code> is succesfully found should induce this portion of the console message:
 
 ~~~
-{% include_relative latex/figures/debug-console.tex %}
+{% include_relative latex/figures/debug-console.log %}
 ~~~
 
 If <code>convert</code> cannot be found or your <code>PATH</code> can't point to it then hardwire the path such as follows:<br>
@@ -62,12 +69,7 @@ If <code>convert</code> cannot be found or your <code>PATH</code> can't point to
 
 If silent weird things are happening then comment out the externalization like this <code>%\tikzexternalize</code>.  This will let latex stop and display errors.
 
-
 ### Downloads
 
-- [<code>tikz-ext-png.tex</code>](latex/tikz-ext-png.tex)
-- [<code>tikz-ext-png-debug.tex</code>](latex/tikz-ext-png-debug.tex)
-- [<code>tikz-ext-png.pdf</code>](latex/tikz-ext-png.pdf)
-
-- [<code>myfigure.png</code>](latex/figures/myfigure.png)
-- [<code>myfigure-600.png</code>](latex/figures/myfigure-600.png)
+{% for dd in page.downloads %}{% capture filePath %}{{dd}}{% endcapture %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ filePath }}){% endfor %}

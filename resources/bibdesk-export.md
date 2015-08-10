@@ -4,14 +4,16 @@ title: BibDesk Publication html Export
 author: Rod Kennedy
 date: 1 Aug 2015
 resource-categories: [code]
+downloads: [bibdesk-export/raksite-default-item.html, bibdesk-export/raksite-main-page.html, bibdesk-export/bibdesk-export.css, bibdesk-export/toggle.js]
+published: true
 ---
 
 {% include toc.md %}
 
-{% capture defaultItem %}bibdesk-export/raksite-default-item.html{% endcapture %}
-{% capture mainPage %}bibdesk-export/raksite-main-page.html{% endcapture %}
-{% capture bibexp %}bibdesk-export/bibdesk-export.css{% endcapture %}
-{% capture toggle %}bibdesk-export/toggle.js{% endcapture %}
+{% capture defaultItem %}{{page.downloads[0]}}{% endcapture %}
+{% capture mainPage %}{{page.downloads[1]}}{% endcapture %}
+{% capture bibexp %}{{page.downloads[2]}}{% endcapture %}
+{% capture toggle %}{{page.downloads[3]}}{% endcapture %}
 
 This is material for a html export template for BibDesk.
 
@@ -53,7 +55,5 @@ This is material for a html export template for BibDesk.
 
 ### Downloads
 
-- [<code>{{ defaultItem | split: "/" | last }}</code>]({{ defaultItem }})
-- [<code>{{ mainPage | split: "/" | last }}</code>]({{ mainPage }})
-- [<code>{{ bibexp | split: "/" | last }}</code>]({{ bibexp }})
-- [<code>{{ toggle | split: "/" | last }}</code>]({{ toggle }})
+{% for dd in page.downloads %}{% capture filePath %}{{ dd }}{% endcapture %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){% endfor %}

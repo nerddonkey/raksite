@@ -8,7 +8,7 @@ tagline: RSEng Engineering, CECS
 description: 'Website of<br><b>Prof Rodney A. Kennedy</b>'
 hometitle: Home Page
 theme: theme-base-00
-resource-categories: [technote, code, paper, sphere]
+resource-categories: [technote, code, paper, sphere, misc]
 excerpt_separator: <!--more-->
 
 # A) Site served up locally usually on http://127.0.0.1:4000/
