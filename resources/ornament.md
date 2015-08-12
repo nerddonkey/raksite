@@ -41,7 +41,7 @@ Here we render ornament 88.  There are 89 ornaments, see instructions [ornaments
 
 ### Output png figure &mdash; [<code>{{ pngPath2 | split: "/" | last }}</code>]({{ pngPath2 }})
 
-![fig]({{ pngPath2 }}){: width="200", class="matlab"}
+![fig]({{ pngPath2 }}){: class="matlab"}
 
 ### Downloads
 

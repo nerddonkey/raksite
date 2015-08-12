@@ -39,6 +39,7 @@
 	margin-bottom: 2em;
 }
 .post-date {
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
 	margin-top: -0.5rem;
 	margin-bottom: 0.5rem;
 	color: #9a9a9a;
@@ -174,7 +175,7 @@ pre {
 code {
 	padding: 0.1rem;
 	font-size: 85%;
-	color: #bf616a;
+	color: #7f4f4f;  /*color: #bf616a;*/
 	background-color: #ffffff;
 	border-radius: 0px;
 }

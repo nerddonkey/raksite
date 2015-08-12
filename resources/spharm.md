@@ -1,10 +1,10 @@
 ---
 layout: technote
-title: Book Spherical Harmonic Code
+title: Spherical Harmonic Plotting with MATLAB&reg;
 author: Rod Kennedy
 date: 6 Aug 2015
 resource-categories: [sphere]
-downloads: [matlab/generate_spherical_harmonic.m, matlab/RZRYRZdeg.m, matlab/shex_01.m, matlab/figures/shex_01.png]
+downloads: [matlab/generate_spherical_harmonic.m, matlab/RZRYRZdeg.m, matlab/shex_01.m, matlab/figures/shex_01.png, matlab/shex_02.m, matlab/figures/shex_02.png]
 published: true
 ---
 
@@ -47,6 +47,24 @@ Here we pick one spherical harmonic corresponding to $$\ell=8$$ and $$m=7$$ and 
 ##### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
 ![png]({{pngPath}}){: width="750px" class="matlab"}
+
+
+{% capture exa %}{{page.downloads[4]}}{% endcapture %}
+
+#### 2) MATLAB&reg; Code [<code>{{ exa | split: "/" | last }}</code>]({{ exa }})
+
+Here we overlay patches of a spherical harmonic on a transparent sphere.
+
+{% highlight matlab tabsize=3 %}
+{% include_relative {{ exa }} %}
+{% endhighlight %}
+
+{% capture pngPath %}{{page.downloads[5]}}{% endcapture %}
+
+##### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
+
+![png]({{pngPath}}){: width="450px" class="matlab"}
+
 
 ### Downloads
 
