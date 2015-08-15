@@ -32,7 +32,7 @@ port: 4001
 paginate: 5
 
 # excluded from copying to destination
-exclude: [LICENSE.md, README.md, sandbox, assets/*latex, public/css/sandbox, ./*.sh]
+exclude: [LICENSE.md, README.md, sandbox, assets/*latex, public/css/sandbox, anu-*.sh]
 
 # about
 name: Rod Kennedy
