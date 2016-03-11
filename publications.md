@@ -9,11 +9,15 @@ menuranking: 60
 {% include toc.md %}
 
 <div>
-	<button id="hide-abstract" class="button" style="width:39px">Abs<b><font face="menlo">-</font></b></button>
-	<button id="show-abstract" class="button" style="width:39px">Abs<font face="menlo">+</font></button>
-	<button id="hide-bibtex" class="button" style="width:39px">Bib<b><font face="menlo">-</font></b></button>
-	<button id="show-bibtex" class="button" style="width:39px">Bib<b><font face="menlo">+</font></b></button>
+	<button id="hide-abstract" class="button" style="width:39px; height:25px">Abs<b><font face="menlo">-</font></b></button>
+	<button id="show-abstract" class="button" style="width:39px; height:25px">Abs<font face="menlo">+</font></button>
+	<button id="hide-bibtex" class="button" style="width:39px; height:25px">Bib<b><font face="menlo">-</font></b></button>
+	<button id="show-bibtex" class="button" style="width:39px; height:25px">Bib<b><font face="menlo">+</font></b></button>
 </div>
+
+## 2016 Publications
+
+{% include snippets/2016pubs.html %}
 
 ## 2015 Publications
 

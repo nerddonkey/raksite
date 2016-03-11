@@ -1,6 +1,7 @@
 # Permalinks, use of `relative_permalinks` ensures post links from the index work properly.
 permalink: /blogs/:year-:month-:day/:title.html
-relative_permalinks: true
+# relative_permalinks: true  In Jekyll 3 and above, relative permalinks have been deprecated
+gems: [jekyll-paginate]
 
 # Setup
 title: Prof Rodney A. Kennedy
@@ -22,7 +23,7 @@ port: 4001
 #destination: /Users/rodneykennedy/Dropbox/Public/raksite
 # cd /Users/rodneykennedy/Dropbox/GitHub/raksite; ls -la
 # jekyll build; cd _site; ls -la; cp -rv * /Volumes/public_html
-#
+
 # C) Site hosted on Dropbox ~/Dropbox/Public/raksite
 # available at https://dl.dropboxusercontent.com/u/3959788/db-raksite/index.html
 #baseurl: https://dl.dropboxusercontent.com/u/3959788/db-raksite

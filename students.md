@@ -16,31 +16,40 @@ menuranking: 40
 
 PhD&nbsp;Student | Topic| Start&nbsp;Date
 :-: | :-: | :-:
-[Usama Elahi](http://www.uet.edu.pk/faculties/facultiesinfo/facultyinfo?fac_id=841) | Harnessing Spherical Geometry in Data Processing | Aug 2015
-[Alice Bates](http://people.cecs.anu.edu.au/user/5215) | Spherical Biological Signals Processing | Feb 2014
-[Yirui Cong](http://people.cecs.anu.edu.au/user/5178) | Mobility Models and Analysis in Ad Hoc Networks | Dec 2013
-[Ni Ding](http://people.cecs.anu.edu.au/user/4928) | Cross-layer Transmission Control in Wireless | Jul 2013
+[Ni Ding][ni-home]         | Cross-layer Transmission Control in Wireless | 07 Jan 2013
+[Yirui Cong][yirui-home]   | Mobility Models and Analysis in Ad Hoc Networks | 02 Dec 2013
+[Alice Bates][alice-home]  | Spherical Biological Signals Processing | 17 Feb 2014
+[Noman Akbar][noman-home]  | Massive MIMO | 30 Mar 2015
+[Yuting Fang][yuting-home] | Molecular Communications| 29 Sep 2015
+[Usama Elahi][usama-home]  | Harnessing Spherical Geometry in Data Processing | Sep 2015
 
 </div>
+
+[ni-home]: http://people.cecs.anu.edu.au/user/4928
+[yirui-home]: http://people.cecs.anu.edu.au/user/5178
+[alice-home]: http://people.cecs.anu.edu.au/user/5215
+[noman-home]: http://people.cecs.anu.edu.au/user/5492
+[yuting-home]: http://people.cecs.anu.edu.au/user/5613
+[usama-home]: http://people.cecs.anu.edu.au/user/5616
 
 ---
 
 ## Recent Past PhD Students
 
-### PhD Students With Thesis Under Examination
+<!-- ### PhD Students With Thesis Under Examination -->
 
-- [Yibeltal Alem](http://people.cecs.anu.edu.au/user/4441) --- sparse spherical processing
-- [Shahriar Etemadi Tajbakhsh](http://people.cecs.anu.edu.au/user/4108) --- cooperative network coding
 
 ### Recently Graduated PhD Students
 
-- [Dr Prasad Samarasinghe 2014](http://www.lankabell.com/lanka_bell_corporate_profile.htm) --- Managing Director Lanka Bell
-- Dr Daniel Chae 2014 --- SK telecom -- South Korea Telecom
-- [Dr Nicolo Malagutti 2014](http://people.cecs.anu.edu.au/user/4029) --- ANU Casual Lecturer
-- [Dr Zubair Khalid 2013](http://www.zubairkhalid.org/home.html) --- ARC funded postdoc at ANU
-- [Dr Ali Nasir 2013](http://people.cecs.anu.edu.au/user/3835) --- ARC funded postdoc at ANU
-- [Dr Karan Zhang 2012](http://www.lms.lnt.de/en/people/staff/mengqiu-zhang.php)  --- University of Erlangen-Nuremberg
-- [Dr Pradeepa Samarasinghe 2011](http://computing.sliit.lk/researcher/dr-pradeepa-samarasinghe/) --- Senior Lecturer SIIT
+- [Yibeltal Alem 2015](http://people.cecs.anu.edu.au/user/4441) --- Casual Lecturer Universty of Canberra, Australia
+- [Shahriar Etemadi Tajbakhsh 2015](http://www.eng.ox.ac.uk/jpc/group.html) --- Postdoctoral Research Assistant, Department of Engineering Science, University of Oxford, United Kingdom
+- [Dr Prasad Samarasinghe 2014](http://www.lankabell.com/lanka_bell_corporate_profile.htm) --- Managing Director, Lanka Bell, Sri Lanka
+- Dr Daniel Chae 2014 --- SK telecom (South Korea Telecom), South Korea
+- [Dr Nicolo Malagutti 2014](http://people.cecs.anu.edu.au/user/4029) --- ANU Casual Lecturer, Australia
+- [Dr Zubair Khalid 2013](http://www.zubairkhalid.org/home.html) --- Assistant Professor, Department of Electrical Engineering, School of Science and Engineering, Lahore University of Management Sciences (LUMS), Pakistan
+- [Dr Ali Nasir 2013](http://seecs.nust.edu.pk/faculty/alinasir.html) --- Assistant Professor, Department of Electrical Engineering, School of Electrical Engineering and Computer Science (SEECS), National University of Sciences and Technology (NUST), Pakistan
+- [Dr Karan Zhang 2012](http://www.lms.lnt.de/en/people/staff/mengqiu-zhang.php)  --- Formally, University of Erlangen-Nuremberg, Germany
+- [Dr Pradeepa Samarasinghe 2011](http://computing.sliit.lk/researcher/dr-pradeepa-samarasinghe/) --- Head, Department of Information Technology, Faculty of Computing, Sri Lanka Institute of Information Technology (SIIT), Sri Lanka
 
 ---
 
