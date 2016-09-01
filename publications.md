@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Publications
-menutitle: <b>Kennedy</b> &middot; Publications
+menutitle: Publications
+menuicon: fa-file
 author: Rod Kennedy
 menuranking: 60
 ---

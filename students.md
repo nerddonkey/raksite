@@ -1,7 +1,8 @@
 ---
 layout: page
 title: PhD Students
-menutitle: <b>Kennedy</b> &middot; PhD Students
+menutitle: PhD Students
+menuicon: fa-graduation-cap
 author: Rod Kennedy
 menuranking: 40
 ---

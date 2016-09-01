@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Resources
-menutitle: <b>Kennedy</b> &middot; Resources
+menutitle: Resources
+menuicon: fa-folder-open
 author: Rod Kennedy
 menuranking: 200
 ---

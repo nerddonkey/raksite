@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Miscellaneous
-menutitle: <b>Kennedy</b> &middot; Miscellaneous
+menutitle: Miscellaneous
+menuicon: fa-briefcase
 author: Rod Kennedy
-menuranking: 100
+menuranking: 500
 ---
 
 {% include toc.md %}
@@ -13,8 +14,7 @@ menuranking: 100
 This figure I derived from the data available at the [Mathematics Genealogy Project][mathgp]
 
 <div class="wide-block" markdown="block">
-<img src="{{ site.baseurl }}/images/rak-genealogy.png"
-	style="min-width:500px; max-width:100%">
+<img src="images/rak-genealogy.png" style="min-width:500px; max-width:100%">
 </div>
 ---
 
