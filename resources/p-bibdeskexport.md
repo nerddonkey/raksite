@@ -10,10 +10,10 @@ published: true
 
 {% include toc.md %}
 
-{% capture defaultItem %}{{page.downloads[0]}}{% endcapture %}
-{% capture mainPage %}{{page.downloads[1]}}{% endcapture %}
-{% capture bibexp %}{{page.downloads[2]}}{% endcapture %}
-{% capture toggle %}{{page.downloads[3]}}{% endcapture %}
+{% capture defaultItem %}{{ page.downloads[0] }}{% endcapture %}
+{% capture mainPage %}{{ page.downloads[1] }}{% endcapture %}
+{% capture bibexp %}{{ page.downloads[2] }}{% endcapture %}
+{% capture toggle %}{{ page.downloads[3] }}{% endcapture %}
 
 This is material for a html export template for BibDesk.
 
@@ -56,4 +56,5 @@ This is material for a html export template for BibDesk.
 ### Downloads
 
 {% for dd in page.downloads %}{% capture filePath %}{{ dd }}{% endcapture %}
-- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){% endfor %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){%
+endfor %}

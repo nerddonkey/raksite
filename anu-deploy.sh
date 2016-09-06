@@ -5,7 +5,7 @@ which -a jekyll
 jekyll -v
 echo -e "\n"
 
-# deploy on baseurl: http://users.cecs.anu.edu.au/~rod
+# deploy on base url: http://users.cecs.anu.edu.au/~rod
 jekyll build --config _config.yml,_config-anu.yml
 cd _site
 ls -l *.html

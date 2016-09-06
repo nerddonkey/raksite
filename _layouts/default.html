@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-  {% include head.html %}
-
+{% include head.html %}
   <body class="{{ site.lanyon-theme }}">
 
-    {% include sidebar.html %}
+	 {% include sidebar.html %}
+	 <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+			content to avoid any CSS collisions with our real content. -->
+	 <div class="wrap">
+		<div class="masthead">
+		  <div class="container">
+			 <h3 class="masthead-title" style="white-space: nowrap; line-height:20px;">
+				<img src="{{ site.baseurl }}/images/ANU-logo.png" align="top" style="margin:0px 0.8rem 0px 0.6rem; display:inline-block; width:30%; max-width:170px; min-width:90px; border:none blue 1px; vertical-align:middle;"><span style="display:inline-block; vertical-align:middle; border:none blue 1px;">
+				<a href="{{ site.baseurl }}/index.html" title="Home Page">{{ site.title }}</a><br>
+				<small>{{ site.tagline }}</small></span>
+			 </h3>
+		  </div>
+		</div>
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title" style="white-space: nowrap; line-height:20px;">
-            <img src="/images/ANU-logo.png" align="top" style="margin:0px 0.8rem 0px 0.6rem; display:inline-block; width:30%; max-width:170px; min-width:90px; border:none blue 1px; vertical-align:middle;"><span style="display:inline-block; vertical-align:middle; border:none blue 1px;">
-            <a href="{{ site.baseurl }}/index.html" title="Home">{{ site.title }}</a><br>
-            <small>{{ site.tagline }}</small></span>
-          </h3>
-        </div>
-      </div>
+		<div class="container content">
+			{{ content }}
+		</div>
+	 </div>
 
-      <div class="container content">
-        {{ content }}
-      </div>
-    </div>
+	 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+	 <script>
+		(function(document) {
+		  var toggle = document.querySelector('.sidebar-toggle');
+		  var sidebar = document.querySelector('#sidebar');
+		  var checkbox = document.querySelector('#sidebar-checkbox');
 
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+		  document.addEventListener('click', function(e) {
+			 var target = e.target;
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
+			 if(!checkbox.checked ||
+				 sidebar.contains(target) ||
+				 (target === checkbox || target === toggle)) return;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
+			 checkbox.checked = false;
+		  }, false);
+		})(document);
+	 </script>
   </body>
 </html>

@@ -11,7 +11,7 @@ published: true
 {% include toc.md %}
 
 
-{% capture shplot %}{{page.downloads[0]}}{% endcapture %}
+{% capture shplot %}{{ page.downloads[0] }}{% endcapture %}
 
 ### MATLAB&reg; code &mdash; [<code>{{ shplot | split: "/" | last }}</code>]({{ shplot }})
 
@@ -22,7 +22,7 @@ This is adapted from the MATLAB&reg; example code webpage [here](http://www.math
 {% endhighlight %}
 
 
-{% capture pngPath %}{{page.downloads[1]}}{% endcapture %}
+{% capture pngPath %}{{ page.downloads[1] }}{% endcapture %}
 
 ### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
@@ -32,4 +32,5 @@ This is adapted from the MATLAB&reg; example code webpage [here](http://www.math
 ### Downloads
 
 {% for dd in page.downloads %}{% capture filePath %}{{ dd }}{% endcapture %}
-- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){% endfor %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){%
+endfor %}

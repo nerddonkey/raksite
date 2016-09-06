@@ -5,7 +5,7 @@ which -a jekyll
 jekyll -v
 echo -e "\n"
 
-(sleep 6; open "http://127.0.0.1:4001/" ) &
+(sleep 6; open "http://127.0.0.1:4003/" ) &
 
-# deploy on baseurl: ""
+# deploy on base url: ""
 jekyll serve

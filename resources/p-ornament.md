@@ -20,8 +20,8 @@ Download [pgfornament.zip](http://www.altermundus.com/pages/downloads/packages/p
 - the folder <code>vectorian</code> must to be in <code>/texmf/tex/generic</code>
 - the folder <code>am</code> must to be in <code>/texmf/tex/generic</code>
 
-<!-- latex/pgf-ornament-generate.tex -->
-{% capture latexPath %}{{page.downloads[0]}}{% endcapture %}
+<!-- resources/latex/pgf-ornament-generate.tex -->
+{% capture latexPath %}{{ page.downloads[0] }}{% endcapture %}
 
 ### Latex code &mdash; [<code>{{ latexPath | split: "/" | last }}</code>]({{ latexPath }})
 
@@ -31,13 +31,13 @@ Here we render ornament 88.  There are 89 ornaments, see instructions [ornaments
 {% include_relative {{ latexPath }} %}
 {% endhighlight %}
 
-{% capture pngPath %}{{page.downloads[1]}}{% endcapture %}
+{% capture pngPath %}{{ page.downloads[1] }}{% endcapture %}
 
 ### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
 ![fig]({{ pngPath }}){: class="matlab"}
 
-{% capture pngPath2 %}{{page.downloads[2]}}{% endcapture %}
+{% capture pngPath2 %}{{ page.downloads[2] }}{% endcapture %}
 
 ### Output png figure &mdash; [<code>{{ pngPath2 | split: "/" | last }}</code>]({{ pngPath2 }})
 
@@ -46,4 +46,5 @@ Here we render ornament 88.  There are 89 ornaments, see instructions [ornaments
 ### Downloads
 
 {% for dd in page.downloads %}{% capture filePath %}{{ dd }}{% endcapture %}
-- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){% endfor %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){%
+endfor %}

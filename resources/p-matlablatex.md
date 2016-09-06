@@ -2,13 +2,12 @@
 layout: technote
 title: Latex labels with MATLAB&reg;
 author: Rod Kennedy
-date: 12 Aug 2015
+date: 6 Sep 2016
 resource-categories: [code]
 published: true
 ---
 
 {% include toc.md %}
-
 
 {% capture cmplxexp %}matlab/cmplxexp.m{% endcapture %}
 

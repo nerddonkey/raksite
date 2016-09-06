@@ -3,32 +3,29 @@ layout: plain
 ---
 
 <div class="page">
-  <h2 class="page-title">{{ page.title }}</h2>
-  <span class="post-date">Technical Note &mdash; {{ page.date }}</span>
-
-  {{ content }}
-
-  <hr style="opacity: 0.5">
-
-  {% for category in site.resource-categories %}
-  	{% assign node-list = site.pages | sort:"date" | reverse %}
-  	{% assign counter = 0 %}
-  	{% for node in node-list %}
-      {% if node.resource-categories contains category %}
-  			{% assign counter = counter | plus: 1 %}
-    			{% if counter == 1 %}
-          <!-- <h3>{{ category | capitalize }} Index:</h3> -->
-          {% capture myString %}### {{ category| capitalize }} Index:{% endcapture %}
-          {{ myString | markdownify }}
-          <ul>
-  			{% endif %}
-        <li><small><code>[{{ node.date | date_to_string }}]</code></small> &mdash;
-          {% if node.title == page.title %} {{ node.title }} {% else %}
-          	<a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>{% endif %}</li>
-  		{% endif %}
-  	{% endfor %}
-  	{% if counter > 0 %}
+   <h2 class="page-title">{{ page.title }}</h2>
+   <span class="post-date">Technical Note &mdash; {{ page.date }}</span>
+   {{ content }}
+   <hr style="opacity: 0.5">
+   {% for category in site.resource-categories %}{%
+      assign node-list = site.pages | sort:"date" | reverse %}{%
+      assign counter = 0 %}{%
+      for node in node-list %}{%
+         if node.resource-categories contains category %}{%
+            assign counter = counter | plus: 1 %}{%
+            if counter == 1 %}{%
+               capture myString %}### {{ category| capitalize }} Index:{% endcapture %}
+   {{ myString | markdownify }}      <ul>{%
+            endif %}
+         <li><small><code>[{{ node.date | date_to_string }}]</code></small> &mdash;{%
+            if node.title == page.title %} {{ node.title }} {%
+            else %}
+            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>{%
+            endif %}</li>{%
+         endif %}{%
+      endfor %}{%
+      if counter > 0 %}
       </ul>
-  	{% endif %}
-  {% endfor %}
+      {% endif %}{%
+   endfor %}
 </div>

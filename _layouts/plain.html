@@ -6,13 +6,10 @@
   <body class="{{ site.lanyon-theme }}">
 
     {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       &nbsp;
       <div class="container content">
-        {{ content }}
+         {{ content }}
       </div>
     </div>
 
@@ -20,20 +17,18 @@
 
     <script>
       (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
+         var toggle = document.querySelector('.sidebar-toggle');
+         var sidebar = document.querySelector('#sidebar');
+         var checkbox = document.querySelector('#sidebar-checkbox');
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
+         document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked || sidebar.contains(target) ||
+               (target === checkbox || target === toggle)) return;
 
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
-  </body>
+            checkbox.checked = false;
+         }, false);
+         })(document);
+      </script>
+   </body>
 </html>

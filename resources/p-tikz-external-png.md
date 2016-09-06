@@ -72,4 +72,5 @@ If silent weird things are happening then comment out the externalization like t
 ### Downloads
 
 {% for dd in page.downloads %}{% capture filePath %}{{dd}}{% endcapture %}
-- [<code>{{ filePath | split: "/" | last }}</code>]({{ filePath }}){% endfor %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ filePath }}){%
+endfor %}

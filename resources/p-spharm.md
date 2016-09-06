@@ -10,7 +10,7 @@ published: true
 
 {% include toc.md %}
 
-{% capture shgen %}{{page.downloads[0]}}{% endcapture %}
+{% capture shgen %}{{ page.downloads[0] }}{% endcapture %}
 
 ### MATLAB&reg; Code [<code>{{ shgen | split: "/" | last }}</code>]({{ shgen }})
 
@@ -20,7 +20,7 @@ Note that the spherical harmonic is not normalized since we are interested in th
 {% include_relative {{ shgen }} %}
 {% endhighlight %}
 
-{% capture RZRYRZdeg %}{{page.downloads[1]}}{% endcapture %}
+{% capture RZRYRZdeg %}{{ page.downloads[1] }}{% endcapture %}
 
 ### MATLAB&reg; Code [<code>{{ RZRYRZdeg | split: "/" | last }}</code>]({{ RZRYRZdeg }})
 
@@ -32,7 +32,7 @@ Note that the spherical harmonic is not normalized since we are interested in th
 
 Here we demonstrate some uses of the above MATLAB&reg; functions.
 
-{% capture exa %}{{page.downloads[2]}}{% endcapture %}
+{% capture exa %}{{ page.downloads[2] }}{% endcapture %}
 
 #### 1) MATLAB&reg; Code [<code>{{ exa | split: "/" | last }}</code>]({{ exa }})
 
@@ -42,14 +42,14 @@ Here we pick one spherical harmonic corresponding to $$\ell=8$$ and $$m=7$$ and 
 {% include_relative {{ exa }} %}
 {% endhighlight %}
 
-{% capture pngPath %}{{page.downloads[3]}}{% endcapture %}
+{% capture pngPath %}{{ page.downloads[3] }}{% endcapture %}
 
 ##### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
-![png]({{pngPath}}){: width="750px" class="matlab"}
+![png]({{ pngPath }}){: width="750px" class="matlab"}
 
 
-{% capture exa %}{{page.downloads[4]}}{% endcapture %}
+{% capture exa %}{{ page.downloads[4] }}{% endcapture %}
 
 #### 2) MATLAB&reg; Code [<code>{{ exa | split: "/" | last }}</code>]({{ exa }})
 
@@ -59,14 +59,15 @@ Here we overlay patches of a spherical harmonic on a transparent sphere.
 {% include_relative {{ exa }} %}
 {% endhighlight %}
 
-{% capture pngPath %}{{page.downloads[5]}}{% endcapture %}
+{% capture pngPath %}{{ page.downloads[5] }}{% endcapture %}
 
 ##### Output png figure &mdash; [<code>{{ pngPath | split: "/" | last }}</code>]({{ pngPath }})
 
-![png]({{pngPath}}){: width="450px" class="matlab"}
+![png]({{ pngPath }}){: width="450px" class="matlab"}
 
 
 ### Downloads
 
 {% for dd in page.downloads %}{% capture filePath %}{{ dd }}{% endcapture %}
-- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){% endfor %}
+- [<code>{{ filePath | split: "/" | last }}</code>]({{ dd }}){%
+endfor %}

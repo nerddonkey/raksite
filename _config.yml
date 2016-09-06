@@ -1,7 +1,18 @@
-# Permalinks, use of `relative_permalinks` ensures post links from the index work properly.
-permalink: /blogs/:year-:month-:day/:title.html
-# relative_permalinks: true  In Jekyll 3 and above, relative permalinks have been deprecated
+defaults:
+  -
+   scope:
+     type: pages
+   values:
+     permalink: /:path/:basename:output_ext
+  -
+   scope:
+     type: posts
+   values:
+     permalink: /blogs/:year-:month-:day/:title.html
+
 gems: [jekyll-paginate]
+paginate: 5
+excerpt_separator: <!--more-->
 
 # Setup
 title: Prof Rodney A. Kennedy
@@ -11,18 +22,13 @@ hometitle: <i class="fa fa-institution fa-fw" aria-hidden="true"></i>&nbsp; Home
 #lanyon-theme: 'theme-base-0b layout-reverse sidebar-overlay'
 lanyon-theme: 'theme-base-0b sidebar-overlay'
 resource-categories: [technote, code, paper, sphere, misc]
-excerpt_separator: <!--more-->
 
-# A) Site served up locally usually on http://127.0.0.1:4001/
-#
+# A) Site served up locally usually on http://127.0.0.1:4003/
 baseurl: ''
-port: 4001
-
-# max blogs entries per page
-paginate: 5
+port: 4003
 
 # excluded from copying to destination
-exclude: [LICENSE.md, README.md, sandbox, assets/*latex, public/css/sandbox, anu-*.sh]
+exclude: [LICENSE.md, README.md, sandbox, assets/*latex, public/css/sandbox, a*.sh]
 
 # about
 name: Rod Kennedy

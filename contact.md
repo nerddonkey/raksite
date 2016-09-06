@@ -19,11 +19,11 @@ Good luck getting through to me and my spam filter.
 
 ## Postal Address
 
-Prof Rodney A Kennedy  
-Research School of Engineering, CECS  
-The Australian National University  
-115 North Road  
-Acton ACT 2601  
+Prof Rodney A Kennedy<br>
+Research School of Engineering, CECS<br>
+The Australian National University<br>
+115 North Road<br>
+Acton ACT 2601<br>
 Australia
 
 ---
@@ -32,8 +32,6 @@ Australia
 
 <img src="images/rod_2011b.jpg"
 	align="top" style="margin:25px 75px 25px 25px; float:right; width:25%;">
-<!-- <img src="{{ site.baseurl }}/images/rod_2011b.jpg"
-	align="top" style="margin:25px 75px 25px 25px; float:right; width:25%;"> -->
 
 Rodney A. Kennedy (S'86--M'88--SM'01--F'05) received the B.E. degree (1st class honours and university medal) from the University of New South Wales, Sydney, Australia, the M.E. degree from the University of Newcastle, and the Ph.D. degree from the Australian National University, Canberra. Since 2000 he has been is a Professor in engineering at the Australian National University, Canberra, Australia.
 
@@ -43,9 +41,9 @@ He has co-authored close to 400 refereed journal or conference papers and a book
 
 ## Campus Address
 
-Room B136 [Building 115][build115]  
-Cnr North & Daley Roads  
-Acton ACT 2601  
+Room B136 [Building 115][build115]
+Cnr North & Daley Roads
+Acton ACT 2601
 
 ---
 

@@ -3,26 +3,20 @@ layout: default
 ---
 
 <div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
-  <span class="post-date">{{ page.author }}</span>
-  {{ content }}
+	<h2 class="post-title">{{ page.title }}</h2>
+	<span class="post-date">{{ page.author }}</span>
+	{{ content }}
 </div>
 
 <hr style="opacity: 0.5">
 
 <div class="related">
-  <h3>Related Posts</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:5 %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <code>
-          <small>[{{ post.date | date_to_string }}]</small>
-        </code> {{ post.title }}
-        <!-- <small>{{ post.date | date_to_string }}</small> -->
-        <small> &mdash; {{ post.author }}</small>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+	<h3>Related Posts</h3>
+	<ul class="related-posts">{% for post in site.related_posts limit:5 %}
+		<li>
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				<code><small>[{{ post.date | date_to_string }}]</small></code> {{ post.title }} {{ post.url }}
+				<small> &mdash; {{ post.author }}</small></a>
+		</li>{% endfor %}
+	</ul>
 </div>
