@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>
+			Kennedy &middot; ARC Grant DP150101011
+		</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/rod/public/css/poole-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/syntax.css">
+		<link rel="stylesheet" href="/rod/public/css/lanyon-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/bibdesk-export.css">
+		<link rel="stylesheet" href="/rod/public/css/raksite.css">
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+		<!-- Icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rod/public/apple-touch-icon-precomposed.png">
+		<link rel="shortcut icon" href="/rod/public/favicon.ico">
+
+		<!-- javascript -->
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				var links = document.links;
+				for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+					if (links[i].hostname != window.location.hostname) {
+						links[i].target = '_blank';
+					}
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function toggle(id) {
+				e = document.getElementById(id);
+				if (e.style.display == "none")
+					e.style.display = "inline";
+				else
+					e.style.display = "none";
+			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			if (typeof jQuery == 'undefined') {
+				document.write(unescape("%3Cscript src='public/js/jquery-1.11.3.js' type='text/javascript'%3E%3C/script%3E"));
+		  	}
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#hide-bibtex").click(function() {
+					$(".Bibtex-toggle").hide();
+				});
+				$("#show-bibtex").click(function() {
+					$(".Bibtex-toggle").show();
+				});
+				$("#hide-abstract").click(function() {
+					$(".Abstract-toggle").hide();
+				});
+				$("#show-abstract").click(function() {
+					$(".Abstract-toggle").show();
+				});
+			});
+		</script>
+
+		<!-- fontawesome: icon font -->
+		<script src="https://use.fontawesome.com/53cb97c394.js"></script>
+
+		<!-- mathjax enable latex math with equation numbers $$\begin{equation} ... \end{equation}$$ kramdown syntax -->
+		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				TeX: {
+					equationNumbers: { autoNumber: "AMS" },
+					extensions: ["color.js"] },
+				SVG: {
+					scale: 90, blacker: 20 } });
+		</script>
+	</head>
+
+  <body class="theme-base-0b sidebar-overlay">
+
+	 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+   <div class="sidebar-item">
+      Website of<br><b>Prof Rodney A. Kennedy</b><i class="fa fa-cog fa-spin fa-1x fa-fw"></i>
+   </div>
+
+   <nav class="sidebar-nav">
+      <a class="sidebar-nav-item "
+         href="/rod/index.html"><i class="fa fa-institution fa-fw" aria-hidden="true"></i>&nbsp; Home Page</a>
+      <a class="sidebar-nav-item"
+         href="/rod/contact.html"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a>
+      <a class="sidebar-nav-item"
+         href="/rod/students.html"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;PhD Students</a>
+      <a class="sidebar-nav-item"
+         href="/rod/publications.html"><i class="fa fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Publications</a>
+      <a class="sidebar-nav-item"
+         href="/rod/book.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hilbert Book</a>
+      <a class="sidebar-nav-item active"
+         href="/rod/dp15.html"><i class="fa fa-rocket fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;ARC Grant DP150101011</a>
+      <a class="sidebar-nav-item"
+         href="/rod/resources.html"><i class="fa fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Resources</a>
+      <a class="sidebar-nav-item"
+         href="/rod/misc.html"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Miscellaneous</a>
+  </nav>
+
+  <div class="sidebar-item">
+     Site Version v1.1.0<br>
+     <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+     &copy; 2016. All rights reserved.
+  </div>
+</div>
+
+	 <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+			content to avoid any CSS collisions with our real content. -->
+	 <div class="wrap">
+		<div class="masthead">
+		  <div class="container">
+			 <h3 class="masthead-title" style="white-space: nowrap; line-height:20px;">
+				<img src="/rod/images/ANU-logo.png" align="top" style="margin:0px 0.8rem 0px 0.6rem; display:inline-block; width:30%; max-width:170px; min-width:90px; border:none blue 1px; vertical-align:middle;"><span style="display:inline-block; vertical-align:middle; border:none blue 1px;">
+				<a href="/rod/index.html" title="Home Page">Prof Rodney A. Kennedy</a><br>
+				<small>RSEng Engineering, CECS</small></span>
+			 </h3>
+		  </div>
+		</div>
+
+		<div class="container content">
+			<div class="page">
+	<h1 class="page-title"><i class="fa fa-rocket fa-fw" aria-hidden="true"></i>&nbsp;ARC Grant DP150101011</h1>
+	<h2 class="no_toc" id="harnessing-spherical-geometry-in-scientific-and-engineering-data-processing"><em>￼Harnessing Spherical Geometry in Scientific and Engineering Data Processing</em></h2>
+
+<h3 class="no_toc" id="contents">Contents</h3>
+
+<ul id="markdown-toc">
+  <li><a href="#project-summary-and-impact-statement" id="markdown-toc-project-summary-and-impact-statement">Project Summary and Impact Statement</a></li>
+  <li><a href="#australian-research-council-arc-budget" id="markdown-toc-australian-research-council-arc-budget">Australian Research Council (ARC) Budget</a></li>
+  <li><a href="#research-team" id="markdown-toc-research-team">Research Team</a></li>
+  <li><a href="#downloads-and-links" id="markdown-toc-downloads-and-links">Downloads and Links</a></li>
+  <li><a href="#publications-supported-by-grant" id="markdown-toc-publications-supported-by-grant">Publications Supported by Grant</a>    <ul>
+      <li><a href="#acknowledgement-text-for-publications" id="markdown-toc-acknowledgement-text-for-publications">Acknowledgement Text for Publications</a></li>
+      <li><a href="#journal-papers" id="markdown-toc-journal-papers">2015–2016 Journal Papers</a></li>
+      <li><a href="#conference-papers" id="markdown-toc-conference-papers">2015–2016 Conference Papers</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr style="opacity: 0.5" />
+
+<h2 id="project-summary-and-impact-statement">Project Summary and Impact Statement</h2>
+
+<p><strong>Project Summary:</strong> Spherical information underpins many natural phenomena, ranging from the distribution of galaxies in the Universe to the connectivity and neuronal activation in the human brain. Current major investments in scientific and medical instrumentation do not efficiently collect and process the massive amounts of data because they do not properly utilize its inherent spherical geometry.  Through harnessing spherical geometry, this project will address the above shortcomings and will provide advances across all these application domains. By collecting and processing data more efficiently, with greater fidelity, and by revealing features currently hidden, the methods developed will see the full benefit from the instrumentation capturing this data.</p>
+
+<p><strong>Impact Statement:</strong> Through proper collection and processing of data with spherical geometry, we can reliably learn: how the Universe is evolving; or gauge the impact of melting polar ice sheets on sea-level rise; or assess whether a person is susceptible to Alzheimer’s disease. These pressing problems link with our needs to understand where we come from; or how we can protect the environment; or how to improve the quality of life.</p>
+
+<hr />
+
+<h2 id="australian-research-council-arc-budget">Australian Research Council (ARC) Budget</h2>
+
+<div class="wide-block">
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Year</th>
+        <th style="text-align: center">Amount</th>
+        <th style="text-align: center">ICA Kennedy</th>
+        <th style="text-align: center">ICA McEwen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">2015</td>
+        <td style="text-align: center">$150,000</td>
+        <td style="text-align: center">$4,820</td>
+        <td style="text-align: center">$4,820</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2016</td>
+        <td style="text-align: center">$134,300</td>
+        <td style="text-align: center">$3,630</td>
+        <td style="text-align: center">$6,010</td>
+      </tr>
+      <tr>
+        <td style="text-align: center">2017</td>
+        <td style="text-align: center">$140,000</td>
+        <td style="text-align: center">$3,630</td>
+        <td style="text-align: center">$6,010</td>
+      </tr>
+      <tr>
+        <td style="text-align: center"><strong>Total</strong></td>
+        <td style="text-align: center"><strong>$424,300</strong></td>
+        <td style="text-align: center"><strong>$12,080</strong></td>
+        <td style="text-align: center"><strong>$16,840</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h4 class="no_toc" id="clarifications">Clarifications:</h4>
+
+<ul>
+  <li>ICA — International Collaboration Award for direct support of international researcher collaboration</li>
+  <li>The “Amount” (2nd column) <em>includes</em> “ICA Kennedy” and “ICA McEwen”.</li>
+  <li>The balance (the majority) is split across salary (post-doc and PhD Scholarship) and travel.</li>
+  <li>The annual amounts are usually indexed.</li>
+  <li>Accouncement snippet from ARC DP15 Outcomes is <a href="images/dp-summary.jpg">here</a>.</li>
+</ul>
+
+<hr />
+
+<h2 id="research-team">Research Team</h2>
+
+<div class="wide-block">
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Researcher</th>
+        <th style="text-align: center">Role</th>
+        <th style="text-align: center">Institution</th>
+        <th style="text-align: center">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">Rod Kennedy</td>
+        <td style="text-align: center">Lead CI</td>
+        <td style="text-align: center">ANU</td>
+        <td style="text-align: center"><a href="http://users.cecs.anu.edu.au/~rod/">Homepage</a>, <a href="http://scholar.google.com.au/citations?user=oAcqc0MAAAAJ&amp;view_op=list_works&amp;pagesize=100">Google-Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Salman Durrani</td>
+        <td style="text-align: center">CI</td>
+        <td style="text-align: center">ANU</td>
+        <td style="text-align: center"><a href="http://users.cecs.anu.edu.au/~Salman.Durrani/">Homepage</a>, <a href="http://scholar.google.com.au/citations?user=_stHeQMAAAAJ&amp;view_op=list_works&amp;pagesize=100">Google-Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Jason McEwen</td>
+        <td style="text-align: center">PI</td>
+        <td style="text-align: center">UCL-MSSL</td>
+        <td style="text-align: center"><a href="http://www.jasonmcewen.org/">Homepage</a>, <a href="https://scholar.google.com.au/citations?user=V19kdRg7j1YC&amp;view_op=list_works&amp;pagesize=100">Google-Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Zubair Khalid</td>
+        <td style="text-align: center">RA</td>
+        <td style="text-align: center">ANU</td>
+        <td style="text-align: center"><a href="http://www.zubairkhalid.org">Homepage</a>, <a href="http://scholar.google.com.au/citations?user=by5tc-oAAAAJ&amp;view_op=list_works&amp;pagesize=100">Google-Scholar</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Alice Bates</td>
+        <td style="text-align: center">PhD-1</td>
+        <td style="text-align: center">ANU</td>
+        <td style="text-align: center"><a href="http://people.cecs.anu.edu.au/user/5215">Homepage</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">Usama Elahi</td>
+        <td style="text-align: center">PhD-2</td>
+        <td style="text-align: center">ANU</td>
+        <td style="text-align: center"><a href="http://people.cecs.anu.edu.au/user/5616">Homepage</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<hr />
+
+<h2 id="downloads-and-links">Downloads and Links</h2>
+
+<p>Useful downloads and links are here.</p>
+
+<div class="wide-block">
+
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: center">Item</th>
+        <th style="text-align: center">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center">Submitted Proposal PDF</td>
+        <td style="text-align: center"><a href="assets/DP150101011-Final.pdf" target="\_blank">link</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">ARC — RMS Website</td>
+        <td style="text-align: center"><a href="https://rms.arc.gov.au/">link</a></td>
+      </tr>
+      <tr>
+        <td style="text-align: center">IEEE Xplore</td>
+        <td style="text-align: center"><a href="http://ieeexplore.ieee.org/">link</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<hr />
+
+<h2 id="publications-supported-by-grant">Publications Supported by Grant</h2>
+
+<h3 id="acknowledgement-text-for-publications">Acknowledgement Text for Publications</h3>
+
+<p>The following text needs to be added to any paper representing research done under the grant:</p>
+
+<blockquote>
+
+  <p>This work is supported by the Australian Research Council’s Discovery Projects funding scheme (Project no. DP150101011).</p>
+</blockquote>
+
+<hr />
+
+<h3 id="journal-papers">2015–2016 Journal Papers</h3>
+
+<div id="content">
+<!---->
+<!-- Paper Title: Gauss-Legendre Sampling on the Rotation Group -->
+<!-- Authors: Z. Khalid, S. Durrani, R. A. Kennedy, Y. Wiaux, and J. D. McEwen -->
+	<div class="Bibentry">[1]
+		<span class="Author">Z. Khalid, S. Durrani, R. A. Kennedy, Y. Wiaux, and J. D. McEwen, </span>
+		<span class="Title">"Gauss-Legendre Sampling on the Rotation Group", </span>
+		<span class="Journal">IEEE Signal Process. Lett., </span>
+		<span class="Volume">vol.&nbsp;23, </span>
+		<span class="Volume">no.&nbsp;2, </span>
+		<span class="Pages">pp.&nbsp;207-211, </span>
+		<span class="Month">February </span>
+		<span class="Date">2016.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2016c_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2016c_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/LSP.2015.2503295" target="_blank">10.1109/LSP.2015.2503295</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2016/07336509.pdf" target="_blank">07336509.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=10.1109/LSP.2015.2503295" target="_blank">[1]</a></span>
+		<span class="Url">arXiv:<a href="http://arxiv.org/abs/1508.03353" target="_blank">http://arxiv.org/abs/1508.03353</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2016c_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> We propose a Gauss-Legendre quadrature based sampling on the rotation group for the representation of a band-limited signal such that the Fourier transform (FT) of a signal can be exactly computed from its samples. Our figure of merit is the sampling efficiency, which is defined as a ratio of the degrees of freedom required to represent a band-limited signal in harmonic domain to the number of samples required to accurately compute the FT. The proposed sampling scheme is asymptotically as efficient as the most efficient scheme developed very recently. For the computation of FT and inverse FT, we also develop fast algorithms of complexity similar to the complexity attained by the fast algorithms for the existing sampling schemes. The developed algorithms are stable, accurate and do not have any pre-computation requirements. We also analyse the computation time and numerical accuracy of the proposed algorithms and show, through numerical experiments, that the proposed Fourier transforms are accurate with errors on the order of numerical precision.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2016c_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2016c,<br />title = {Gauss-Legendre Sampling on the Rotation Group},<br />author = {Khalid, Z. and Durrani, S. and Kennedy, R. A. and Wiaux, Y. and McEwen, J. D.},<br />journal = {{IEEE} Signal Process. Lett.},<br />volume = {23},<br />pages = {207-211},<br />month = {February},<br />year = {2016}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: An Optimal Dimensionality Sampling Scheme on the Sphere with Accurate and Efficient Spherical Harmonic Transform for Diffusion MRI -->
+<!-- Authors: A. P. Bates, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[2]
+		<span class="Author">A. P. Bates, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"An Optimal Dimensionality Sampling Scheme on the Sphere with Accurate and Efficient Spherical Harmonic Transform for Diffusion MRI", </span>
+		<span class="Journal">IEEE Signal Process. Lett., </span>
+		<span class="Volume">vol.&nbsp;23, </span>
+		<span class="Volume">no.&nbsp;1, </span>
+		<span class="Pages">pp.&nbsp;15-19, </span>
+		<span class="Month">January </span>
+		<span class="Date">2016.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2016a_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2016a_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/LSP.2015.2498162" target="_blank">10.1109/LSP.2015.2498162</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2016/07320980-preprint.pdf" target="_blank">07320980-preprint.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=10.1109/LSP.2015.2498162" target="_blank">[link]</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2016a_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> This paper presents a novel sampling scheme on the sphere for obtaining head-related transfer function (HRTF) measurements and accurately computing the spherical harmonic transform~(SHT). The scheme requires an optimal number of samples, given by the degrees of freedom in the spectral domain, for the accurate representation of the HRTF that is band-limited in the spherical harmonic domain. The proposed scheme allows for the samples to be easily taken over the sphere due to its iso-latitude structure and non-dense sampling near the poles. In addition, the scheme can be used when samples are not taken from the south polar cap region of the sphere as the HRTF measurements are not reliable in south polar cap region due to reflections from the ground. Furthermore, the scheme has a hierarchical structure, which enables the HRTF to be analysed at different audible frequencies using the same sampling configuration. In comparison to the proposed scheme, none of the other sampling schemes on the sphere simultaneously possess all these properties. We conduct several numerical experiments to determine the accuracy of the SHT associated with the proposed sampling scheme. We show that the SHT attains accuracy on the order of numerical precision $(10^-14)$ when samples are taken over the whole sphere, both in the optimal sample placement and hierarchical configurations, and achieves an acceptable level of accuracy $(10^-5)$ when samples are not taken over the south polar cap region of the sphere for the band-limits of interest. Simulations are used to show the accurate reconstruction of the HRTF over the whole sphere, including unmeasured locations.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2016a_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2016a,<br />title = {An Optimal Dimensionality Sampling Scheme on the Sphere with Accurate and Efficient Spherical Harmonic Transform for Diffusion {MRI}},<br />author = {Bates, A. P. and Khalid, Z. and Kennedy, R. A.},<br />journal = {{IEEE} Signal Process. Lett.},<br />volume = {23},<br />pages = {15-19},<br />month = {January},<br />year = {2016}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: Novel Sampling Scheme on the Sphere for Head-Related Transfer Function Measurements -->
+<!-- Authors: A. P. Bates, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[3]
+		<span class="Author">A. P. Bates, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"Novel Sampling Scheme on the Sphere for Head-Related Transfer Function Measurements", </span>
+		<span class="Journal">IEEE/ACM Trans. Audio Speech Language Process., </span>
+		<span class="Volume">vol.&nbsp;23, </span>
+		<span class="Volume">no.&nbsp;6, </span>
+		<span class="Pages">pp.&nbsp;1068-1081, </span>
+		<span class="Month">June </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2015c_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2015c_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/TASLP.2015.2419971" target="_blank">10.1109/TASLP.2015.2419971</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07079390.pdf" target="_blank">07079390.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com.au/scholar?q=10.1109/TASLP.2015.2419971" target="_blank">[1]</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2015c_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> This paper presents a novel sampling scheme on the sphere for obtaining head-related transfer function (HRTF) measurements and accurately computing the spherical harmonic transform~(SHT). The scheme requires an optimal number of samples, given by the degrees of freedom in the spectral domain, for the accurate representation of the HRTF that is band-limited in the spherical harmonic domain. The proposed scheme allows for the samples to be easily taken over the sphere due to its iso-latitude structure and non-dense sampling near the poles. In addition, the scheme can be used when samples are not taken from the south polar cap region of the sphere as the HRTF measurements are not reliable in south polar cap region due to reflections from the ground. Furthermore, the scheme has a hierarchical structure, which enables the HRTF to be analysed at different audible frequencies using the same sampling configuration. In comparison to the proposed scheme, none of the other sampling schemes on the sphere simultaneously possess all these properties. We conduct several numerical experiments to determine the accuracy of the SHT associated with the proposed sampling scheme. We show that the SHT attains accuracy on the order of numerical precision $(10^-14)$ when samples are taken over the whole sphere, both in the optimal sample placement and hierarchical configurations, and achieves an acceptable level of accuracy $(10^-5)$ when samples are not taken over the south polar cap region of the sphere for the band-limits of interest. Simulations are used to show the accurate reconstruction of the HRTF over the whole sphere, including unmeasured locations.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2015c_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2015c,<br />title = {Novel Sampling Scheme on the Sphere for Head-Related Transfer Function Measurements},<br />author = {Bates, A. P. and Khalid, Z. and Kennedy, R. A.},<br />journal = {{IEEE/ACM} Trans. Audio Speech Language Process.},<br />volume = {23},<br />pages = {1068-1081},<br />month = {June},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: 3D Spatial Fading Correlation for Uniform Angle of Arrival Distribution -->
+<!-- Authors: Y. F. Alem, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[4]
+		<span class="Author">Y. F. Alem, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"3D Spatial Fading Correlation for Uniform Angle of Arrival Distribution", </span>
+		<span class="Journal">IEEE Commun. Lett., </span>
+		<span class="Volume">vol.&nbsp;19, </span>
+		<span class="Volume">no.&nbsp;6, </span>
+		<span class="Pages">pp.&nbsp;1073-1076, </span>
+		<span class="Month">June </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2015d_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2015d_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/LCOMM.2015.2414414" target="_blank">10.1109/LCOMM.2015.2414414</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/spatcorr-uniform-preprint.pdf" target="_blank">spatcorr-uniform-preprint.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com/scholar?q=10.1109/LCOMM.2015.2414414" target="_blank">[link]</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2015d_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> We derive a closed-form expression for the spatial fading correlation (SFC) between two arbitrary points in 3D- space for the uniform limited azimuth-elevation angle of arrival probability density function (pdf). This expression simplifies the computation of the SFC, can be used in any 3D antenna array ge- ometry, and avoids the need to generate separate expressions for specific antenna array geometries. We corroborate the accuracy of the closed-form expression through application to 2D and 3D antenna array geometries. We expect the results presented in this letter to be of significant importance for performance evaluation and sensitivity analysis in multi-input multi-output (MIMO) systems.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2015d_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2015d,<br />title = {{3D} Spatial Fading Correlation for Uniform Angle of Arrival Distribution},<br />author = {Alem, Y. F. and Khalid, Z. and Kennedy, R. A.},<br />journal = {{IEEE} Commun. Lett.},<br />volume = {19},<br />pages = {1073-1076},<br />month = {June},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: Slepian Spatial-Spectral Concentration on the Ball -->
+<!-- Authors: Z. Khalid, R. A. Kennedy, and J. D. McEwen -->
+	<div class="Bibentry">[5]
+		<span class="Author">Z. Khalid, R. A. Kennedy, and J. D. McEwen, </span>
+		<span class="Title">"Slepian Spatial-Spectral Concentration on the Ball", </span>
+		<span class="Journal">Appl. Comput. Harmon. Anal., </span>
+		<span class="Date">2015 (Preprint online 27 March 2015; DOI: 10.1016/j.acha.2015.03.008).</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2015e_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2015e_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1016/j.acha.2015.03.008" target="_blank">10.1016/j.acha.2015.03.008</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://arxiv.org/pdf/1403.5553" target="_blank">1403.5553</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com.au/scholar?q=Slepian+Spatial-Spectral+Concentration+on+the+Ball" target="_blank">[1]</a></span>
+		<span class="Url">arXiv:<a href="http://arxiv.org/abs/1403.5553" target="_blank">http://arxiv.org/abs/1403.5553</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2015e_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> We formulate and solve the Slepian spatial-spectral concentration problem on the three-dimensional ball. Both the standard Fourier-Bessel and also the Fourier-Laguerre spectral domains are considered since the latter exhibits a number of practical advantages (spectral decoupling and exact computation). The Slepian spatial and spectral concentration problems are formulated as eigenvalue problems, the eigenfunctions of which form an orthogonal family of concentrated functions. Equivalence between the spatial and spectral problems is shown. The spherical Shannon number on the ball is derived, which acts as the analog of the space-bandwidth product in the Euclidean setting, giving an estimate of the number of concentrated eigenfunctions and thus the dimension of the space of functions that can be concentrated in both the spatial and spectral domains simultaneously. Various symmetries of the spatial region are considered that reduce considerably the computational burden of recovering eigenfunctions, either by decoupling the problem into smaller subproblems or by affording analytic calculations. The family of concentrated eigenfunctions forms a Slepian basis that can be used be represent concentrated signals efficiently. We illustrate our results with numerical examples and show that the Slepian basis indeeds permits a sparse representation of concentrated signals.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2015e_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2015e,<br />title = {Slepian Spatial-Spectral Concentration on the Ball},<br />author = {Khalid, Z. and Kennedy, R. A. and McEwen, J. D.},<br />journal = {Appl. Comput. Harmon. Anal.},<br />year = {2015 (Preprint online 27 March 2015; DOI: 10.1016/j.acha.2015.03.008)}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: Spherical Harmonic Expansion of Fisher-Bingham Distribution and 3D Spatial Fading Correlation for Multiple-Antenna Systems -->
+<!-- Authors: Y. Alem, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[6]
+		<span class="Author">Y. Alem, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"Spherical Harmonic Expansion of Fisher-Bingham Distribution and 3D Spatial Fading Correlation for Multiple-Antenna Systems", </span>
+		<span class="Journal">IEEE Trans. Veh. Technol., </span>
+		<span class="Date">2015 (Preprint online 03 August 2015; DOI: 10.1109/TVT.2015.2463731).</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyJ2015h_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2015h_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/TVT.2015.2463731" target="_blank">10.1109/TVT.2015.2463731</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07175064-preprint.pdf" target="_blank">07175064-preprint.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=arXiv:1501.04395" target="_blank">[1]</a></span>
+		<span class="Url">arXiv:<a href="http://arxiv.org/abs/1501.04395" target="_blank">http://arxiv.org/abs/1501.04395</a></span>
+			<!-- Abstract -->
+		<div id="KennedyJ2015h_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> This paper considers the 3D spatial fading correlation (SFC) resulting from an angle-of-arrival (AoA) distribution that can be modeled by a mixture of Fisher-Bingham distributions on the sphere. By deriving a closed-form expression for the spherical harmonic transform for the component Fisher-Bingham distributions, with arbitrary parameter values, we obtain a closed-form expression of the 3D-SFC for the mixture case. The 3D-SFC expression is general and can be used in arbitrary multiantenna array geometries and is demonstrated for the cases of a 2D uniform circular array and a 3D regular dodecahedral array. In computational aspects, we use recursions to compute the spherical harmonic coefficients and give pragmatic guidelines on the truncation size in the series representations to yield machine precision accuracy results. The results are further corroborated through numerical experiments to demonstrate that the closedform expressions yield the same results as significantly more computationally expensive numerical integration methods.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyJ2015h_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@article{KennedyJ2015h,<br />title = {Spherical Harmonic Expansion of {F}isher-{B}ingham Distribution and {3D} Spatial Fading Correlation for Multiple-Antenna Systems},<br />author = {Alem, Y. and Khalid, Z. and Kennedy, R. A.},<br />journal = {{IEEE} Trans. Veh. Technol.},<br />year = {2015 (Preprint online 03 August 2015; DOI: 10.1109/TVT.2015.2463731)}}</span>
+			</div>
+	  </div>
+	</div>
+
+<!---->
+</div>
+
+<hr />
+
+<h3 id="conference-papers">2015–2016 Conference Papers</h3>
+
+<div id="content">
+<!---->
+<!-- Paper Title: On the use of Slepian Functions for the Reconstruction of the Head-Related Transfer Function on the Sphere -->
+<!-- Authors: A. P. Bates, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[1]
+		<span class="Author">A. P. Bates, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"On the use of Slepian Functions for the Reconstruction of the Head-Related Transfer Function on the Sphere", </span>
+		<span class="Booktitle">Proc. Int. Conf. Signal Processing and Communication Systems, ICSPCS'2015, </span>
+		<span class="Address">Cairns, Australia, </span>
+		<span class="Pages">pp.&nbsp;7, </span>
+		<span class="Month">December </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyC2015f_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyC2015f_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/ICSPCS.2015.7391738" target="_blank">10.1109/ICSPCS.2015.7391738</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07391738.pdf" target="_blank">07391738.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=10.1109/ICSPCS.2015.7391738" target="_blank">[link]</a></span>
+			<!-- Abstract -->
+		<div id="KennedyC2015f_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> For the fast and exact computation of spherical harmonic transform (SHT) of a band-limited signal defined on the sphere from its samples, the Gauss-Legendre (GL) and equiangular sampling schemes on the sphere require asymptotically least number of samples. In comparison to the equiangular scheme, the GL scheme has larger spatial dimensionality, defined as the number of the samples required for the exact computation of SHT. In this work, we propose an efficient GL sampling scheme with spatial dimensionality equal to that of equiangular scheme. We also propose op- timisation of samples along longitude to further reduce the spatial dimensionality of equiangular, GL and efficient GL sampling schemes. We also demonstrate that the accuracy of the SHT is not affected due to the proposed reduction in the spatial dimensionality.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyC2015f_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@inproceedings{KennedyC2015f,<br />title = {On the use of {Slepian} Functions for the Reconstruction of the Head-Related Transfer Function on the Sphere},<br />author = {Bates, A. P. and Khalid, Z. and Kennedy, R. A.},<br />booktitle = {Proc. Int. Conf. Signal Processing and Communication Systems, ICSPCS'2015},<br />address = {Cairns, Australia},<br />pages = {7},<br />month = {December},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: Maximal Multiplicative Spatial-Spectral Concentration on the Sphere: Optimal Basis -->
+<!-- Authors: Z. Khalid and R. A. Kennedy -->
+	<div class="Bibentry">[2]
+		<span class="Author">Z. Khalid and R. A. Kennedy, </span>
+		<span class="Title">"Maximal Multiplicative Spatial-Spectral Concentration on the Sphere: Optimal Basis", </span>
+		<span class="Booktitle">Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015, </span>
+		<span class="Address">Brisbane, Australia, </span>
+		<span class="Pages">pp.&nbsp;4160-4164, </span>
+		<span class="Month">April </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyC2015c_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyC2015c_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/ICASSP.2015.7178754" target="_blank">10.1109/ICASSP.2015.7178754</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07178754.pdf" target="_blank">07178754.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com.au/scholar?q=Maximal+Multiplicative+Spatial-Spectral+Concentration+on+the+Sphere%3A+Optimal+Basis" target="_blank">[link]</a></span>
+			<!-- Abstract -->
+		<div id="KennedyC2015c_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> In this work, we design complete orthonormal basis functions, which are referred to as optimal basis functions, that span the vector sum of subspaces formed by band-limited spatially concentrated and space-limited spectrally concentrated functions. The optimal basis are shown to be a linear combination of band-limited functions with maximized energy concentration in some spatial region of interest and space-limited functions which maximize the energy concentration in some spectral region. The linear combination is designed with an optimality condition of maximizing the product of measures of energy concentration in the spatial and spectral domain. We also show that each optimal basis is an eigenfunction of a linear operator which maximizes the product of energy concentration measures in spatial and spectral domain. Finally, we discuss the properties of the proposed optimal basis functions and highlight their usefulness for the signal representation and data analysis due to the simultaneous concentration of the proposed basis functions in spatial and spectral domains.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyC2015c_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@inproceedings{KennedyC2015c,<br />title = {Maximal Multiplicative Spatial-Spectral Concentration on the Sphere: Optimal Basis},<br />author = {Khalid, Z. and Kennedy, R. A.},<br />booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015},<br />address = {Brisbane, Australia},<br />pages = {4160-4164},<br />month = {April},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: Spherical Harmonic Transform for Minimum Dimensionality Regular Grid Sampling on the Sphere -->
+<!-- Authors: Z. Khalid and R. A. Kennedy -->
+	<div class="Bibentry">[3]
+		<span class="Author">Z. Khalid and R. A. Kennedy, </span>
+		<span class="Title">"Spherical Harmonic Transform for Minimum Dimensionality Regular Grid Sampling on the Sphere", </span>
+		<span class="Booktitle">Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015, </span>
+		<span class="Address">Brisbane, Australia, </span>
+		<span class="Pages">pp.&nbsp;3656-3660, </span>
+		<span class="Month">April </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyC2015b_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyC2015b_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/ICASSP.2015.7178653" target="_blank">10.1109/ICASSP.2015.7178653</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07178653.pdf" target="_blank">07178653.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com.au/scholar?q=Spherical+Harmonic+Transform+for+Minimum+Dimensionality+Regular+Grid+Sampling+on+the+Sphere" target="_blank">[link]</a></span>
+			<!-- Abstract -->
+		<!-- Bibtex -->
+	  <div id="KennedyC2015b_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@inproceedings{KennedyC2015b,<br />title = {Spherical Harmonic Transform for Minimum Dimensionality Regular Grid Sampling on the Sphere},<br />author = {Khalid, Z. and Kennedy, R. A.},<br />booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015},<br />address = {Brisbane, Australia},<br />pages = {3656-3660},<br />month = {April},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+<!-- Paper Title: An Optimal Dimensionality Sampling Scheme on the Sphere for Antipodal Signals in Diffusion Magnetic Resonance Imaging -->
+<!-- Authors: A. P. Bates, Z. Khalid, and R. A. Kennedy -->
+	<div class="Bibentry">[4]
+		<span class="Author">A. P. Bates, Z. Khalid, and R. A. Kennedy, </span>
+		<span class="Title">"An Optimal Dimensionality Sampling Scheme on the Sphere for Antipodal Signals in Diffusion Magnetic Resonance Imaging", </span>
+		<span class="Booktitle">Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015, </span>
+		<span class="Address">South Brisbane, Australia, </span>
+		<span class="Pages">pp.&nbsp;872-876, </span>
+		<span class="Month">April </span>
+		<span class="Date">2015.</span>
+		<div class="CheckBoxes">
+			<form>
+				<input type="button" value="Abstract" onclick="toggle('KennedyC2015a_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyC2015a_bibtex');" />
+			</form>
+		</div>
+		<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/ICASSP.2015.7178094" target="_blank">10.1109/ICASSP.2015.7178094</a></span>
+		<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2015/07178094.pdf" target="_blank">07178094.pdf</a></span>
+		<span class="Url">Google-Scholar:&nbsp;<a href="https://scholar.google.com.au/scholar?q=10.1109/ICASSP.2015.7178094" target="_blank">[2]</a></span>
+		<span class="Url">arXiv:<a href="http://arxiv.org/abs/1502.07099" target="_blank">http://arxiv.org/abs/1502.07099</a></span>
+			<!-- Abstract -->
+		<div id="KennedyC2015a_abstract" class="Abstract-toggle" style="display:none">
+			<div class="Abstract">
+				<strong>Abstract:</strong> We propose a sampling scheme on the sphere and develop a corresponding spherical harmonic transform (SHT) for the accurate reconstruction of the diffusion signal in diffusion magnetic resonance imaging (dMRI). By exploiting the antipodal symmetry, we design a sampling scheme that requires the optimal number of samples on the sphere, equal to the degrees of freedom required to represent the antipodally symmetric band-limited diffusion signal in the spectral (spherical harmonic) domain. Compared with existing sampling schemes on the sphere that allow for the accurate reconstruction of the diffusion signal, the proposed sampling scheme reduces the number of samples required by a factor of two or more. We analyse the numerical accuracy of the proposed SHT and show through experiments that the proposed sampling allows for the accurate and rotationally invariant computation of the SHT to near machine precision accuracy.
+			</div>
+		</div>
+		<!-- Bibtex -->
+	  <div id="KennedyC2015a_bibtex" class="Bibtex-toggle" style="display:none">
+		  <div class="Bibtex">
+		    <span>@inproceedings{KennedyC2015a,<br />title = {An Optimal Dimensionality Sampling Scheme on the Sphere for Antipodal Signals in Diffusion Magnetic Resonance Imaging},<br />author = {Bates, A. P. and Khalid, Z. and Kennedy, R. A.},<br />booktitle = {Proc. IEEE Int. Conf. Acoustics, Speech and Signal Processing, ICASSP'2015},<br />address = {South Brisbane, Australia},<br />pages = {872-876},<br />month = {April},<br />year = {2015}}</span>
+			</div>
+	  </div>
+	</div>
+
+<!---->
+</div>
+
+<hr style="opacity: 0.5" />
+
+
+</div>
+
+		</div>
+	 </div>
+
+	 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+	 <script>
+		(function(document) {
+		  var toggle = document.querySelector('.sidebar-toggle');
+		  var sidebar = document.querySelector('#sidebar');
+		  var checkbox = document.querySelector('#sidebar-checkbox');
+
+		  document.addEventListener('click', function(e) {
+			 var target = e.target;
+
+			 if(!checkbox.checked ||
+				 sidebar.contains(target) ||
+				 (target === checkbox || target === toggle)) return;
+
+			 checkbox.checked = false;
+		  }, false);
+		})(document);
+	 </script>
+  </body>
+</html>

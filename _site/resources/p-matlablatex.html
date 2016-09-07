@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>
+			Kennedy &middot; Latex labels with MATLAB&reg;
+		</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/rod/public/css/poole-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/syntax.css">
+		<link rel="stylesheet" href="/rod/public/css/lanyon-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/bibdesk-export.css">
+		<link rel="stylesheet" href="/rod/public/css/raksite.css">
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+		<!-- Icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rod/public/apple-touch-icon-precomposed.png">
+		<link rel="shortcut icon" href="/rod/public/favicon.ico">
+
+		<!-- javascript -->
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				var links = document.links;
+				for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+					if (links[i].hostname != window.location.hostname) {
+						links[i].target = '_blank';
+					}
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function toggle(id) {
+				e = document.getElementById(id);
+				if (e.style.display == "none")
+					e.style.display = "inline";
+				else
+					e.style.display = "none";
+			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			if (typeof jQuery == 'undefined') {
+				document.write(unescape("%3Cscript src='public/js/jquery-1.11.3.js' type='text/javascript'%3E%3C/script%3E"));
+		  	}
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#hide-bibtex").click(function() {
+					$(".Bibtex-toggle").hide();
+				});
+				$("#show-bibtex").click(function() {
+					$(".Bibtex-toggle").show();
+				});
+				$("#hide-abstract").click(function() {
+					$(".Abstract-toggle").hide();
+				});
+				$("#show-abstract").click(function() {
+					$(".Abstract-toggle").show();
+				});
+			});
+		</script>
+
+		<!-- fontawesome: icon font -->
+		<script src="https://use.fontawesome.com/53cb97c394.js"></script>
+
+		<!-- mathjax enable latex math with equation numbers $$\begin{equation} ... \end{equation}$$ kramdown syntax -->
+		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				TeX: {
+					equationNumbers: { autoNumber: "AMS" },
+					extensions: ["color.js"] },
+				SVG: {
+					scale: 90, blacker: 20 } });
+		</script>
+	</head>
+
+
+  <body class="theme-base-0b sidebar-overlay">
+
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+   <div class="sidebar-item">
+      Website of<br><b>Prof Rodney A. Kennedy</b><i class="fa fa-cog fa-spin fa-1x fa-fw"></i>
+   </div>
+
+   <nav class="sidebar-nav">
+      <a class="sidebar-nav-item "
+         href="/rod/index.html"><i class="fa fa-institution fa-fw" aria-hidden="true"></i>&nbsp; Home Page</a>
+      <a class="sidebar-nav-item"
+         href="/rod/contact.html"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a>
+      <a class="sidebar-nav-item"
+         href="/rod/students.html"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;PhD Students</a>
+      <a class="sidebar-nav-item"
+         href="/rod/publications.html"><i class="fa fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Publications</a>
+      <a class="sidebar-nav-item"
+         href="/rod/book.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hilbert Book</a>
+      <a class="sidebar-nav-item"
+         href="/rod/dp15.html"><i class="fa fa-rocket fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;ARC Grant DP150101011</a>
+      <a class="sidebar-nav-item"
+         href="/rod/resources.html"><i class="fa fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Resources</a>
+      <a class="sidebar-nav-item"
+         href="/rod/misc.html"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Miscellaneous</a>
+  </nav>
+
+  <div class="sidebar-item">
+     Site Version v1.1.0<br>
+     <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+     &copy; 2016. All rights reserved.
+  </div>
+</div>
+
+    <div class="wrap">
+      &nbsp;
+      <div class="container content">
+         <div class="page">
+   <h2 class="page-title">Latex labels with MATLAB&reg;</h2>
+   <span class="post-date">Technical Note &mdash; 6 Sep 2016</span>
+   <h3 class="no_toc" id="contents">Contents</h3>
+
+<ul id="markdown-toc">
+  <li><a href="#matlabreg-code-mdash-codecmplxexpmcodematlabcmplxexpm" id="markdown-toc-matlabreg-code-mdash-codecmplxexpmcodematlabcmplxexpm">MATLAB® code — <a href="matlab/cmplxexp.m"><code>cmplxexp.m</code></a></a></li>
+  <li><a href="#output-png-figure-mdash-codect-cmplxexppngcodematlabfiguresct-cmplxexppng" id="markdown-toc-output-png-figure-mdash-codect-cmplxexppngcodematlabfiguresct-cmplxexppng">Output png Figure — <a href="matlab/figures/ct-cmplxexp.png"><code>ct-cmplxexp.png</code></a></a></li>
+  <li><a href="#output-png-figure-mdash-codedt-cmplxexppngcodematlabfiguresdt-cmplxexppng" id="markdown-toc-output-png-figure-mdash-codedt-cmplxexppngcodematlabfiguresdt-cmplxexppng">Output png Figure — <a href="matlab/figures/dt-cmplxexp.png"><code>dt-cmplxexp.png</code></a></a></li>
+</ul>
+
+<hr style="opacity: 0.5" />
+
+<h3 id="matlabreg-code-mdash-codecmplxexpmcodematlabcmplxexpm">MATLAB® code — <a href="matlab/cmplxexp.m"><code>cmplxexp.m</code></a></h3>
+
+<figure class="highlight"><pre><code class="language-matlab" data-lang="matlab"><span class="nb">alpha</span><span class="o">=-</span><span class="mf">0.2</span><span class="o">+</span><span class="mi">2</span><span class="nb">j</span><span class="p">;</span>
+<span class="n">C</span><span class="o">=</span><span class="mf">0.5</span><span class="o">+</span><span class="mf">0.7</span><span class="nb">j</span><span class="p">;</span>
+
+<span class="n">dd</span><span class="o">=</span><span class="mf">0.1</span><span class="p">;</span>
+<span class="n">t</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="n">dd</span><span class="p">:</span><span class="mi">10</span><span class="p">];</span>
+<span class="n">yt</span><span class="o">=</span><span class="n">C</span><span class="o">*</span><span class="nb">exp</span><span class="p">(</span><span class="nb">alpha</span><span class="o">*</span><span class="n">t</span><span class="p">);</span>
+
+<span class="nb">clf</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="s1">'position'</span><span class="p">,[</span><span class="mf">0.05</span> <span class="mf">0.06</span> <span class="mf">0.9</span> <span class="mf">1.1</span><span class="p">])</span> <span class="c1">% so png's clip nicely</span>
+
+<span class="c1">% plot the continuous curve</span>
+<span class="nb">plot3</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="nb">real</span><span class="p">(</span><span class="n">yt</span><span class="p">),</span> <span class="nb">imag</span><span class="p">(</span><span class="n">yt</span><span class="p">),</span> <span class="s1">'green'</span><span class="p">)</span>
+<span class="nb">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">10</span> <span class="mi">10</span> <span class="o">-</span><span class="mi">8</span> <span class="mi">8</span> <span class="o">-</span><span class="mi">8</span> <span class="mi">8</span><span class="p">]);</span> <span class="nb">axis</span> <span class="n">square</span>
+<span class="nb">set</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'defaultAxesTickLabelInterpreter'</span><span class="p">,</span><span class="s1">'latex'</span><span class="p">);</span>
+<span class="nb">set</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'defaultLegendInterpreter'</span><span class="p">,</span><span class="s1">'latex'</span><span class="p">);</span>
+
+<span class="c1">% labels (in latex)</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'continuous time $t$'</span><span class="p">,</span> <span class="s1">'Interpreter'</span><span class="p">,</span> <span class="s1">'Latex'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'real part'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="nb">zlabel</span><span class="p">(</span><span class="s1">'imag part'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="n">h</span><span class="o">=</span><span class="nb">text</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">'$x(t)=(0.5+0.7j)\,e^{(-0.2+2j)t}$'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
+<span class="nb">shg</span><span class="p">;</span> <span class="nb">pause</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span> <span class="c1">% flash up the CT complex exponential</span>
+
+<span class="c1">% output CT complex exponential to png file</span>
+<span class="nb">set</span><span class="p">(</span><span class="nb">gcf</span><span class="p">,</span><span class="s1">'PaperUnits'</span><span class="p">,</span><span class="s1">'inches'</span><span class="p">,</span><span class="s1">'PaperPosition'</span><span class="p">,[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span> <span class="mi">5</span><span class="p">])</span> <span class="c1">%150dpi</span>
+<span class="nb">saveas</span><span class="p">(</span><span class="nb">gcf</span><span class="p">,</span> <span class="s1">'figures/ct-cmplxexp'</span><span class="p">,</span> <span class="s1">'png'</span><span class="p">)</span>
+
+<span class="nb">hold</span> <span class="n">on</span><span class="p">;</span> <span class="c1">% we will overlay the CT complex exponential with the DT complex exponential</span>
+
+<span class="c1">% plot the discrete points</span>
+<span class="n">n</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="p">];</span>
+<span class="n">yn</span><span class="o">=</span><span class="n">C</span><span class="o">*</span><span class="nb">exp</span><span class="p">(</span><span class="nb">alpha</span><span class="o">*</span><span class="n">n</span><span class="p">);</span>
+<span class="nb">plot3</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">real</span><span class="p">(</span><span class="n">yn</span><span class="p">),</span> <span class="nb">imag</span><span class="p">(</span><span class="n">yn</span><span class="p">),</span> <span class="s1">'*'</span><span class="p">)</span>
+
+<span class="c1">% labels (in latex)</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'discrete time $n$'</span><span class="p">,</span> <span class="s1">'Interpreter'</span><span class="p">,</span> <span class="s1">'Latex'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="nb">delete</span><span class="p">(</span><span class="n">h</span><span class="p">);</span> <span class="c1">% remove old CT text label</span>
+<span class="nb">text</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">'$x[n]=(0.5+0.7j)\,\beta^n,\quad \beta=e^{-0.2+2j}$'</span><span class="p">,</span> <span class="s1">'FontSize'</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
+
+<span class="c1">% output DT complex exponential to png file</span>
+<span class="nb">set</span><span class="p">(</span><span class="nb">gcf</span><span class="p">,</span><span class="s1">'PaperUnits'</span><span class="p">,</span><span class="s1">'inches'</span><span class="p">,</span><span class="s1">'PaperPosition'</span><span class="p">,[</span><span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span> <span class="mi">5</span><span class="p">])</span> <span class="c1">%150dpi</span>
+<span class="nb">saveas</span><span class="p">(</span><span class="nb">gcf</span><span class="p">,</span> <span class="s1">'figures/dt-cmplxexp'</span><span class="p">,</span> <span class="s1">'png'</span><span class="p">)</span>
+
+<span class="nb">hold</span> <span class="n">off</span><span class="p">;</span> <span class="nb">shg</span></code></pre></figure>
+
+<h3 id="output-png-figure-mdash-codect-cmplxexppngcodematlabfiguresct-cmplxexppng">Output png Figure — <a href="matlab/figures/ct-cmplxexp.png"><code>ct-cmplxexp.png</code></a></h3>
+
+<p><img src="matlab/figures/ct-cmplxexp.png" alt="ct" width="45%" class="matlab" /></p>
+
+<h3 id="output-png-figure-mdash-codedt-cmplxexppngcodematlabfiguresdt-cmplxexppng">Output png Figure — <a href="matlab/figures/dt-cmplxexp.png"><code>dt-cmplxexp.png</code></a></h3>
+
+<p><img src="matlab/figures/dt-cmplxexp.png" alt="dt" width="45%" class="matlab" /></p>
+
+   <hr style="opacity: 0.5">
+   
+   <h3 id="code-index">Code Index:</h3>
+      <ul>
+         <li><small><code>[06 Sep 2016]</code></small> &mdash; Latex labels with MATLAB&reg; </li>
+         <li><small><code>[21 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-tikz-external-png.html">TikZ&ndash;tikzexternalize to png</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-sp-latex.html">Spherical Harmonics LaTeX Macros</a></li>
+         <li><small><code>[01 Aug 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-bibdeskexport.html">BibDesk Publication html Export</a></li>
+      </ul>
+      
+   <h3 id="sphere-index">Sphere Index:</h3>
+      <ul>
+         <li><small><code>[06 Aug 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-spharm.html">Spherical Harmonic Plotting with MATLAB&reg;</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-sp-latex.html">Spherical Harmonics LaTeX Macros</a></li>
+         <li><small><code>[16 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-shplot.html">Spherical Harmonic MATLAB&reg; Code 1</a></li>
+      </ul>
+      
+   <h3 id="misc-index">Misc Index:</h3>
+      <ul>
+         <li><small><code>[31 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-ornament.html">Outputing png from pgfornament</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-gaussleg.html">Improving Gauss-Legendre</a></li>
+      </ul>
+      
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+         var toggle = document.querySelector('.sidebar-toggle');
+         var sidebar = document.querySelector('#sidebar');
+         var checkbox = document.querySelector('#sidebar-checkbox');
+
+         document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked || sidebar.contains(target) ||
+               (target === checkbox || target === toggle)) return;
+
+            checkbox.checked = false;
+         }, false);
+         })(document);
+      </script>
+   </body>
+</html>

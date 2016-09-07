@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>
+			Kennedy &middot; BibDesk Publication html Export
+		</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/rod/public/css/poole-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/syntax.css">
+		<link rel="stylesheet" href="/rod/public/css/lanyon-rak.css">
+		<link rel="stylesheet" href="/rod/public/css/bibdesk-export.css">
+		<link rel="stylesheet" href="/rod/public/css/raksite.css">
+
+		<!-- External CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+		<!-- Icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/rod/public/apple-touch-icon-precomposed.png">
+		<link rel="shortcut icon" href="/rod/public/favicon.ico">
+
+		<!-- javascript -->
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				var links = document.links;
+				for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+					if (links[i].hostname != window.location.hostname) {
+						links[i].target = '_blank';
+					}
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			function toggle(id) {
+				e = document.getElementById(id);
+				if (e.style.display == "none")
+					e.style.display = "inline";
+				else
+					e.style.display = "none";
+			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			if (typeof jQuery == 'undefined') {
+				document.write(unescape("%3Cscript src='public/js/jquery-1.11.3.js' type='text/javascript'%3E%3C/script%3E"));
+		  	}
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#hide-bibtex").click(function() {
+					$(".Bibtex-toggle").hide();
+				});
+				$("#show-bibtex").click(function() {
+					$(".Bibtex-toggle").show();
+				});
+				$("#hide-abstract").click(function() {
+					$(".Abstract-toggle").hide();
+				});
+				$("#show-abstract").click(function() {
+					$(".Abstract-toggle").show();
+				});
+			});
+		</script>
+
+		<!-- fontawesome: icon font -->
+		<script src="https://use.fontawesome.com/53cb97c394.js"></script>
+
+		<!-- mathjax enable latex math with equation numbers $$\begin{equation} ... \end{equation}$$ kramdown syntax -->
+		<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				TeX: {
+					equationNumbers: { autoNumber: "AMS" },
+					extensions: ["color.js"] },
+				SVG: {
+					scale: 90, blacker: 20 } });
+		</script>
+	</head>
+
+
+  <body class="theme-base-0b sidebar-overlay">
+
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+   <div class="sidebar-item">
+      Website of<br><b>Prof Rodney A. Kennedy</b><i class="fa fa-cog fa-spin fa-1x fa-fw"></i>
+   </div>
+
+   <nav class="sidebar-nav">
+      <a class="sidebar-nav-item "
+         href="/rod/index.html"><i class="fa fa-institution fa-fw" aria-hidden="true"></i>&nbsp; Home Page</a>
+      <a class="sidebar-nav-item"
+         href="/rod/contact.html"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a>
+      <a class="sidebar-nav-item"
+         href="/rod/students.html"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;PhD Students</a>
+      <a class="sidebar-nav-item"
+         href="/rod/publications.html"><i class="fa fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Publications</a>
+      <a class="sidebar-nav-item"
+         href="/rod/book.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hilbert Book</a>
+      <a class="sidebar-nav-item"
+         href="/rod/dp15.html"><i class="fa fa-rocket fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;ARC Grant DP150101011</a>
+      <a class="sidebar-nav-item"
+         href="/rod/resources.html"><i class="fa fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Resources</a>
+      <a class="sidebar-nav-item"
+         href="/rod/misc.html"><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Miscellaneous</a>
+  </nav>
+
+  <div class="sidebar-item">
+     Site Version v1.1.0<br>
+     <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://github.com/poole/lanyon">Lanyon</a><br>
+     &copy; 2016. All rights reserved.
+  </div>
+</div>
+
+    <div class="wrap">
+      &nbsp;
+      <div class="container content">
+         <div class="page">
+   <h2 class="page-title">BibDesk Publication html Export</h2>
+   <span class="post-date">Technical Note &mdash; 1 Aug 2015</span>
+   <h3 class="no_toc" id="contents">Contents</h3>
+
+<ul id="markdown-toc">
+  <li><a href="#bibdesk-template-default-item-mdash-coderaksite-default-itemhtmlcodebibdesk-exportraksite-default-itemhtml" id="markdown-toc-bibdesk-template-default-item-mdash-coderaksite-default-itemhtmlcodebibdesk-exportraksite-default-itemhtml">BibDesk Template Default Item — <a href="bibdesk-export/raksite-default-item.html"><code>raksite-default-item.html</code></a></a></li>
+  <li><a href="#bibdesk-template-main-page-mdash-coderaksite-main-pagehtmlcodebibdesk-exportraksite-main-pagehtml" id="markdown-toc-bibdesk-template-main-page-mdash-coderaksite-main-pagehtmlcodebibdesk-exportraksite-main-pagehtml">BibDesk Template Main Page — <a href="bibdesk-export/raksite-main-page.html"><code>raksite-main-page.html</code></a></a></li>
+  <li><a href="#style-file-mdash-codebibdesk-exportcsscodebibdesk-exportbibdesk-exportcss" id="markdown-toc-style-file-mdash-codebibdesk-exportcsscodebibdesk-exportbibdesk-exportcss">Style file — <a href="bibdesk-export/bibdesk-export.css"><code>bibdesk-export.css</code></a></a></li>
+  <li><a href="#javascript-mdash-codetogglejscodebibdesk-exporttogglejs" id="markdown-toc-javascript-mdash-codetogglejscodebibdesk-exporttogglejs">Javascript — <a href="bibdesk-export/toggle.js"><code>toggle.js</code></a></a></li>
+  <li><a href="#export-example" id="markdown-toc-export-example">Export Example</a>    <ul>
+      <li><a href="#bibdesk-exported-html-source" id="markdown-toc-bibdesk-exported-html-source">BibDesk Exported html Source</a></li>
+      <li><a href="#bibdesk-exported-html-in-browser-with-css-codebibdesk-exportcsscode" id="markdown-toc-bibdesk-exported-html-in-browser-with-css-codebibdesk-exportcsscode">BibDesk Exported html in Browser (with css <code>bibdesk-export.css</code>)</a></li>
+    </ul>
+  </li>
+  <li><a href="#downloads" id="markdown-toc-downloads">Downloads</a></li>
+</ul>
+
+<hr style="opacity: 0.5" />
+
+<p>This is material for a html export template for BibDesk.</p>
+
+<h3 id="bibdesk-template-default-item-mdash-coderaksite-default-itemhtmlcodebibdesk-exportraksite-default-itemhtml">BibDesk Template Default Item — <a href="bibdesk-export/raksite-default-item.html"><code>raksite-default-item.html</code></a></h3>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Paper</span> <span class="nt">Title</span><span class="o">:</span> <span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Title.stringByRemovingCurlyBraces</span><span class="o">/&gt;</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Authors</span><span class="o">:</span> <span class="o">&lt;</span><span class="err">$</span><span class="nt">authors</span><span class="nc">.abbreviatedName</span><span class="o">.</span><span class="k">@componentsJoinedByCommaAndAnd</span><span class="p">/</span><span class="err">&gt;</span> <span class="n">--</span><span class="err">&gt;</span>
+
+<span class="err">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Bibentry"</span><span class="err">&gt;</span><span class="p">[</span><span class="err">&lt;$#</span><span class="p">/</span><span class="err">&gt;</span><span class="p">]</span>
+<span class="err">&lt;$</span><span class="n">pubAuthorsForDisplay</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Author"</span><span class="err">&gt;&lt;$</span><span class="n">authors</span><span class="p">.</span><span class="n">abbreviatedName</span><span class="p">.</span><span class="err">@</span><span class="n">componentsJoinedByCommaAndAnd</span><span class="p">/</span><span class="err">&gt;</span><span class="p">,</span> <span class="err">&lt;</span><span class="p">/</span><span class="n">span</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="p">/</span><span class="err">$</span><span class="n">pubAuthorsForDisplay</span><span class="err">?&gt;</span>
+<span class="err">&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Title</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Title"</span><span class="err">&gt;</span><span class="s1">"&lt;$fields.Title.stringByRemovingCurlyBraces/&gt;"</span><span class="p">,</span> <span class="err">&lt;</span><span class="p">/</span><span class="n">span</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="p">/</span><span class="err">$</span><span class="n">fields</span><span class="p">.</span><span class="n">Title</span><span class="err">?&gt;</span>
+<span class="err">&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Journal</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Journal"</span><span class="err">&gt;&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Journal</span><span class="p">.</span><span class="n">stringByRemovingCurlyBraces</span><span class="p">/</span><span class="err">&gt;</span><span class="p">,</span> <span class="err">&lt;</span><span class="p">/</span><span class="n">span</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="p">/</span><span class="err">$</span><span class="n">fields</span><span class="p">.</span><span class="n">Journal</span><span class="err">?&gt;</span>
+<span class="err">&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Booktitle</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Booktitle"</span><span class="err">&gt;&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Booktitle</span><span class="p">/</span><span class="err">&gt;</span><span class="p">,</span> <span class="err">&lt;</span><span class="p">/</span><span class="n">span</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="p">/</span><span class="err">$</span><span class="n">fields</span><span class="p">.</span><span class="n">Booktitle</span><span class="err">?&gt;</span>
+<span class="err">&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Publisher</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Publisher"</span><span class="err">&gt;&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Publisher</span><span class="p">/</span><span class="err">&gt;</span><span class="p">,</span> <span class="err">&lt;</span><span class="p">/</span><span class="n">span</span><span class="err">&gt;</span>
+<span class="err">&lt;</span><span class="p">/</span><span class="err">$</span><span class="n">fields</span><span class="p">.</span><span class="n">Publisher</span><span class="err">?&gt;</span>
+<span class="err">&lt;$</span><span class="n">fields</span><span class="p">.</span><span class="n">Volume</span><span class="err">?&gt;</span>
+<span class="err">&lt;</span><span class="n">span</span> <span class="n">class</span><span class="err">=</span><span class="s1">"Volume"</span><span class="err">&gt;</span><span class="n">vol</span><span class="p">.</span><span class="err">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Volume</span><span class="o">/&gt;,</span> <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Volume</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Number</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Volume</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">no</span><span class="o">.&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Number</span><span class="o">/&gt;,</span> <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Number</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Address</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Address</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Address</span><span class="o">/&gt;,</span> <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Address</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pages</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Pages</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">pp</span><span class="o">.&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pages</span><span class="o">/&gt;,</span> <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pages</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Month</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Month</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Month</span><span class="o">/&gt;</span> <span class="o">&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Month</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Year</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Date</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Year</span><span class="o">/&gt;.&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Year</span><span class="o">?&gt;</span>
+
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Buttons</span><span class="o">:</span> <span class="nt">Abstract</span> <span class="nt">and</span> <span class="nt">BibTeX</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">CheckBoxes</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">form</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">input</span> <span class="nt">type</span><span class="o">=</span><span class="err">"</span><span class="nt">button</span><span class="err">"</span> <span class="nt">value</span><span class="o">=</span><span class="err">"</span><span class="nt">Abstract</span><span class="err">"</span> <span class="nt">onclick</span><span class="o">=</span><span class="err">"</span><span class="nt">toggle</span><span class="o">(</span><span class="err">'</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">citeKey</span><span class="o">/&gt;</span><span class="nt">_abstract</span><span class="err">'</span><span class="o">);</span><span class="err">"</span><span class="o">&gt;&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="nt">input</span> <span class="nt">type</span><span class="o">=</span><span class="err">"</span><span class="nt">button</span><span class="err">"</span> <span class="nt">value</span><span class="o">=</span><span class="err">"</span><span class="nt">BibTeX</span><span class="err">"</span> <span class="nt">onclick</span><span class="o">=</span><span class="err">"</span><span class="nt">toggle</span><span class="o">(</span><span class="err">'</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">citeKey</span><span class="o">/&gt;</span><span class="nt">_bibtex</span><span class="err">'</span><span class="o">);</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">form</span><span class="o">&gt;</span>
+
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Links</span><span class="o">:</span> <span class="nt">DOI</span><span class="o">,</span> <span class="nt">PDF</span><span class="o">,</span> <span class="nt">Google</span> <span class="nt">Scholar</span> <span class="nt">and</span> <span class="nt">Arxiv</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Doi</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Url</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">DOI</span><span class="o">:&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">"</span><span class="nt">http</span><span class="o">://</span><span class="nt">dx</span><span class="nc">.doi.org</span><span class="o">/&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Doi</span><span class="o">/&gt;</span><span class="err">"</span> <span class="nt">target</span><span class="o">=</span><span class="err">"</span><span class="nt">_blank</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Doi</span><span class="o">/&gt;&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Doi</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pdf-Url</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Url</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">PDF</span><span class="o">:&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pdf-Url</span><span class="o">/&gt;</span><span class="err">"</span> <span class="nt">target</span><span class="o">=</span><span class="err">"</span><span class="nt">_blank</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pdf-Url.lastPathComponent</span><span class="o">/&gt;&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pdf-Url</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar-Url</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar</span><span class="o">=</span><span class="nt">0</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Url</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">Google-Scholar</span><span class="o">:&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar-Url</span><span class="o">/&gt;</span><span class="err">"</span> <span class="nt">target</span><span class="o">=</span><span class="err">"</span><span class="nt">_blank</span><span class="err">"</span><span class="o">&gt;[</span><span class="nt">link</span><span class="o">]&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;?</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Url</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">Google-Scholar</span><span class="o">:&amp;</span><span class="nt">nbsp</span><span class="o">;&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar-Url</span><span class="o">/&gt;</span><span class="err">"</span> <span class="nt">target</span><span class="o">=</span><span class="err">"</span><span class="nt">_blank</span><span class="err">"</span><span class="o">&gt;[&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar</span><span class="o">/&gt;]&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar</span><span class="o">?&gt;</span>
+<span class="o">&lt;?</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar-Url</span><span class="o">?&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Google-Scholar-Url</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Arxiv</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Url</span><span class="err">"</span><span class="o">&gt;</span><span class="nt">arXiv</span><span class="o">:&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Arxiv</span><span class="o">/&gt;</span><span class="err">"</span> <span class="nt">target</span><span class="o">=</span><span class="err">"</span><span class="nt">_blank</span><span class="err">"</span><span class="o">&gt;&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Arxiv</span><span class="o">/&gt;&lt;/</span><span class="nt">a</span><span class="o">&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Arxiv</span><span class="o">?&gt;</span>
+
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Abstract</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Abstract</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">citeKey</span><span class="o">/&gt;</span><span class="nt">_abstract</span><span class="err">"</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Abstract-toggle</span><span class="err">"</span> <span class="nt">style</span><span class="o">=</span><span class="err">"</span><span class="nt">display</span><span class="nd">:none</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Abstract</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">strong</span><span class="o">&gt;</span><span class="nt">Abstract</span><span class="o">:&lt;/</span><span class="nt">strong</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Abstract.stringByRemovingTeX</span><span class="o">/&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Abstract</span><span class="o">?&gt;</span>
+
+<span class="o">&lt;!</span><span class="nt">--</span> <span class="nt">Bibtex</span> <span class="nt">--</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="err">"</span><span class="o">&lt;</span><span class="err">$</span><span class="nt">citeKey</span><span class="o">/&gt;</span><span class="nt">_bibtex</span><span class="err">"</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Bibtex-toggle</span><span class="err">"</span> <span class="nt">style</span><span class="o">=</span><span class="err">"</span><span class="nt">display</span><span class="nd">:none</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">div</span> <span class="nt">class</span><span class="o">=</span><span class="err">"</span><span class="nt">Bibtex</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nt">span</span><span class="o">&gt;@&lt;</span><span class="err">$</span><span class="nt">pubType</span><span class="o">/&gt;</span><span class="p">{</span><span class="err">&lt;$citeKey/&gt;,&lt;br&gt;&lt;$fields.Title?&gt;title</span> <span class="err">=</span> <span class="err">{&lt;$fields.Title/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Title</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Author</span><span class="o">?&gt;</span><span class="nt">author</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Author/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Author</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Journal</span><span class="o">?&gt;</span><span class="nt">journal</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Journal/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Journal</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Booktitle</span><span class="o">?&gt;</span><span class="nt">booktitle</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Booktitle/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Booktitle</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Publisher</span><span class="o">?&gt;</span><span class="nt">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Publisher/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Publisher</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Address</span><span class="o">?&gt;</span><span class="nt">address</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Address/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Address</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Volume</span><span class="o">?&gt;</span><span class="nt">volume</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Volume/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Volume</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pages</span><span class="o">?&gt;</span><span class="nt">pages</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Pages/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Pages</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Month</span><span class="o">?&gt;</span><span class="nt">month</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Month/&gt;</span><span class="p">}</span><span class="o">,&lt;</span><span class="nt">br</span><span class="o">&gt;&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Month</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Year</span><span class="o">?&gt;</span><span class="nt">year</span> <span class="o">=</span> <span class="p">{</span><span class="err">&lt;$fields.Year/&gt;</span><span class="p">}</span><span class="err">}</span><span class="o">&lt;/</span><span class="err">$</span><span class="nt">fields</span><span class="nc">.Year</span><span class="o">?&gt;&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 id="bibdesk-template-main-page-mdash-coderaksite-main-pagehtmlcodebibdesk-exportraksite-main-pagehtml">BibDesk Template Main Page — <a href="bibdesk-export/raksite-main-page.html"><code>raksite-main-page.html</code></a></h3>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">div</span> <span class="nt">id</span><span class="o">=</span><span class="err">"</span><span class="nt">content</span><span class="err">"</span><span class="o">&gt;</span>
+<span class="o">&lt;!</span><span class="nt">----</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="err">$</span><span class="nt">publicationsUsingTemplate</span><span class="o">/&gt;</span>
+<span class="o">&lt;!</span><span class="nt">----</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nt">div</span><span class="o">&gt;</span></code></pre></figure>
+
+<h3 id="style-file-mdash-codebibdesk-exportcsscodebibdesk-exportbibdesk-exportcss">Style file — <a href="bibdesk-export/bibdesk-export.css"><code>bibdesk-export.css</code></a></h3>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* css file for laying out publications exported by bibdesk */</span>
+
+<span class="nc">.Bibentry</span> <span class="p">{</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span><span class="p">;</span>
+	<span class="nl">line-height</span><span class="p">:</span> <span class="m">120%</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="m">0px</span> <span class="m">5px</span> <span class="m">22px</span><span class="p">;</span>
+	<span class="nl">text-indent</span><span class="p">:</span> <span class="m">-22px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.Title</span><span class="o">,</span> <span class="nc">.Pages</span><span class="o">,</span> <span class="nc">.Month</span><span class="o">,</span> <span class="nc">.Date</span><span class="o">,</span> <span class="nc">.Volume</span><span class="o">,</span> <span class="nc">.Author</span><span class="o">,</span> <span class="nc">.Year</span><span class="o">,</span> <span class="nc">.Publisher</span><span class="o">,</span> <span class="nc">.Address</span> <span class="p">{</span>
+	<span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.Journal</span><span class="o">,</span> <span class="nc">.Conference</span><span class="o">,</span> <span class="nc">.Booktitle</span> <span class="p">{</span>
+	<span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.Abstract</span> <span class="p">{</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+	<span class="nl">text-align</span><span class="p">:</span> <span class="nb">justify</span><span class="p">;</span>
+	<span class="nl">line-height</span><span class="p">:</span> <span class="m">110%</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+	<span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+	<span class="nl">margin-right</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+	<span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+	<span class="nl">padding-left</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+	<span class="nl">text-indent</span><span class="p">:</span> <span class="m">0px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.Bibtex</span> <span class="p">{</span>
+	<span class="nl">font-family</span><span class="p">:</span> <span class="n">monaco</span><span class="p">,</span> <span class="n">Consolas</span><span class="p">,</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="n">Courier</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">70%</span><span class="p">;</span>
+	<span class="nl">line-height</span><span class="p">:</span> <span class="m">120%</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+	<span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+	<span class="nl">margin-top</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+	<span class="nl">margin-right</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+	<span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+	<span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span>
+	<span class="nl">border-width</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+	<span class="nl">border-color</span><span class="p">:</span> <span class="m">#CFCFCF</span><span class="p">;</span>
+	<span class="nl">background</span><span class="p">:</span> <span class="m">#B5CFDA</span><span class="p">;</span>
+	<span class="nl">padding-left</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+	<span class="nl">text-indent</span><span class="p">:</span> <span class="m">-17px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">form</span> <span class="p">{</span>
+	<span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.CheckBoxes</span> <span class="p">{</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span><span class="p">;</span>
+	<span class="nl">margin-top</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+	<span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+	<span class="nl">padding-left</span><span class="p">:</span> <span class="m">22px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.Url</span> <span class="p">{</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">85%</span><span class="p">;</span>
+	<span class="nl">font-style</span><span class="p">:</span> <span class="nb">italic</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#000000</span><span class="p">;</span>
+	<span class="nl">padding-right</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+	<span class="nl">padding-top</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+	<span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="javascript-mdash-codetogglejscodebibdesk-exporttogglejs">Javascript — <a href="bibdesk-export/toggle.js"><code>toggle.js</code></a></h3>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">toggle</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">==</span> <span class="s2">"none"</span><span class="p">)</span>
+		<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"inline"</span><span class="p">;</span>
+	<span class="k">else</span>
+		<span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">"none"</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="export-example">Export Example</h3>
+
+<h4 id="bibdesk-exported-html-source">BibDesk Exported html Source</h4>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!----&gt;</span>
+<span class="c">&lt;!-- Paper Title: Relaying Protocols for Wireless Energy Harvesting and Information Processing --&gt;</span>
+<span class="c">&lt;!-- Authors: A. A. Nasir, X. Zhou, S. Durrani, and R. A. Kennedy --&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Bibentry"</span><span class="nt">&gt;</span>[1]
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Author"</span><span class="nt">&gt;</span>A. A. Nasir, X. Zhou, S. Durrani, and R. A. Kennedy, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Title"</span><span class="nt">&gt;</span>"Relaying Protocols for Wireless Energy Harvesting and Information Processing", <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Journal"</span><span class="nt">&gt;</span>IEEE Trans. Wireless Commun., <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Volume"</span><span class="nt">&gt;</span>vol.<span class="ni">&amp;nbsp;</span>12, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Volume"</span><span class="nt">&gt;</span>no.<span class="ni">&amp;nbsp;</span>7, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Pages"</span><span class="nt">&gt;</span>pp.<span class="ni">&amp;nbsp;</span>3622-3636, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Month"</span><span class="nt">&gt;</span>July <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Date"</span><span class="nt">&gt;</span>2013.<span class="nt">&lt;/span&gt;</span>
+
+<span class="c">&lt;!-- Buttons: Abstract and BibTeX --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"CheckBoxes"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;form&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Abstract"</span> <span class="na">onclick=</span><span class="s">"toggle('KennedyJ2013f_abstract');"</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"BibTeX"</span> <span class="na">onclick=</span><span class="s">"toggle('KennedyJ2013f_bibtex');"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+
+<span class="c">&lt;!-- Links: DOI, PDF, Google Scholar and Arxiv --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>DOI:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://dx.doi.org/10.1109/TWC.2013.062413.122042"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>10.1109/TWC.2013.062413.122042<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>PDF:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://users.rsise.anu.edu.au/~rod/papers/2013/06552840.pdf"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>06552840.pdf<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>Google-Scholar:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://scholar.google.com.au/scholar?q=10.1109/TWC.2013.062413.122042"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>[266]<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>arXiv:<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://arxiv.org/abs/1212.5406"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>http://arxiv.org/abs/1212.5406<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+
+<span class="c">&lt;!-- Abstract --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"KennedyJ2013f_abstract"</span> <span class="na">class=</span><span class="s">"Abstract-toggle"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Abstract"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;strong&gt;</span>Abstract:<span class="nt">&lt;/strong&gt;</span> An emerging solution for prolonging the lifetime of energy constrained relay nodes in wireless networks is to avail the ambient radio-frequency (RF) signal and to simultaneously harvest energy and process information. In this paper, an amplify-and-forward relaying network is considered, where an energy constrained relay node harvests energy from the received RF signal and uses that harvested energy to forward the source information to the destination. Based on the time switching and power splitting receiver architectures, two relaying protocols, namely, i) time switching-based relaying (TSR) protocol and ii) power splitting-based relaying (PSR) protocol are proposed to enable energy harvesting and information processing at the relay. In order to determine the throughput, analytical expressions for outage probability and ergodic capacity are derived for delay-limited and delay-tolerant transmission modes, respectively. The numerical analysis provides practical insights into the effect of various system parameters, such as energy harvesting time, power splitting ratio, source transmission rate, source to relay distance, noise power, and energy harvesting efficiency, on the performance of wireless energy harvesting and information processing using AF relay nodes. In particular, the TSR protocol outperforms the PSR protocol in terms of throughput at relatively low signal-to-noise-ratios and high transmission rate.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Bibtex --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"KennedyJ2013f_bibtex"</span> <span class="na">class=</span><span class="s">"Bibtex-toggle"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Bibtex"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;span&gt;</span>@article{KennedyJ2013f,<span class="nt">&lt;br&gt;</span>title = {Relaying Protocols for Wireless Energy Harvesting and Information Processing},<span class="nt">&lt;br&gt;</span>author = {Nasir, A. A. and Zhou, X. and Durrani, S. and Kennedy, R. A.},<span class="nt">&lt;br&gt;</span>journal = {{IEEE} Trans. Wireless Commun.},<span class="nt">&lt;br&gt;</span>volume = {12},<span class="nt">&lt;br&gt;</span>pages = {3622-3636},<span class="nt">&lt;br&gt;</span>month = {July},<span class="nt">&lt;br&gt;</span>year = {2013}}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- Paper Title: Hilbert Space Methods in Signal Processing --&gt;</span>
+<span class="c">&lt;!-- Authors: R. A. Kennedy and P. Sadeghi --&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Bibentry"</span><span class="nt">&gt;</span>[2]
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Author"</span><span class="nt">&gt;</span>R. A. Kennedy and P. Sadeghi, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Title"</span><span class="nt">&gt;</span>"Hilbert Space Methods in Signal Processing", <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Publisher"</span><span class="nt">&gt;</span>Cambridge University Press, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Address"</span><span class="nt">&gt;</span>Cambridge, UK, <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Month"</span><span class="nt">&gt;</span>March <span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Date"</span><span class="nt">&gt;</span>2013.<span class="nt">&lt;/span&gt;</span>
+
+<span class="c">&lt;!-- Buttons: Abstract and BibTeX --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"CheckBoxes"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;form&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Abstract"</span> <span class="na">onclick=</span><span class="s">"toggle('Kennedy-book:2013_abstract');"</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"BibTeX"</span> <span class="na">onclick=</span><span class="s">"toggle('Kennedy-book:2013_bibtex');"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+
+<span class="c">&lt;!-- Links: DOI, PDF, Google Scholar and Arxiv --&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>PDF:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://users.rsise.anu.edu.au/~rod/papers/2013/book-front.pdf"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>book-front.pdf<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"Url"</span><span class="nt">&gt;</span>Google-Scholar:<span class="ni">&amp;nbsp;</span><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://scholar.google.com.au/scholar?q=allintitle%3A+Hilbert+Space+Methods+in+Signal+Processing"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>[41]<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+
+<span class="c">&lt;!-- Abstract --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"Kennedy-book:2013_abstract"</span> <span class="na">class=</span><span class="s">"Abstract-toggle"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Abstract"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;strong&gt;</span>Abstract:<span class="nt">&lt;/strong&gt;</span> This lively and accessible book describes the theory and applications of Hilbert spaces and also presents the history of the subject to reveal the ideas behind theorems and the human struggle that led to them. The authors begin by establishing the concept of 'countably infinite', which is central to the proper understanding of separable Hilbert spaces. Fundamental ideas such as convergence, completeness and dense sets are first demonstrated through simple familiar examples and then formalised. Having addressed fundamental topics in Hilbert spaces, the authors then go on to cover the theory of bounded, compact and integral operators at an advanced but accessible level. Finally, the theory is put into action, considering signal processing on the unit sphere, as well as reproducing kernel Hilbert spaces. The text is interspersed with historical comments about central figures in the development of the theory, which helps bring the subject to life.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Bibtex --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"Kennedy-book:2013_bibtex"</span> <span class="na">class=</span><span class="s">"Bibtex-toggle"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"Bibtex"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;span&gt;</span>@book{Kennedy-book:2013,<span class="nt">&lt;br&gt;</span>title = {Hilbert Space Methods in Signal Processing},<span class="nt">&lt;br&gt;</span>author = {Kennedy, R. A. and Sadeghi, P.},<span class="nt">&lt;br&gt;</span>publisher = {Cambridge University Press},<span class="nt">&lt;br&gt;</span>address = {Cambridge, UK},<span class="nt">&lt;br&gt;</span>month = {March},<span class="nt">&lt;br&gt;</span>year = {2013}}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!----&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h4 id="bibdesk-exported-html-in-browser-with-css-codebibdesk-exportcsscode">BibDesk Exported html in Browser (with css <code>bibdesk-export.css</code>)</h4>
+
+<div id="content">
+<!---->
+<!-- Paper Title: Relaying Protocols for Wireless Energy Harvesting and Information Processing -->
+<!-- Authors: A. A. Nasir, X. Zhou, S. Durrani, and R. A. Kennedy -->
+
+<div class="Bibentry">[1]
+<span class="Author">A. A. Nasir, X. Zhou, S. Durrani, and R. A. Kennedy, </span>
+<span class="Title">"Relaying Protocols for Wireless Energy Harvesting and Information Processing", </span>
+<span class="Journal">IEEE Trans. Wireless Commun., </span>
+<span class="Volume">vol.&nbsp;12, </span>
+<span class="Volume">no.&nbsp;7, </span>
+<span class="Pages">pp.&nbsp;3622-3636, </span>
+<span class="Month">July </span>
+<span class="Date">2013.</span>
+
+<!-- Buttons: Abstract and BibTeX -->
+<div class="CheckBoxes">
+<form>
+<input type="button" value="Abstract" onclick="toggle('KennedyJ2013f_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('KennedyJ2013f_bibtex');" />
+</form>
+
+<!-- Links: DOI, PDF, Google Scholar and Arxiv -->
+</div>
+<span class="Url">DOI:&nbsp;<a href="http://dx.doi.org/10.1109/TWC.2013.062413.122042" target="_blank">10.1109/TWC.2013.062413.122042</a></span>
+<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2013/06552840.pdf" target="_blank">06552840.pdf</a></span>
+<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=10.1109/TWC.2013.062413.122042" target="_blank">[266]</a></span>
+<span class="Url">arXiv:<a href="http://arxiv.org/abs/1212.5406" target="_blank">http://arxiv.org/abs/1212.5406</a></span>
+
+<!-- Abstract -->
+<div id="KennedyJ2013f_abstract" class="Abstract-toggle" style="display:none">
+<div class="Abstract">
+<strong>Abstract:</strong> An emerging solution for prolonging the lifetime of energy constrained relay nodes in wireless networks is to avail the ambient radio-frequency (RF) signal and to simultaneously harvest energy and process information. In this paper, an amplify-and-forward relaying network is considered, where an energy constrained relay node harvests energy from the received RF signal and uses that harvested energy to forward the source information to the destination. Based on the time switching and power splitting receiver architectures, two relaying protocols, namely, i) time switching-based relaying (TSR) protocol and ii) power splitting-based relaying (PSR) protocol are proposed to enable energy harvesting and information processing at the relay. In order to determine the throughput, analytical expressions for outage probability and ergodic capacity are derived for delay-limited and delay-tolerant transmission modes, respectively. The numerical analysis provides practical insights into the effect of various system parameters, such as energy harvesting time, power splitting ratio, source transmission rate, source to relay distance, noise power, and energy harvesting efficiency, on the performance of wireless energy harvesting and information processing using AF relay nodes. In particular, the TSR protocol outperforms the PSR protocol in terms of throughput at relatively low signal-to-noise-ratios and high transmission rate.
+</div>
+</div>
+
+<!-- Bibtex -->
+<div id="KennedyJ2013f_bibtex" class="Bibtex-toggle" style="display:none">
+<div class="Bibtex">
+<span>@article{KennedyJ2013f,<br />title = {Relaying Protocols for Wireless Energy Harvesting and Information Processing},<br />author = {Nasir, A. A. and Zhou, X. and Durrani, S. and Kennedy, R. A.},<br />journal = {{IEEE} Trans. Wireless Commun.},<br />volume = {12},<br />pages = {3622-3636},<br />month = {July},<br />year = {2013}}</span>
+</div>
+</div>
+</div>
+<!-- Paper Title: Hilbert Space Methods in Signal Processing -->
+<!-- Authors: R. A. Kennedy and P. Sadeghi -->
+
+<div class="Bibentry">[2]
+<span class="Author">R. A. Kennedy and P. Sadeghi, </span>
+<span class="Title">"Hilbert Space Methods in Signal Processing", </span>
+<span class="Publisher">Cambridge University Press, </span>
+<span class="Address">Cambridge, UK, </span>
+<span class="Month">March </span>
+<span class="Date">2013.</span>
+
+<!-- Buttons: Abstract and BibTeX -->
+<div class="CheckBoxes">
+<form>
+<input type="button" value="Abstract" onclick="toggle('Kennedy-book:2013_abstract');" />&nbsp;<input type="button" value="BibTeX" onclick="toggle('Kennedy-book:2013_bibtex');" />
+</form>
+
+<!-- Links: DOI, PDF, Google Scholar and Arxiv -->
+</div>
+<span class="Url">PDF:&nbsp;<a href="http://users.rsise.anu.edu.au/~rod/papers/2013/book-front.pdf" target="_blank">book-front.pdf</a></span>
+<span class="Url">Google-Scholar:&nbsp;<a href="http://scholar.google.com.au/scholar?q=allintitle%3A+Hilbert+Space+Methods+in+Signal+Processing" target="_blank">[41]</a></span>
+
+<!-- Abstract -->
+<div id="Kennedy-book:2013_abstract" class="Abstract-toggle" style="display:none">
+<div class="Abstract">
+<strong>Abstract:</strong> This lively and accessible book describes the theory and applications of Hilbert spaces and also presents the history of the subject to reveal the ideas behind theorems and the human struggle that led to them. The authors begin by establishing the concept of 'countably infinite', which is central to the proper understanding of separable Hilbert spaces. Fundamental ideas such as convergence, completeness and dense sets are first demonstrated through simple familiar examples and then formalised. Having addressed fundamental topics in Hilbert spaces, the authors then go on to cover the theory of bounded, compact and integral operators at an advanced but accessible level. Finally, the theory is put into action, considering signal processing on the unit sphere, as well as reproducing kernel Hilbert spaces. The text is interspersed with historical comments about central figures in the development of the theory, which helps bring the subject to life.
+</div>
+</div>
+
+<!-- Bibtex -->
+<div id="Kennedy-book:2013_bibtex" class="Bibtex-toggle" style="display:none">
+<div class="Bibtex">
+<span>@book{Kennedy-book:2013,<br />title = {Hilbert Space Methods in Signal Processing},<br />author = {Kennedy, R. A. and Sadeghi, P.},<br />publisher = {Cambridge University Press},<br />address = {Cambridge, UK},<br />month = {March},<br />year = {2013}}</span>
+</div>
+</div>
+</div>
+
+<!---->
+</div>
+
+<h3 id="downloads">Downloads</h3>
+
+<ul>
+  <li><a href="bibdesk-export/raksite-default-item.html"><code>raksite-default-item.html</code></a></li>
+  <li><a href="bibdesk-export/raksite-main-page.html"><code>raksite-main-page.html</code></a></li>
+  <li><a href="bibdesk-export/bibdesk-export.css"><code>bibdesk-export.css</code></a></li>
+  <li><a href="bibdesk-export/toggle.js"><code>toggle.js</code></a></li>
+</ul>
+
+   <hr style="opacity: 0.5">
+   
+   <h3 id="code-index">Code Index:</h3>
+      <ul>
+         <li><small><code>[06 Sep 2016]</code></small> &mdash;
+            <a href="/rod/resources/p-matlablatex.html">Latex labels with MATLAB&reg;</a></li>
+         <li><small><code>[21 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-tikz-external-png.html">TikZ&ndash;tikzexternalize to png</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-sp-latex.html">Spherical Harmonics LaTeX Macros</a></li>
+         <li><small><code>[01 Aug 2015]</code></small> &mdash; BibDesk Publication html Export </li>
+      </ul>
+      
+   <h3 id="sphere-index">Sphere Index:</h3>
+      <ul>
+         <li><small><code>[06 Aug 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-spharm.html">Spherical Harmonic Plotting with MATLAB&reg;</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-sp-latex.html">Spherical Harmonics LaTeX Macros</a></li>
+         <li><small><code>[16 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-shplot.html">Spherical Harmonic MATLAB&reg; Code 1</a></li>
+      </ul>
+      
+   <h3 id="misc-index">Misc Index:</h3>
+      <ul>
+         <li><small><code>[31 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-ornament.html">Outputing png from pgfornament</a></li>
+         <li><small><code>[18 Jul 2015]</code></small> &mdash;
+            <a href="/rod/resources/p-gaussleg.html">Improving Gauss-Legendre</a></li>
+      </ul>
+      
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+         var toggle = document.querySelector('.sidebar-toggle');
+         var sidebar = document.querySelector('#sidebar');
+         var checkbox = document.querySelector('#sidebar-checkbox');
+
+         document.addEventListener('click', function(e) {
+            var target = e.target;
+            if(!checkbox.checked || sidebar.contains(target) ||
+               (target === checkbox || target === toggle)) return;
+
+            checkbox.checked = false;
+         }, false);
+         })(document);
+      </script>
+   </body>
+</html>
