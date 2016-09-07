@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[margin=8mm]{geometry}
+\usepackage{tikz,pgfplots}
+%\usetikzlibrary{matrix,arrows,calc,shadows,positioning,patterns,backgrounds,fit}
+\usetikzlibrary{backgrounds,fit}
+\usepackage[object=vectorian]{pgfornament}
+
+\usepgfplotslibrary{external} % creates a tight self-contained pdf figure for each tikzpicture
+\tikzexternalize % comment out to debug if latex errors: generates the external pdf
+\tikzset{external/force remake} % force remarking of external pdf otherwise will use external pdf
+\tikzsetexternalprefix{pgf-figures/} % output the pdf to an existing directory (needs to exist)
+
+\tikzset{png export/.style={
+	external/system call={
+		pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
+%		sips -s format png --out "\image.png" "\image.pdf";
+		convert -version;
+		convert -units pixelsperinch -density 600 "\image.pdf" "\image-600.png";
+	}}}
+\newcommand{\drawbackgroundframe}{
+	\begin{pgfonlayer}{background}
+		\draw[red,fill=none] (current bounding box.south west) rectangle
+			(current bounding box.north east);
+	\end{pgfonlayer}}
+
+\tikzset{png export}
+\pgfplotsset{compat=1.12}
+\tikzsetnextfilename{pgf-ornament}
+\begin{document}
+%\pgfornament{75}
+\thispagestyle{empty}\flushleft
+%\begin{tikzpicture}]
+%\raisebox{7pt}{\pgfornament{88}}
+\pgfornament[ydelta=+3cm]{88}
+%\drawbackgroundframe
+%\node[fit=(current bounding box),inner sep=2pt]{};
+%\drawbackgroundframe
+%\end{tikzpicture}
+\end{document}

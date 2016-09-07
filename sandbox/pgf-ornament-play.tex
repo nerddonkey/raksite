@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[margin=0mm]{geometry}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{matrix,arrows,calc,shadows,positioning,patterns,backgrounds,fit}
+
+\usepgfplotslibrary{external} % creates a tight self-contained pdf figure for each tikzpicture
+\tikzexternalize % comment out to debug if latex errors: generates the external pdf
+\tikzset{external/force remake} % force remarking of external pdf otherwise will use external pdf
+\tikzsetexternalprefix{pgf-figures/} % output the pdf to an existing directory (needs to exist)
+
+\tikzset{png export/.style={
+	external/system call={
+		pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
+		sips -s format png --out "\image.png" "\image.pdf";
+		convert -version;
+		convert -units pixelsperinch -density 600 "\image.pdf" "\image-600.png";
+	}}}
+\newcommand{\drawbackgroundframe}{
+	\begin{pgfonlayer}{background}
+		\draw[red,fill=none] (current bounding box.south west) rectangle
+			(current bounding box.north east);
+	\end{pgfonlayer}}
+
+\tikzset{png export}
+\pgfplotsset{compat=1.12}
+\tikzsetnextfilename{pgf-ornament}
+\begin{document}
+\thispagestyle{empty}\flushleft
+%\begin{tikzpicture}
+%\raisebox{7pt}{
+\pgfornament{88}%}
+%\node[fit=(current bounding box),inner sep=2pt]{};
+%\drawbackgroundframe
+%\end{tikzpicture}
+\end{document}
+
+pgfornament must already be a tikzpicture so adding another generates issues including probably the baseline
+
+http://tex.stackexchange.com/questions/47377/proper-nesting-of-tikzpicture-environments-reset-all-pgf-values-to-their-defaul
+
+\newsavebox{\mybox}
+\sbox{\mybox}{%
+   \begin{tikzpicture}
+     % Inner picture
+   \end{tikzpicture}
+ }
+\begin{tikzpicture}
+  % Outer picture
+  % to include somewhere
+  \usebox{\mybox}
+\end{tikzpicture}
